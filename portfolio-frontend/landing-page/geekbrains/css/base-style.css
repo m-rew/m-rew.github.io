@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+/* header */
+
+.main-menu {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #fff;
+}
+
+/* main */
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+
+    padding: 34px 0;
+}
+
+.base-h1 {
+    line-height: 74px;
+    letter-spacing: 0.04em;
+}
+
+.base-h3 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+.base-h2 {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+    margin-bottom: 32px;
+}
+
+
+.base-text {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+
+    opacity: 0.6;
+}
+
+/* footer */
+
+footer {
+    background: #316099;
+}
+
+.footer-top .base-h2 {
+    color: #FFFFFF;
+}
+
+.footer-top .base-text {
+    color: #FFFFFF;
+}
+
+.footer-btn {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+
+    background: #5A98D0;
+    padding: 15px 80px;
+    display: inline-block;
+    text-decoration: none;
+
+    margin-top: 74px;
+}
+
+.footer-top {
+    padding: 91px 0 96px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer hr {
+    border-color: #fff;
+    opacity: 0.4;
+}
+
+.footer-bottom {
+    padding-top: 32px;
+    padding-bottom: 64px;
+}
+
+.footer-contacts-list {
+    list-style-type: decimal;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-contacts-list a {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-contacts-item {
+    padding-left: 19px;
+    width: 33%;
+    margin-top: 32px;
+}
+
+.footer-bottom .base-text {
+    color: #FFFFFF;
+    opacity: 0.4;
+    margin-top: 64px;
+}

@@ -1,0 +1,203 @@
+/* header */
+
+.banner .base-h1 {
+    font-size: 64px;
+    color: #1F3F68;
+}
+
+.banner .base-text {
+    margin-top: 32px;
+}
+
+.banner {
+    padding-top: 73px;
+    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+
+    display: flex;
+    align-items: stretch;
+    height: 652px;
+}
+
+.banner-container {
+    background: url(../img/homepage/bg-header-img.png) right top no-repeat;
+    overflow: visible;
+    width: 1140px;
+}
+
+.banner-btn {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+
+    padding: 15px 50px;
+    display: inline-block;
+    text-decoration: none;
+
+    margin-top: 71px;
+}
+
+/* benefits */
+
+.benefits {
+    padding: 64px 0;
+}
+
+.benefits .base-h2 {
+    text-align: center;
+}
+
+.benefits-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 34px;
+}
+
+.benefits-item {
+    width: 31%;
+    min-width: 321px;
+    
+    margin-right: 30px;
+    padding: 32px 37px 64px 37px;
+
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.benefits-item:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.benefits-item > img {
+    display: block;
+    margin: 0 auto;
+    height: 120px;
+}
+
+.benefits-item .base-h3 {
+    letter-spacing: 0.05em;
+    margin-top: 51px;
+}
+
+.benefits-item .base-text {
+    color: #1F3F68;
+    margin-top: 14px;
+}
+
+.benefits-item .more {
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #5A98D0;
+    text-decoration: none;
+
+    display: inline-block;
+    position: absolute;
+    bottom: 24px;
+}
+
+.benefits-item .more::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/homepage/icon-benefits-arrow.svg);
+    background-size: 15px;
+    float: right;
+    margin-left: 24px;
+    margin-top: 7px;
+}
+
+/* projects */
+
+.projects {
+    margin-bottom: 112px;
+}
+
+.projects .base-h2 {
+    text-align: center;
+}
+
+.projects .base-text {
+    text-align: center;
+    color: #222222;
+    opacity: 1;
+
+    margin-bottom: 64px;;
+}
+
+.projects-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projects-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.projects-item h3 {
+    font-size: 32px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+
+    position: absolute;
+}
+
+/* Отступы сверху начиная с 2-х */
+.projects-item:nth-child(n+2) {
+    margin-top: 32px;
+    width: 48%;
+    height: 417px;
+}
+
+/* Отступы справа только у четных */
+.projects-item:nth-child(2n) {
+    margin-right: 30px;
+}
+
+/* Заголовок 1-го элемента */
+.projects-item:first-child h3 {
+    top: 64px;
+    right: 64px;
+}
+
+.projects-item:nth-child(n+2) h3 {
+    top: 32px;
+    left: 32px;
+}
+
+/* Размеры 1-го элемента */
+.projects-item:first-child {
+    width: 1140px;
+    height: 480px;
+}
+
+/* overlay */
+.projects-item .overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(306.48deg, rgba(66, 165, 245, 0.4) 0%, rgba(21, 101, 192, 0.6) 97.81%);
+}
+
+.projects-item:nth-child(1) .overlay {
+    background: url(../img/homepage/overlay-projects.svg) no-repeat left bottom, linear-gradient(89.99deg, #1F3F68 3.62%, rgba(31, 63, 104, 0.37) 97.78%);
+}
+
+.projects-item:nth-child(2) .overlay {
+    background: linear-gradient(308.85deg, rgba(66, 165, 245, 0.4) -1.71%, rgba(21, 101, 192, 0.6) 74.54%);
+}
+
+.projects-item:nth-child(3) .overlay {
+    background: linear-gradient(306.48deg, rgba(66, 165, 245, 0.4) 0%, rgba(21, 101, 192, 0.6) 97.81%);
+}
