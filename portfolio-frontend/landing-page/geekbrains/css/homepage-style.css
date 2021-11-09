@@ -3,9 +3,11 @@
 .banner .base-h1 {
     font-size: 64px;
     color: #1F3F68;
+    max-width: 506px;
 }
 
 .banner .base-text {
+    max-width: 425px;
     margin-top: 32px;
 }
 
@@ -15,13 +17,14 @@
 
     display: flex;
     align-items: stretch;
-    height: 652px;
 }
 
 .banner-container {
     background: url(../img/homepage/bg-header-img.png) right top no-repeat;
-    overflow: visible;
-    width: 1140px;
+    background-size: 50%;
+    background-position: bottom 60px right 87px;
+    width: 100%;
+    padding-bottom: 190px;
 }
 
 .banner-btn {
@@ -125,11 +128,13 @@
 }
 
 .projects .base-text {
+    width: 750px;
     text-align: center;
     color: #222222;
     opacity: 1;
 
-    margin-bottom: 64px;;
+    margin: 0 auto;
+    margin-bottom: 64px;
 }
 
 .projects-list {

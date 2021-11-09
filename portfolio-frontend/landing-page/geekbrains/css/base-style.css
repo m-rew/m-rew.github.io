@@ -7,15 +7,6 @@
     font-weight: 400;
 }
 
-/* header */
-
-.main-menu {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background: #fff;
-}
-
 /* main */
 
 .container {
@@ -34,6 +25,7 @@
 .base-h1 {
     line-height: 74px;
     letter-spacing: 0.04em;
+    font-weight: 300;
 }
 
 .base-h3 {
@@ -68,10 +60,12 @@ footer {
 }
 
 .footer-top .base-h2 {
+    width: 340px;
     color: #FFFFFF;
 }
 
 .footer-top .base-text {
+    width: 490px;
     color: #FFFFFF;
 }
 
@@ -125,10 +119,14 @@ footer hr {
     text-decoration: none;
 }
 
+.footer-contacts-item:first-child {
+    width: 250px;
+}
+
 .footer-contacts-item {
-    padding-left: 19px;
-    width: 33%;
+    margin-left: 20px;
     margin-top: 32px;
+    padding-left: 29px;
 }
 
 .footer-bottom .base-text {
