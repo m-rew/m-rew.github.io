@@ -69,9 +69,3 @@
         padding: 32px 16px;
     }
 }
-
-@media (max-width: 374px) {
-    body {
-        width: 375px;
-    }
-}
