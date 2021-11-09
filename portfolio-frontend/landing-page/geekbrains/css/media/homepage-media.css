@@ -46,7 +46,11 @@
 
     .projects-item:nth-child(n+2) {
         height: 253px;
-        width: 45.8%;
+        width: 47.6%;
+    }
+
+    .projects-item:nth-child(2n) {
+        margin-right: 32px;
     }
 
     .projects-item h3 {

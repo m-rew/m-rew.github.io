@@ -214,5 +214,9 @@
 .map {
     margin-top: 96px;
     margin-bottom: 112px;
+    height: 480px;
 }
 
+.map .container {
+    height: 100%;
+}
