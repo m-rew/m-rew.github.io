@@ -220,3 +220,7 @@
 .map .container {
     height: 100%;
 }
+
+.map h2 {
+    display: none;
+}
