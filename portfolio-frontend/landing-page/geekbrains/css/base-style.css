@@ -89,8 +89,8 @@ footer {
     justify-content: space-between;
 }
 
-footer hr {
-    border-color: #fff;
+.line {
+    border-top: 2px solid #fff;
     opacity: 0.4;
 }
 
