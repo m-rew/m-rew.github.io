@@ -294,8 +294,8 @@
   margin-right: 23px;
 }
 .reviews-pagination__item::after {
-  content: url('../img/icons/icon-pagination.svg');
+  content: url(../../img/icons/icon-pagination.svg);
 }
 .reviews-pagination_active::after {
-  content: url('../img/icons/icon-pagination_active.svg');
+  content: url(../../img/icons/icon-pagination_active.svg);
 }
