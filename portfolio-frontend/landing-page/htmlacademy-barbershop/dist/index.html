@@ -1,14 +1,258 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>«Барбершоп» — Главная страница</title>
+  <title>Барбершоп «Бородинский»</title>
+  <link rel="stylesheet" href="css/base-style.css">
+  <link rel="stylesheet" href="css/base-effects-style.css">
+  <link rel="stylesheet" href="css/index-style.css">
+  <link rel="stylesheet" href="css/index-effects-style.css">
+  <link rel="stylesheet" href="css/fonts.css">
 </head>
 
 <body>
+
+  <!-- header -->
+  <header class="header header_bg">
+    <!-- section nav -->
+    <nav class="main-menu">
+      <div class="container main-menu__container">
+        <ul class="main-menu__list">
+          <li><a class="main-menu__link main-menu__link_active" href="index.html">ГЛАВНАЯ</a></li>
+          <li><a class="main-menu__link" href="photo.html">НАШИ РАБОТЫ</a></li>
+          <li><a class="main-menu__link" href="form.html">ЗАПИСАТЬСЯ</a></li>
+          <li><a class="main-menu__link" href="#">КОНТАКТЫ</a></li>
+          <li><a class="main-menu__link" href="#">HTML ACADEMY</a></li>
+        </ul>
+        <a class="main-menu__login main-menu__link" href="#">
+          <img class="main-menu__login-img" src="img/icons/icon-login.svg" alt="Иконка кнопки Войти">
+          <span class="main-menu__login-title">ВОЙТИ</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- section logo -->
+    <div class="header-logo">
+      <img src="img/base/logo.svg" alt="Логотип барбершопа Бородинский" class="header-logo__img">
+    </div>
+
+    <!-- section stat -->
+    <section class="stat">
+      <div class="container stat__container">
+        <div class="stat__cover"></div>
+        <div class="stat__main-item">
+          <h3 class="stat-main-item__title">Стрижка у нас это выгодно!</h3>
+          <p class="stat-main-item__subtitle">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+          <p class="stat-main-item__descr">* — приведённые данные ложь</p>
+        </div>
+        <ul class="stat__list">
+          <li class="stat__item">
+            <p class="stat-item__title">1500*</p>
+            <p class="stat-item__subtitle">рублей вложений</p>
+          </li>
+          <li class="stat__item">
+            <p class="stat-item__title">7 200</p>
+            <p class="stat-item__subtitle">секунд времени мастера</p>
+          </li>
+          <li class="stat__item">
+            <p class="stat-item__title">90 000</p>
+            <p class="stat-item__subtitle">постриженных волос</p>
+          </li>
+          <li class="stat__item">
+            <p class="stat-item__title">500 000 *</p>
+            <p class="stat-item__subtitle">лайков и комплиментов</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </header>
+
+  <!-- main -->
+  <main>
+
+    <!-- START section feature -->
+    <section class="feature">
+      <div class="container">
+        <ul class="feature__list">
+          <li class="feature__item">
+            <div class="feature-item-icon__container">
+              <img src="img/icons/icon-feature-1.svg" alt="Изображение ножниц" class="feature-item__icon">
+            </div>
+            <h3 class="feature-item__title">БЫСТРО</h3>
+            <p class="feature-item__subtitle">Мы делаем свою работу быстро!<br>
+              Два часа пролетят незаметно<br>
+              и вы — счастливый обладатель<br>
+              стильной стрижки-минутки</p>
+          </li>
+          <li class="feature__item">
+            <div class="feature-item-icon__container">
+              <img src="img/icons/icon-feature-2.svg" alt="Изображение стула" class="feature-item__icon">
+            </div>
+            <h3 class="feature-item__title">КРУТО</h3>
+            <p class="feature-item__subtitle">Забудьте, как вы стриглись<br>
+              раньше. Мы сделаем из вас<br>
+              звезду футбола или кино.<br>
+              Во всяком случае внешне.</p>
+          </li>
+          <li class="feature__item">
+            <div class="feature-item-icon__container">
+              <img src="img/icons/icon-feature-3.svg" alt="Изображение денег" class="feature-item__icon">
+            </div>
+            <h3 class="feature-item__title">ДОРОГО</h3>
+            <p class="feature-item__subtitle">Наши мастера — профессионалы<br>
+              своего дела не могут стоить<br>
+              дёшево. К тому же, разве цена<br>
+              не даёт определённый статус?</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="feature__cover"></div>
+    <!-- END section feature -->
+
+    <!-- START section news -->
+    <section class="news">
+      <div class="container">
+        <div class="news__header">
+          <div class="news-header__title title">НОВОСТИ И АКЦИИ</div>
+          <a href="#" class="btn">ПОКАЗАТЬ ВСЕ</a>
+        </div>
+        <ul class="news__list">
+          <li class="news__item">
+            <a class="news-item__link" href="#">
+              <div class="news-item-date__container">
+                <p class="news-item__date">29 <span>СЕНТ</span></p>
+                <div class="news-item-date__cover"></div>
+              </div>
+              <p class="news-item__descr">Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время
+                стрижки.
+              </p>
+            </a>
+          </li>
+          <li class="news__item">
+            <a class="news-item__link" href="#">
+              <div class="news-item-date__container">
+                <p class="news-item__date">19 <span>СЕНТ</span></p>
+                <div class="news-item-date__cover"></div>
+              </div>
+              <p class="news-item__descr">В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши стройные
+                ряды. Спешите записаться!
+              </p>
+            </a>
+          </li>
+          <li class="news__item">
+            <a class="news-item__link" href="#">
+              <div class="news-item-date__container">
+                <p class="news-item__date">9 <span>СЕНТ</span></p>
+                <div class="news-item-date__cover"></div>
+              </div>
+              <p class="news-item__descr">Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете,
+                в
+                чем здесь подвох!
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- END section news -->
+
+    <div class="line"></div>
+
+    <!-- START section reviews -->
+    <section class="reviews">
+      <div class="container">
+        <div class="reviews__header">
+          <div class="reviews-header__title title">ОТЗЫВЫ О НАС</div>
+          <a href="#" class="btn">ОСТАВИТЬ СВОЙ</a>
+        </div>
+        <div class="reviews__main">
+          <div class="reviews__arrow">
+            <img src="img/icons/icon-arrow-left.svg" alt="Иконка кнопки влево" class="reviews-arrow__icon">
+          </div>
+          <!-- START section reviews__content -->
+          <ul class="reviews__list">
+            <!-- START reviews-content__item -->
+            <li class="reviews__item reviews-item_active">
+              <div class="reviews-item__img-container">
+                <img src="img/index/reviews-photo.jpg" alt="Фотография стрижки Трэвис Баркер" class="reviews-item__img">
+              </div>
+              <div class="reviews-item__comment">
+                <h3 class="reviews-item-comment__title">Трэвис Баркер</h3>
+                <p class="reviews-item-comment__subtitle">Спасибо за лысину! Был проездом в Москве, заскочил
+                  побриться, чтобы было видно новую татуировку!</p>
+              </div>
+            </li>
+            <!-- END reviews-content__item -->
+          </ul>
+          <!-- END section reviews__content -->
+          <div class="reviews__arrow">
+            <img src="img/icons/icon-arrow-right.svg" alt="Иконка кнопки влево" class="reviews-arrow__icon">
+          </div>
+        </div>
+        <div class="reviews__pagination">
+          <ul class="reviews-pagination__list">
+            <li class="reviews-pagination__item reviews-pagination_active"></li>
+            <li class="reviews-pagination__item"></li>
+            <li class="reviews-pagination__item"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- END section reviews -->
+
+  </main>
+
+  <!-- START section footer -->
+  <footer class="footer footer_bg">
+    <div class="container">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <h1 class="footer__title_h1">Барбершоп Бородинский</h1>
+          <ul class="footer-contacts__list">
+            <li class="footer-contacts__item">
+              <a class="footer-contacts__link" target="_blank" href="https://goo.gl/maps/LfFZzTqFsZguPmHr6">г.
+                Санкт-Петербург, ул. Большая
+                Конюшенная 19/8</a>
+            </li>
+            <li class="footer-contacts__item">
+              Тел.: <a class="footer-contacts__link" href="tel:78125556666">+7 (812) 555-66-66</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__item">
+          <h3 class="footer__title_h3">Давайте дружить!</h3>
+          <ul class="footer-social__list">
+            <li class="footer-social__item">
+              <a href="#" class="footer__btn">
+                <img src="img/icons/icon-vk.svg" alt="Иконка социальной сети ВКонтакте" class="footer-social__icon">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__btn">
+                <img src="img/icons/icon-fb.svg" alt="Иконка социальной сети Фейсбук" class="footer-social__icon">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__btn">
+                <img src="img/icons/icon-inst.svg" alt="Иконка социальной сети Инстаграм" class="footer-social__icon">
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__item">
+          <div class="footer-copyright__container">
+            <h3 class="footer__title_h3">Разработано:</h3>
+            <a href="#" class="copyright__btn">HTML ACADEMY</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- END section footer -->
 
 </body>
 

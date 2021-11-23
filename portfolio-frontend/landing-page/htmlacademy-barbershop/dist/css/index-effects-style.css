@@ -1,0 +1,39 @@
+/* ------------------------------ *\
+  section news
+\* ------------------------------ */
+
+/* hover */
+
+.news__item:hover .news-item__descr {
+  text-decoration: underline;
+  color: #826550;
+}
+.news__item:hover .news-item__date,
+.news__item:hover .news-item-date__cover {
+  background: #826550;
+}
+
+/* active */
+
+.news__item:active .news-item__descr {
+  color: #6A4D38;
+}
+.news__item:active .news-item__date,
+.news__item:active .news-item-date__cover,
+.news__item:active .news-item__date span {
+  background: #6A4D38;
+  color: rgba(255, 255, 255, .3);
+}
+
+/* ------------------------------ *\
+  section reviews
+\* ------------------------------ */
+
+/* hover */
+
+.reviews__arrow:hover {
+  cursor: pointer;
+}
+.reviews-pagination__item:hover {
+  cursor: pointer;
+}
