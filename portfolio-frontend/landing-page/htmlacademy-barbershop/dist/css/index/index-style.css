@@ -1,4 +1,5 @@
 .header {
+  height: 720px;
   position: relative;
 }
 
@@ -47,14 +48,12 @@
 .stat-main-item__subtitle {
   width: 202px;
   font-size: 20px;
-  line-height: 27px;
   color: #000000;
 
   margin-top: 46px;
 }
 .stat-main-item__descr {
   font-size: 20px;
-  line-height: 27px;
   color: rgba(0, 0, 0, 0.3);
 
   margin-top: 36px;
@@ -88,7 +87,6 @@
 }
 .stat-item__subtitle {
   font-size: 20px;
-  line-height: 27px;
   color: #FFFFFF;
 
   margin-top: 7px;
@@ -143,7 +141,6 @@
 }
 .feature-item__subtitle {
   font-size: 20px;
-  line-height: 27px;
   color: #FFFFFF;
 
   text-align: center;
@@ -217,9 +214,7 @@
 }
 .news-item__descr {
   width: 197px;
-
   font-size: 18px;
-  line-height: 27px;
 }
 
 /* ------------------------------ *\
@@ -275,11 +270,9 @@
 .reviews-item-comment__title {
   font-weight: 700;
   font-size: 24px;
-  line-height: 27px;
 }
 .reviews-item-comment__subtitle {
   font-size: 18px;
-  line-height: 27px;
   margin-top: 8px;
 }
 .reviews__pagination {

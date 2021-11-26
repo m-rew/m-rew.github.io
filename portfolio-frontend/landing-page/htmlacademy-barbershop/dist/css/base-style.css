@@ -9,6 +9,10 @@
   color: #000000;
 }
 
+body {
+  background: #F8F5F2;
+}
+
 .container {
   width: 960px;
   margin: 0 auto;
@@ -39,9 +43,6 @@
   header
 \* ------------------------------ */
 
-.header {
-  height: 720px;
-}
 .header_bg {
   background: url('../img/base/base-bg.png') center center/cover no-repeat;
 }

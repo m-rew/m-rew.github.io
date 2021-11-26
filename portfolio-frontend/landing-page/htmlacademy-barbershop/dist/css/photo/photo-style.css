@@ -1,0 +1,115 @@
+.header {
+  height: 384px;
+
+  clip-path: polygon(0 0, 100% 0%, 100% 316px, 50% 100%, 0 316px);
+}
+
+/* ------------------------------ *\
+  works
+\* ------------------------------ */
+
+.works {
+  padding: 64px 0 90px 0;
+}
+.works__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.works-header__title {
+}
+.works__main {
+  margin-top: 79px;
+}
+.works__leader {
+  height: 480px;
+  display: flex;
+  position: relative;
+}
+.wroks-leader__stick {
+  position: absolute;
+  right: 0;
+  top: 26px;
+  background: #826550;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 8px 50%);
+}
+.wroks-leader-stick__titlte {
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 18px 20px 18px 34px;
+}
+.works-leader__img-container {
+}
+.works-leader__img {
+  height: 100%;
+}
+.works-comment__container {
+  width: 100%;
+  padding: 134px 30px 31px 42px;
+  border: 1px solid #E5DDD5;
+  border-left: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.works__comment {
+
+}
+.works-comment__title {
+  font-weight: 700;
+  font-size: 24px;
+}
+.works-comment__subtitle {
+  margin-top: 38px;
+  font-size: 18px;
+}
+.works-comment__keywords {
+  margin-top: 36px;
+}
+.works-comment-keywords__list {
+  display: flex;
+  list-style-type: none;
+}
+.works-comment-keywords__item {
+  display: flex;
+}
+.works-comment-keywords__item:not(:last-child) {
+  margin-right: 32px;
+}
+.works-comment-keywords__img {
+}
+.works-comment-keywords__title {
+  margin-left: 14px;
+}
+.works__other {
+  margin-top: 39px;
+}
+.works-other__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.works-other__img-container {
+  width: 294px;
+  height: 294px;
+  overflow: hidden;
+}
+.works-other__img {
+  height: 100%;
+}
+
+.works-other__item .works-comment__container {
+  padding: 34px 30px 35px 36px;
+  border: 1px solid #E5DDD5;
+  border-top: none;
+  flex-grow: 1;
+}
+.works-other__item {
+  max-width: 294px;
+  display: flex;
+  flex-direction: column;
+}

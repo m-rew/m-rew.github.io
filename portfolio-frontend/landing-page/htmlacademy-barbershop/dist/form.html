@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Запись на стрижку</title>
+  <link rel="stylesheet" href="css/base-style.css">
+  <link rel="stylesheet" href="css/base-effects-style.css">
+  <link rel="stylesheet" href="css/signup/signup-style.css">
+  <link rel="stylesheet" href="css/signup/signup-effects-style.css">
+  <link rel="stylesheet" href="css/fonts.css">
+</head>
+
+<body>
+
+  <!-- START header -->
+  <header class="header header_bg">
+    <!-- START section nav -->
+    <nav class="main-menu">
+      <div class="container main-menu__container">
+        <ul class="main-menu__list">
+          <li><a class="main-menu__link" href="index.html">ГЛАВНАЯ</a></li>
+          <li><a class="main-menu__link" href="photo.html">НАШИ РАБОТЫ</a></li>
+          <li><a class="main-menu__link main-menu__link_active" href="form.html">ЗАПИСАТЬСЯ</a></li>
+          <li><a class="main-menu__link" href="#">КОНТАКТЫ</a></li>
+          <li><a class="main-menu__link" href="#">HTML ACADEMY</a></li>
+        </ul>
+        <a class="main-menu__login main-menu__link" href="#">
+          <img class="main-menu__login-img" src="img/icons/icon-login.svg" alt="Иконка кнопки Войти">
+          <span class="main-menu__login-title">ВОЙТИ</span>
+        </a>
+      </div>
+    </nav>
+    <!-- END section nav -->
+
+    <!-- START section logo -->
+    <div class="header-logo">
+      <img src="img/base/logo.svg" alt="Логотип барбершопа Бородинский" class="header-logo__img">
+    </div>
+    <!-- START section logo -->
+
+  </header>
+  <!-- END header -->
+
+  <!-- START section main -->
+  <main>
+
+    <section class="signup">
+      <div class="container">
+        <div class="signup__header">
+          <div class="signup-header__title title">НАШИ РАБОТЫ</div>
+          <a href="index.html" class="btn">НА ГЛАВНУЮ</a>
+        </div>
+        <div class="signup__main">
+          <form action="#">
+
+            <div class="group-input_flex">
+              <input class="input_text" type="text" placeholder="Фамилия">
+              <input class="input_text" type="text" placeholder="Имя">
+              <input class="input_text" type="text" placeholder="Отчество">
+              <input class="input_text" type="tel" placeholder="Контактный телефон">
+              <input class="input_text" type="email" placeholder="Контактный e-mail">
+            </div>
+
+            <textarea class="input_text textarea" placeholder="Доп. информация для мастера"></textarea>
+
+            <fieldset class="fieldset fieldset__radio_flex">
+              <legend class="fieldset__legend_h3">ВЫБЕРИТЕ МОДЕЛЬ БОРОДЫ</legend>
+
+              <div class="radio__container">
+                <input class="radio" id="admiral" type="radio" name="beard-size" value="admiral" checked>
+                <label class="label" for="admiral">
+                  <p class="fieldset__title radio__title">адмирал</p>
+                  <img class="radio__img" src="img/icons/icon-beard-1.svg" alt="Иконка бороды адмирал">
+                </label>
+              </div>
+
+              <div class="radio__container">
+                <input class="radio" id="lesorb" type="radio" name="beard-size" value="lesorb">
+                <label class="label" for="lesorb">
+                  <p class="fieldset__title radio__title">лесоруб</p>
+                  <img class="radio__img" src="img/icons/icon-beard-2.svg" alt="Иконка бороды лесоруб">
+                </label>
+              </div>
+
+              <div class="radio__container">
+                <input class="radio" id="polarExplorer" type="radio" name="beard-size" value="polarExplorer">
+                <label class="label" for="polarExplorer">
+                  <p class="fieldset__title radio__title">полярник</p>
+                  <img class="radio__img" src="img/icons/icon-beard-3.svg" alt="Иконка бороды полярник">
+                </label>
+              </div>
+
+              <div class="radio__container">
+                <input class="radio" id="Boyar" type="radio" name="beard-size" value="Boyar">
+                <label class="label" for="Boyar">
+                  <p class="fieldset__title radio__title">боярин</p>
+                  <img class="radio__img" src="img/icons/icon-beard-4.svg" alt="Иконка бороды боярин">
+                </label>
+              </div>
+
+              <div class="radio__container">
+                <input class="radio" id="sage" type="radio" name="beard-size" value="sage">
+                <label class="label" for="sage">
+                  <p class="fieldset__title radio__title">мудрец</p>
+                  <img class="radio__img" src="img/icons/icon-beard-5.svg" alt="Иконка бороды мудрец">
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="fieldset fieldset__checkbox_flex">
+              <legend class="fieldset__legend_h3">ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ:</legend>
+
+              <div class="checkbox__container">
+                <input class="checkbox" id="touchTheBeard" type="checkbox" value="touchTheBeard" checked>
+                <label class="label" for="touchTheBeard">
+                  <p class="fieldset__title">Подкрасить бороду</p>
+                </label>
+              </div>
+
+              <div class="checkbox__container">
+                <input class="checkbox" id="happyBeard" type="checkbox" value="happyBeard">
+                <label class="label" for="happyBeard">
+                  <p class="fieldset__title">Причесать бороду</p>
+                </label>
+              </div>
+
+              <div class="checkbox__container">
+                <input class="checkbox" id="removeGray" type="checkbox" value="removeGray">
+                <label class="label" for="removeGray">
+                  <p class="fieldset__title">Убрать седину</p>
+                </label>
+              </div>
+
+              <div class="checkbox__container">
+                <input class="checkbox" id="cheatMustache" type="checkbox" value="cheatMustache" checked>
+                <label class="label" for="cheatMustache">
+                  <p class="fieldset__title">Накрутить усы</p>
+                </label>
+              </div>
+
+              <div class="checkbox__container">
+                <input class="checkbox" id="focusWhiskey" type="checkbox" value="focusWhiskey">
+                <label class="label" for="focusWhiskey">
+                  <p class="fieldset__title">Подровнять виски</p>
+                </label>
+              </div>
+
+              <div class="checkbox__container">
+                <input class="checkbox" id="polishLysin" type="checkbox" value="polishLysin">
+                <label class="label" for="polishLysin">
+                  <p class="fieldset__title">Отполировать лысину</p>
+                </label>
+              </div>
+
+            </fieldset>
+
+            <button class="btn_submit" type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- END section main -->
+
+  <!-- START section footer -->
+  <footer class="footer footer_bg">
+    <div class="container">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <p class="footer__title_h1">Барбершоп Бородинский</p>
+          <ul class="footer-contacts__list">
+            <li class="footer-contacts__item">
+              <a class="footer-contacts__link" target="_blank" href="https://goo.gl/maps/LfFZzTqFsZguPmHr6">г.
+                Санкт-Петербург, ул. Большая
+                Конюшенная 19/8</a>
+            </li>
+            <li class="footer-contacts__item">
+              Тел.: <a class="footer-contacts__link" href="tel:78125556666">+7 (812) 555-66-66</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__item">
+          <h3 class="footer__title_h3">Давайте дружить!</h3>
+          <ul class="footer-social__list">
+            <li class="footer-social__item">
+              <a href="#" class="footer__btn">
+                <img src="img/icons/icon-vk.svg" alt="Иконка социальной сети ВКонтакте" class="footer-social__icon">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__btn">
+                <img src="img/icons/icon-fb.svg" alt="Иконка социальной сети Фейсбук" class="footer-social__icon">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__btn">
+                <img src="img/icons/icon-inst.svg" alt="Иконка социальной сети Инстаграм" class="footer-social__icon">
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__item">
+          <div class="footer-copyright__container">
+            <h3 class="footer__title_h3">Разработано:</h3>
+            <a href="#" class="copyright__btn">HTML ACADEMY</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- END section footer -->
+
+</body>
+
+</html>
