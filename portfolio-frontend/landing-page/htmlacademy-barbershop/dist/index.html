@@ -10,12 +10,14 @@
   <link rel="stylesheet" href="css/base-effects-style.css">
   <link rel="stylesheet" href="css/index/index-style.css">
   <link rel="stylesheet" href="css/index/index-effects-style.css">
+  <link rel="stylesheet" href="css/base-media-style.css">
+  <link rel="stylesheet" href="css/index/index-media-style.css">
   <link rel="stylesheet" href="css/fonts.css">
 </head>
 
 <body>
 
-  <!-- START section header -->
+  <!-- Header Section Start -->
   <header class="header header_bg">
     <!-- START section nav -->
     <nav class="main-menu">
@@ -37,7 +39,11 @@
 
     <!-- START section logo -->
     <div class="header-logo">
-      <img src="img/base/logo.svg" alt="Логотип барбершопа Бородинский" class="header-logo__img">
+      <picture>
+        <source media="(max-width: 1199px)" srcset="img/base/logo-min.svg">
+        <img src="img/base/logo.svg" alt="Логотип барбершопа Бородинский" class="header-logo__img">
+      </picture>
+
     </div>
     <!-- END section logo -->
 
@@ -72,59 +78,86 @@
     </section>
     <!-- END section stat -->
   </header>
-  <!-- END section header -->
+  <!-- Header Section End -->
 
-  <!-- START section main -->
+  <!-- Main Section Start -->
   <main>
 
-    <!-- START section feature -->
+    <!-- Feature Section Start -->
     <section class="feature">
       <div class="container">
+        <!-- Feature List Start -->
         <ul class="feature__list">
+
+          <!-- Feature Item Start -->
           <li class="feature__item">
             <div class="feature-item-icon__container">
               <img src="img/icons/icon-feature-1.svg" alt="Изображение ножниц" class="feature-item__icon">
             </div>
-            <h3 class="feature-item__title">БЫСТРО</h3>
-            <p class="feature-item__subtitle">Мы делаем свою работу быстро!<br>
-              Два часа пролетят незаметно<br>
-              и вы — счастливый обладатель<br>
-              стильной стрижки-минутки</p>
+            <div class="feature-item-main__container">
+              <h3 class="feature-item__title">БЫСТРО</h3>
+              <p class="feature-item__subtitle">Мы делаем свою работу быстро!<br>
+                Два часа пролетят незаметно<br>
+                и вы — счастливый обладатель<br>
+                стильной стрижки-минутки</p>
+            </div>
+
           </li>
+          <!-- Feature Item End -->
+
+          <!-- Feature Item Start -->
           <li class="feature__item">
             <div class="feature-item-icon__container">
               <img src="img/icons/icon-feature-2.svg" alt="Изображение стула" class="feature-item__icon">
             </div>
-            <h3 class="feature-item__title">КРУТО</h3>
-            <p class="feature-item__subtitle">Забудьте, как вы стриглись<br>
-              раньше. Мы сделаем из вас<br>
-              звезду футбола или кино.<br>
-              Во всяком случае внешне.</p>
+            <div class="feature-item-main__container">
+              <h3 class="feature-item__title">КРУТО</h3>
+              <p class="feature-item__subtitle">Забудьте, как вы стриглись<br>
+                раньше. Мы сделаем из вас<br>
+                звезду футбола или кино.<br>
+                Во всяком случае внешне.</p>
+            </div>
           </li>
+          <!-- Feature Item End -->
+
+          <!-- Feature Item Start -->
           <li class="feature__item">
             <div class="feature-item-icon__container">
               <img src="img/icons/icon-feature-3.svg" alt="Изображение денег" class="feature-item__icon">
             </div>
-            <h3 class="feature-item__title">ДОРОГО</h3>
-            <p class="feature-item__subtitle">Наши мастера — профессионалы<br>
-              своего дела не могут стоить<br>
-              дёшево. К тому же, разве цена<br>
-              не даёт определённый статус?</p>
+            <div class="feature-item-main__container">
+              <h3 class="feature-item__title">ДОРОГО</h3>
+              <p class="feature-item__subtitle">Наши мастера — профессионалы<br>
+                своего дела не могут стоить<br>
+                дёшево. К тому же, разве цена<br>
+                не даёт определённый статус?</p>
+            </div>
           </li>
+          <!-- Feature Item End -->
+
         </ul>
+        <!-- Feature List End -->
       </div>
     </section>
-    <div class="feature__cover"></div>
-    <!-- END section feature -->
+    <!-- Feature Section End -->
 
-    <!-- START section news -->
+    <div class="feature__cover"></div>
+
+    <!-- News Section Start -->
     <section class="news">
       <div class="container">
+
+        <!-- News Header Start -->
         <div class="news__header">
           <div class="news-header__title title">НОВОСТИ И АКЦИИ</div>
           <a href="#" class="btn">ПОКАЗАТЬ ВСЕ</a>
         </div>
+        <!-- News Header End -->
+
+        <!-- News List Start -->
         <ul class="news__list">
+
+          <!-- News Item Start -->
           <li class="news__item">
             <a class="news-item__link" href="#">
               <div class="news-item-date__container">
@@ -136,6 +169,9 @@
               </p>
             </a>
           </li>
+          <!-- News Item End -->
+
+          <!-- News Item Start -->
           <li class="news__item">
             <a class="news-item__link" href="#">
               <div class="news-item-date__container">
@@ -147,6 +183,9 @@
               </p>
             </a>
           </li>
+          <!-- News Item End -->
+
+          <!-- News Item Start -->
           <li class="news__item">
             <a class="news-item__link" href="#">
               <div class="news-item-date__container">
@@ -159,27 +198,38 @@
               </p>
             </a>
           </li>
+          <!-- News Item End -->
+
         </ul>
+        <!-- News List End -->
       </div>
     </section>
-    <!-- END section news -->
+    <!-- News Section End -->
 
     <div class="line"></div>
 
-    <!-- START section reviews -->
+    <!-- Reviews Section Start -->
     <section class="reviews">
-      <div class="container">
+      <div class="container reviews__container">
+
+        <!-- Reviews Header Start -->
         <div class="reviews__header">
           <div class="reviews-header__title title">ОТЗЫВЫ О НАС</div>
           <a href="#" class="btn">ОСТАВИТЬ СВОЙ</a>
         </div>
+        <!-- Reviews Header End -->
+
+        <!-- Reviews Main Start -->
         <div class="reviews__main">
+
           <div class="reviews__arrow">
             <img src="img/icons/icon-arrow-left.svg" alt="Иконка кнопки влево" class="reviews-arrow__icon">
           </div>
-          <!-- START section reviews__content -->
+
+          <!-- Reviews List Start -->
           <ul class="reviews__list">
-            <!-- START reviews-content__item -->
+
+            <!-- Reviews Item Start -->
             <li class="reviews__item reviews-item_active">
               <div class="reviews-item__img-container">
                 <img src="img/index/reviews-photo.jpg" alt="Фотография стрижки Трэвис Баркер" class="reviews-item__img">
@@ -190,13 +240,17 @@
                   побриться, чтобы было видно новую татуировку!</p>
               </div>
             </li>
-            <!-- END reviews-content__item -->
+            <!-- Reviews Item End -->
+
           </ul>
-          <!-- END section reviews__content -->
+          <!-- Reviews List End -->
           <div class="reviews__arrow">
             <img src="img/icons/icon-arrow-right.svg" alt="Иконка кнопки влево" class="reviews-arrow__icon">
           </div>
         </div>
+        <!-- Reviews Main End -->
+
+        <!-- Reviews Pagination Start -->
         <div class="reviews__pagination">
           <ul class="reviews-pagination__list">
             <li class="reviews-pagination__item reviews-pagination_active"></li>
@@ -204,17 +258,23 @@
             <li class="reviews-pagination__item"></li>
           </ul>
         </div>
+        <!-- Reviews Pagination End -->
+
       </div>
     </section>
-    <!-- END section reviews -->
+    <!-- Reviews Section End -->
 
   </main>
-  <!-- END section main -->
+  <!-- Main Section End -->
 
-  <!-- START section footer -->
+  <!-- Footer Section Start -->
   <footer class="footer footer_bg">
     <div class="container">
+
+      <!-- Footer List Start -->
       <ul class="footer__list">
+
+        <!-- Footer Item Start -->
         <li class="footer__item">
           <p class="footer__title_h1">Барбершоп Бородинский</p>
           <ul class="footer-contacts__list">
@@ -228,6 +288,9 @@
             </li>
           </ul>
         </li>
+        <!-- Footer Item End -->
+
+        <!-- Footer Item Start -->
         <li class="footer__item">
           <h3 class="footer__title_h3">Давайте дружить!</h3>
           <ul class="footer-social__list">
@@ -236,28 +299,35 @@
                 <img src="img/icons/icon-vk.svg" alt="Иконка социальной сети ВКонтакте" class="footer-social__icon">
               </a>
             </li>
-            <li>
+            <li class="footer-social__item">
               <a href="#" class="footer__btn">
                 <img src="img/icons/icon-fb.svg" alt="Иконка социальной сети Фейсбук" class="footer-social__icon">
               </a>
             </li>
-            <li>
+            <li class="footer-social__item">
               <a href="#" class="footer__btn">
                 <img src="img/icons/icon-inst.svg" alt="Иконка социальной сети Инстаграм" class="footer-social__icon">
               </a>
             </li>
           </ul>
         </li>
-        <li class="footer__item">
+        <!-- Footer Item End -->
+
+        <!-- Footer Item Start -->
+        <li class="footer__item footer-copyright_flex">
           <div class="footer-copyright__container">
             <h3 class="footer__title_h3">Разработано:</h3>
             <a href="#" class="copyright__btn">HTML ACADEMY</a>
           </div>
         </li>
+        <!-- Footer Item End -->
+
       </ul>
+      <!-- Footer List End -->
+
     </div>
   </footer>
-  <!-- END section footer -->
+  <!-- Footer Section End -->
 
 </body>
 

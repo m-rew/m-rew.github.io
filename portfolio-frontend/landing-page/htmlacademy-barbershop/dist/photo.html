@@ -9,12 +9,14 @@
   <link rel="stylesheet" href="css/base-style.css">
   <link rel="stylesheet" href="css/base-effects-style.css">
   <link rel="stylesheet" href="css/photo/photo-style.css">
+  <link rel="stylesheet" href="css/base-media-style.css">
+  <link rel="stylesheet" href="css/photo/photo-media-style.css">
   <link rel="stylesheet" href="css/fonts.css">
 </head>
 
 <body>
 
-  <!-- START header -->
+  <!-- Header Section Start -->
   <header class="header header_bg">
     <!-- START section nav -->
     <nav class="main-menu">
@@ -36,12 +38,46 @@
 
     <!-- START section logo -->
     <div class="header-logo">
-      <img src="img/base/logo.svg" alt="Логотип барбершопа Бородинский" class="header-logo__img">
-    </div>
-    <!-- START section logo -->
+      <picture>
+        <source media="(max-width: 1199px)" srcset="img/base/logo-min.svg">
+        <img src="img/base/logo.svg" alt="Логотип барбершопа Бородинский" class="header-logo__img">
+      </picture>
 
+    </div>
+    <!-- END section logo -->
+
+    <!-- START section stat -->
+    <section class="stat">
+      <div class="container stat__container">
+        <div class="stat__cover"></div>
+        <div class="stat__main-item">
+          <h3 class="stat-main-item__title">Стрижка у нас это выгодно!</h3>
+          <p class="stat-main-item__subtitle">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+          <p class="stat-main-item__descr">* — приведённые данные ложь</p>
+        </div>
+        <ul class="stat__list">
+          <li class="stat__item">
+            <p class="stat-item__title">1500*</p>
+            <p class="stat-item__subtitle">рублей вложений</p>
+          </li>
+          <li class="stat__item">
+            <p class="stat-item__title">7 200</p>
+            <p class="stat-item__subtitle">секунд времени мастера</p>
+          </li>
+          <li class="stat__item">
+            <p class="stat-item__title">90 000</p>
+            <p class="stat-item__subtitle">постриженных волос</p>
+          </li>
+          <li class="stat__item">
+            <p class="stat-item__title">500 000 *</p>
+            <p class="stat-item__subtitle">лайков и комплиментов</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- END section stat -->
   </header>
-  <!-- END header -->
+  <!-- Header Section End -->
 
   <!-- START section main -->
   <main>
@@ -218,10 +254,14 @@
   </main>
   <!-- END section main -->
 
-  <!-- START section footer -->
+  <!-- Footer Section Start -->
   <footer class="footer footer_bg">
     <div class="container">
+
+      <!-- Footer List Start -->
       <ul class="footer__list">
+
+        <!-- Footer Item Start -->
         <li class="footer__item">
           <p class="footer__title_h1">Барбершоп Бородинский</p>
           <ul class="footer-contacts__list">
@@ -235,6 +275,9 @@
             </li>
           </ul>
         </li>
+        <!-- Footer Item End -->
+
+        <!-- Footer Item Start -->
         <li class="footer__item">
           <h3 class="footer__title_h3">Давайте дружить!</h3>
           <ul class="footer-social__list">
@@ -243,28 +286,35 @@
                 <img src="img/icons/icon-vk.svg" alt="Иконка социальной сети ВКонтакте" class="footer-social__icon">
               </a>
             </li>
-            <li>
+            <li class="footer-social__item">
               <a href="#" class="footer__btn">
                 <img src="img/icons/icon-fb.svg" alt="Иконка социальной сети Фейсбук" class="footer-social__icon">
               </a>
             </li>
-            <li>
+            <li class="footer-social__item">
               <a href="#" class="footer__btn">
                 <img src="img/icons/icon-inst.svg" alt="Иконка социальной сети Инстаграм" class="footer-social__icon">
               </a>
             </li>
           </ul>
         </li>
-        <li class="footer__item">
+        <!-- Footer Item End -->
+
+        <!-- Footer Item Start -->
+        <li class="footer__item footer-copyright_flex">
           <div class="footer-copyright__container">
             <h3 class="footer__title_h3">Разработано:</h3>
             <a href="#" class="copyright__btn">HTML ACADEMY</a>
           </div>
         </li>
+        <!-- Footer Item End -->
+
       </ul>
+      <!-- Footer List End -->
+
     </div>
   </footer>
-  <!-- END section footer -->
+  <!-- Footer Section End -->
 
 </body>
 

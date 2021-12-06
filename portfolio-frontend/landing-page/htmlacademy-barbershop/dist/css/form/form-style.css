@@ -38,6 +38,9 @@
   margin-top: 35px;
   width: 462px;
 }
+.input_text::placeholder {
+  color: #000000;
+}
 .textarea {
   margin-top: 35px;
   width: 100%;

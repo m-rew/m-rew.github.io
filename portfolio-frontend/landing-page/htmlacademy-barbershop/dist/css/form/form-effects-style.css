@@ -1,0 +1,58 @@
+/* ------------------------------ *\
+  section signup
+\* ------------------------------ */
+
+/* hover */
+
+.input_text:hover {
+  border: 1px solid #D5C9BD;
+}
+.label:hover {
+  cursor: pointer;
+}
+.radio + .label:hover::before,
+.checkbox + .label:hover::before {
+  border-color: #D5C9BD;
+}
+.btn_submit:hover {
+  cursor: pointer;
+  background: #6A4D38;
+}
+
+/* active */
+
+.input_text:active {
+  border-color: #999999;
+}
+.radio + .label:active::before,
+.checkbox + .label:active::before {
+  background-color: #D5C9BD;
+}
+.btn_submit:active {
+  background: #6A4D38;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* focus */
+
+.input_text:focus {
+  border-color: none;
+  outline: 4px solid rgba(0, 125, 250, 0.6);
+}
+.radio:focus:not(:checked) + label::before,
+.checkbox:focus:not(:checked) + label::before {
+  outline: 4px solid rgba(0, 125, 250, 0.6);
+}
+
+/* checked */
+
+.radio:checked + label::before,
+.checkbox:checked + label::before {
+  border: 1px solid #D5C9BD;
+}
+
+
+
+.btn_submit:disabled {
+  background: #AEAEAE;
+}

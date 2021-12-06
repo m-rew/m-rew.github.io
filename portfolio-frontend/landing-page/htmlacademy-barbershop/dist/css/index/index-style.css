@@ -98,7 +98,6 @@
 
 .feature {
   background: #353535;
-  min-height: 550px;
   padding-top: 204px;
 }
 .feature__list {
@@ -136,6 +135,7 @@
   font-size: 30px;
   line-height: 30px;
   color: #FFFFFF;
+  text-align: center;
 
   margin-top: 34px;
 }

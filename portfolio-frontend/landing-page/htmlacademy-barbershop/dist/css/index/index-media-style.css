@@ -1,0 +1,148 @@
+@media (max-width: 1199px) {
+  /* ------------------------------ *\
+    section stat
+  \* ------------------------------ */
+
+  .stat {
+    height: 504px;
+    bottom: -318px;
+  }
+  .stat__container {
+    flex-wrap: wrap;
+  }
+  .stat__main-item {
+    width: 100%;
+    height: 186px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .stat-main-item__title {
+    width: 50%;
+    padding-right: 85px;
+  }
+  .stat-main-item__subtitle {
+    width: calc(50% - 32px);
+    margin: 0;
+    margin-left: 32px;
+  }
+  .stat-main-item__descr {
+    width: 100%;
+    margin-top: 24px;
+  }
+  .stat__list {
+    width: 100%;
+  }
+  .stat__item {
+    height: 159px;
+  }
+
+  /* ------------------------------ *\
+    section feature
+  \* ------------------------------ */
+
+  .feature {
+    padding-top: 320px;
+  }
+  .feature br {
+    display: none;
+  }
+  .feature__list {
+    justify-content: center;
+  }
+  .feature-item-main__container {
+    width: 444px;
+  }
+  .feature-item-icon__container {
+    margin-right: 34px;
+  }
+  .feature__item {
+    width: 570px;
+    flex-direction: row;
+    align-items: start;
+
+    margin-top: 40px;
+    padding-bottom: 37px;
+  }
+  .feature__item:not(:last-child)::after {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+  }
+  .feature-item__title {
+    text-align: left;
+    margin: 0;
+  }
+  .feature-item__subtitle {
+    text-align: left;
+    margin-top: 12px;
+  }
+
+  /* ------------------------------ *\
+    section news
+  \* ------------------------------ */
+
+  .news {
+    padding: 42px 0 35px 0;
+  }
+  .news-header__title {
+    margin: 0;
+  }
+  .news__item {
+    width: 50%;
+  }
+  .news__item:last-child {
+    display: none;
+  }
+  .news-item__descr {
+    width: 203px;
+  }
+
+  /* ------------------------------ *\
+    section reviews
+  \* ------------------------------ */
+
+  .reviews {
+    padding: 42px 0 55px 0;
+  }
+  .reviews__container {
+    position: relative;
+  }
+  .reviews-header__title {
+    margin: 0;
+  }
+  .reviews__item {
+    align-items: center;
+    border: 1px solid #E5DDD5;
+    border-left: none;
+    border-right: none;
+  }
+  .reviews-item__img-container {
+    width: 80px;
+    height: 80px;
+    flex: 1 0 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 30px 0 30px;
+  }
+  .reviews-item__comment {
+    width: 100%;
+    padding: 31px 48px 36px 0;
+    border: none;
+  }
+  .reviews__pagination {
+    position: absolute;
+    width: 100%;
+    bottom: -12px;
+    display: flex;
+    justify-content: center;
+  }
+  .reviews-pagination__list {
+    background: #F8F5F2;
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 767px) {
+
+}

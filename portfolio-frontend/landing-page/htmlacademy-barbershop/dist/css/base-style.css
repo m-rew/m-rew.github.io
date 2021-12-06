@@ -111,7 +111,6 @@ body {
 }
 .footer__item {
   width: 33.333%;
-  position: relative;
 }
 .footer__title_h1 {
   color: #FFFFFF;
@@ -151,9 +150,9 @@ body {
 .footer-social__icon {
   height: 20px;
 }
-.footer-copyright__container {
-  position: absolute;
-  right: 0;
+.footer-copyright_flex {
+  display: flex;
+  justify-content: end;
 }
 .copyright__btn {
   margin-top: 13px;
