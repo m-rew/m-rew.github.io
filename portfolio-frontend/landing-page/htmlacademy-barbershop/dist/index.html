@@ -19,28 +19,46 @@
 
   <!-- Header Section Start -->
   <header class="header header_bg">
-    <!-- START section nav -->
-    <nav class="main-menu">
-      <div class="container main-menu__container">
-        <ul class="main-menu__list">
-          <li><a class="main-menu__link main-menu__link_active" href="index.html">ГЛАВНАЯ</a></li>
-          <li><a class="main-menu__link" href="photo.html">НАШИ РАБОТЫ</a></li>
-          <li><a class="main-menu__link" href="form.html">ЗАПИСАТЬСЯ</a></li>
-          <li><a class="main-menu__link" href="#">КОНТАКТЫ</a></li>
-          <li><a class="main-menu__link" href="#">HTML ACADEMY</a></li>
-        </ul>
-        <a class="main-menu__login main-menu__link" href="#">
-          <img class="main-menu__login-img" src="img/icons/icon-login.svg" alt="Иконка кнопки Войти">
-          <span class="main-menu__login-title">ВОЙТИ</span>
-        </a>
+    <!-- Nav Section Start -->
+    <nav class="main-menu main-menu_bg">
+      <!-- Header for mobile Start -->
+      <div class="main-menu__header">
+        <div class="main-menu__burger">
+          <div class="main-menu-burger__icon"></div>
+        </div>
+        <p class="main-menu__link">ГЛАВНАЯ</p>
       </div>
+      <!-- Header for mobile End -->
+
+      <!-- Overlay for mobile Start -->
+      <div class="main-menu__overlay">
+        <div class="main-menu__close">
+          <div class="main-menu-close__icon"></div>
+        </div>
+        <div class="container main-menu__container">
+          <ul class="main-menu__list">
+            <li><a class="main-menu__link main-menu__link_active" href="index.html">ГЛАВНАЯ</a></li>
+            <li><a class="main-menu__link" href="photo.html">НАШИ РАБОТЫ</a></li>
+            <li><a class="main-menu__link" href="form.html">ЗАПИСАТЬСЯ</a></li>
+            <li><a class="main-menu__link" href="#">КОНТАКТЫ</a></li>
+            <li><a class="main-menu__link" href="#">HTML ACADEMY</a></li>
+          </ul>
+          <a class="main-menu__login main-menu__link" href="#">
+            <img class="main-menu__login-img" src="img/icons/icon-login.svg" alt="Иконка кнопки Войти">
+            <span class="main-menu__login-title">ВОЙТИ</span>
+          </a>
+        </div>
+      </div>
+      <!-- Overlay for mobile End -->
     </nav>
-    <!-- END section nav -->
+    <!-- Nav Section End -->
 
     <!-- START section logo -->
     <div class="header-logo">
       <picture>
+        <source media="(max-width: 767px)" srcset="img/base/logo-mobile.svg">
         <source media="(max-width: 1199px)" srcset="img/base/logo-min.svg">
+
         <img src="img/base/logo.svg" alt="Логотип барбершопа Бородинский" class="header-logo__img">
       </picture>
 
@@ -52,28 +70,29 @@
       <div class="container stat__container">
         <div class="stat__cover"></div>
         <div class="stat__main-item">
-          <h3 class="stat-main-item__title">Стрижка у нас это выгодно!</h3>
+          <h3 class="stat-main-item__title">Стрижка у нас<br> это выгодно!</h3>
           <p class="stat-main-item__subtitle">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
           <p class="stat-main-item__descr">* — приведённые данные ложь</p>
         </div>
         <ul class="stat__list">
           <li class="stat__item">
             <p class="stat-item__title">1500*</p>
-            <p class="stat-item__subtitle">рублей вложений</p>
+            <p class="stat-item__subtitle">рублей<br> вложений</p>
           </li>
           <li class="stat__item">
             <p class="stat-item__title">7 200</p>
-            <p class="stat-item__subtitle">секунд времени мастера</p>
+            <p class="stat-item__subtitle">секунд<br> времени мастера</p>
           </li>
           <li class="stat__item">
             <p class="stat-item__title">90 000</p>
-            <p class="stat-item__subtitle">постриженных волос</p>
+            <p class="stat-item__subtitle">постриженных<br> волос</p>
           </li>
           <li class="stat__item">
             <p class="stat-item__title">500 000 *</p>
-            <p class="stat-item__subtitle">лайков и комплиментов</p>
+            <p class="stat-item__subtitle">лайков и<br> комплиментов</p>
           </li>
         </ul>
+        <p class="stat-main-item__descr">* — приведённые данные ложь</p>
       </div>
     </section>
     <!-- END section stat -->
@@ -84,13 +103,13 @@
   <main>
 
     <!-- Feature Section Start -->
-    <section class="feature">
+    <section class="feature cover">
       <div class="container">
         <!-- Feature List Start -->
         <ul class="feature__list">
 
           <!-- Feature Item Start -->
-          <li class="feature__item">
+          <li class="feature__item feature__item_mobile-active">
             <div class="feature-item-icon__container">
               <img src="img/icons/icon-feature-1.svg" alt="Изображение ножниц" class="feature-item__icon">
             </div>
@@ -137,22 +156,27 @@
 
         </ul>
         <!-- Feature List End -->
+
+        <!-- Reviews Pagination Start -->
+        <div class="feature__mobile-pagination pagination">
+          <ul class="pagination__list">
+            <li class="pagination__item pagination_active"></li>
+            <li class="pagination__item"></li>
+            <li class="pagination__item"></li>
+          </ul>
+        </div>
+        <!-- Reviews Pagination End -->
+
       </div>
     </section>
     <!-- Feature Section End -->
 
-    <div class="feature__cover"></div>
-
     <!-- News Section Start -->
     <section class="news">
-      <div class="container">
+      <div class="container news_flex">
 
-        <!-- News Header Start -->
-        <div class="news__header">
-          <div class="news-header__title title">НОВОСТИ И АКЦИИ</div>
-          <a href="#" class="btn">ПОКАЗАТЬ ВСЕ</a>
-        </div>
-        <!-- News Header End -->
+        <h2 class="news__title title">НОВОСТИ И АКЦИИ</h2>
+        <a href="#" class="btn">ПОКАЗАТЬ ВСЕ</a>
 
         <!-- News List Start -->
         <ul class="news__list">
@@ -209,15 +233,11 @@
     <div class="line"></div>
 
     <!-- Reviews Section Start -->
-    <section class="reviews">
-      <div class="container reviews__container">
+    <section class="reviews cover cover_mobile cover_white">
+      <div class="container reviews__container reviews_flex">
 
-        <!-- Reviews Header Start -->
-        <div class="reviews__header">
-          <div class="reviews-header__title title">ОТЗЫВЫ О НАС</div>
-          <a href="#" class="btn">ОСТАВИТЬ СВОЙ</a>
-        </div>
-        <!-- Reviews Header End -->
+        <h2 class="reviews__title title">ОТЗЫВЫ О НАС</h2>
+        <a href="#" class="reviews__btn btn">ОСТАВИТЬ СВОЙ</a>
 
         <!-- Reviews Main Start -->
         <div class="reviews__main">
@@ -251,11 +271,11 @@
         <!-- Reviews Main End -->
 
         <!-- Reviews Pagination Start -->
-        <div class="reviews__pagination">
-          <ul class="reviews-pagination__list">
-            <li class="reviews-pagination__item reviews-pagination_active"></li>
-            <li class="reviews-pagination__item"></li>
-            <li class="reviews-pagination__item"></li>
+        <div class="pagination">
+          <ul class="pagination__list">
+            <li class="pagination__item pagination_active"></li>
+            <li class="pagination__item"></li>
+            <li class="pagination__item"></li>
           </ul>
         </div>
         <!-- Reviews Pagination End -->
@@ -284,7 +304,7 @@
                 Конюшенная 19/8</a>
             </li>
             <li class="footer-contacts__item">
-              Тел.: <a class="footer-contacts__link" href="tel:78125556666">+7 (812) 555-66-66</a>
+              <span>Тел.:</span> <a class="footer-contacts__link" href="tel:78125556666">+7 (812) 555-66-66</a>
             </li>
           </ul>
         </li>
@@ -329,11 +349,38 @@
   </footer>
   <!-- Footer Section End -->
 
+  <!-- Window Section Start -->
   <section class="window">
-    <div class="window__container">
-      <div class="window__title title">ЛИЧНЫЙ КАБИНЕТ</div>
+    <div class="window__container window_bg">
+
+      <h2 class="window__title title">ЛИЧНЫЙ КАБИНЕТ</h2>
+      <p class="window__subtitle">Введите свой логин и пароль, чтобы войти</p>
+
+      <form class="window__form" action="#">
+        <div class="form__login-input">
+          <input type="text" class="form__input" placeholder="Логин">
+        </div>
+
+        <div class="form__password-input">
+          <input type="password" class="form__input" placeholder="Пароль">
+        </div>
+
+        <div class="form-checkbox__container">
+          <input type="checkbox" class="form__checkbox" id="remember">
+          <label for="remember" name="form__label" class="form__label" value="remember">
+            <p class="fieldset__title">Запомните меня</p>
+          </label>
+          <a class="form__forgotLink" href="#">Я забыл пароль!</a>
+        </div>
+
+        <div class="form-login__btns">
+          <button class="btn__login" type="submit"></button>
+          <div class="form__close"><span>ЗАКРЫТЬ</span></div>
+        </div>
+      </form>
     </div>
   </section>
+  <!-- Window Section End -->
 
 </body>
 

@@ -59,3 +59,58 @@
   border-color: rgba(255, 255, 255, .0);
   background: #252525;
 }
+
+/* ------------------------------ *\
+  section window
+\* ------------------------------ */
+
+/* hover */
+
+.form__input:hover {
+  border: 1px solid #D5C9BD;
+}
+.form__label:hover {
+  cursor: pointer;
+}
+.form__checkbox + .form__label:hover::before {
+  border-color: #D5C9BD;
+}
+.btn__login:hover {
+  cursor: pointer;
+  background: #6A4D38;
+}
+
+/* active */
+
+.form__input:active {
+  border-color: #999999;
+}
+.form__checkbox + .form__label:active::before {
+  background-color: #D5C9BD;
+}
+.btn__login:active {
+  background: #6A4D38;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* focus */
+
+.form__input:focus {
+  border-color: none;
+  outline: 4px solid rgba(0, 125, 250, 0.6);
+}
+.form__checkbox:focus + .form__label::before,
+.form__forgotLink:focus,
+.btn__login:focus {
+  outline: 4px solid rgba(0, 125, 250, 0.6);
+}
+
+@media (max-width: 767px) {
+  .form__close:hover {
+    border-color: #D5C9BD;
+  }
+  .form__close:active {
+    background: #D5C9BD;
+    color: rgba(0, 0, 0, .3);
+  }
+}

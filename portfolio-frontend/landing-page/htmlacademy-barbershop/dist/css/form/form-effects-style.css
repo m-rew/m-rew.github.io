@@ -51,7 +51,7 @@
   border: 1px solid #D5C9BD;
 }
 
-
+/* disabled */
 
 .btn_submit:disabled {
   background: #AEAEAE;
