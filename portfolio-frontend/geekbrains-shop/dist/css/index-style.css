@@ -172,13 +172,16 @@
     margin: 48px 0 0 0;
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 .products__item {
     width: calc(33.333% - 20px);
 
+    position: relative;
+
     display: flex;
+    flex-direction: column;
 
     background-color: var(--bg-dark-secondary);
 }
@@ -195,7 +198,7 @@
     position: relative;
 
     display: flex;
-    flex-direction: column;
+    flex-grow: 1;
 
     text-decoration: none;
 }
