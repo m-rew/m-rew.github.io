@@ -274,6 +274,7 @@
     left: -37px;
 
     background-image: url('../img/fetured-Items/icon-add-to-cart.svg');
+    background-size: cover;
 }
 
 .products__btn-wrapper {
