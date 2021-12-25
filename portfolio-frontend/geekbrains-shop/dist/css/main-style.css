@@ -203,3 +203,117 @@ body {
 .social__icon {
     height: 16px;
 }
+
+/* ------------------------------
+    features section
+------------------------------ */
+
+.features {
+    padding: 100px 0;
+
+    background-color: var(--bg-dark);
+}
+.features__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.features__item {
+    width: calc(33.333% - 55px);
+
+    display: flex;
+    flex-direction: column;
+}
+.features__img {
+    display: block;
+    height: 40px;
+}
+.features__title {
+    width: 100%;
+    margin: 25px 0 0 0;
+
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--c-white);
+}
+.features__description {
+    width: 100%;
+    margin: 16px 0 0 0;
+
+    font-weight: 300;
+    text-align: center;
+    color: var(--c-white);
+}
+
+.rev-sub {
+    padding: 97px 0 156px 0;
+
+    background: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)),
+                url('../img/subscribe/bg-reviews.jpg')
+                center center/cover no-repeat;
+}
+.rev-sub__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reviews {
+    width: 50%;
+}
+.reviews__wrapper {
+    width: 66.666%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reviews__avatar-wrapper {
+    width: 96px;
+    height: 96px;
+
+    border-radius: 50%;
+    overflow: hidden;
+}
+.reviews__avatar {
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: cover;
+}
+.reviews__text {
+    margin: 30px 0 0 0;
+
+    font-size: 20px;
+    line-height: 24px;
+    font-style: italic;
+    text-align: center;
+    color: var(c-dark-secondary);
+}
+.subscribe {
+    width: 50%;
+
+    display: flex;
+    justify-content: flex-end;
+}
+.subscribe__wrapper {
+    width: 66.666%;
+    margin: 0 16.666% 0 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subscribe__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.subscribe__subtitle {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
