@@ -101,23 +101,23 @@
     width: 100%;
     margin-right: 0;
 }
-.catalog__item-woman-bg {
+.catalog__item--bg-woman {
     background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), 
                 url('../img/categories/cat-for-woman.jpg')
                 center center/cover no-repeat;
     
 }
-.catalog__item-man-bg {
+.catalog__item--bg-man {
     background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), 
                 url('../img/categories/cat-for-man.jpg')
                 center center/cover no-repeat;
 }
-.catalog__item-kids-bg {
+.catalog__item--bg-kids {
     background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), 
                 url('../img/categories/cat-for-kids.jpg')
                 center center/cover no-repeat;
 }
-.catalog__item-accesories-bg {
+.catalog__item--bg-accesories {
     background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), 
                 url('../img/categories/cat-accesories.jpg')
                 center center/cover no-repeat;
