@@ -13,32 +13,37 @@
 
 @font-face {
     font-family: 'Lato';
-    src: url('../fonts/Lato-Light.ttf');
+    src: url('../fonts/lato/Lato-Light.ttf') format(ttf),
+        url('../fonts/lato/Lato-Light.woff') format(woff);
     font-weight: 300;
 }
 
 @font-face {
     font-family: 'Lato';
-    src: url('../fonts/Lato-Regular.ttf');
+    src: url('../fonts/lato/Lato-Regular.ttf') format(ttf),
+        url('../fonts/lato/Lato-Regular.woff') format(woff);
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Lato';
-    src: url('../fonts/Lato-Italic.ttf');
+    src: url('../fonts/lato/Lato-Italic.ttf') format(ttf),
+        url('../fonts/lato/Lato-Italic.woff') format(woff);
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Lato';
-    src: url('../fonts/Lato-Bold.ttf');
+    src: url('../fonts/lato/Lato-Bold.ttf') format(ttf),
+        url('../fonts/lato/Lato-Bold.woff') format(woff);
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'Lato';
-    src: url('../fonts/Lato-Black.ttf');
+    src: url('../fonts/lato/Lato-Black.ttf') format(ttf),
+        url('../fonts/lato/Lato-Black.woff') format(woff);
     font-weight: 900;
 }
 
@@ -196,6 +201,7 @@ main {
 .menu__wrapper {
     display: flex;
     flex-direction: column;
+    box-sizing: content-box;
     padding: 0 35px 35px 35px;
 }
 
@@ -321,7 +327,7 @@ main {
 }
 
 .features__item {
-    width: calc(33.333% - 55px);
+    width: calc(33.333% - 60px);
 
     display: flex;
     flex-direction: column;
