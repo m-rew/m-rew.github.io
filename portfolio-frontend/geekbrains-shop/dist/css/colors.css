@@ -1,0 +1,12 @@
+:root {
+    --bg-dark: #222222;
+    --bg-dark-secondary: #F8F8F8;
+    --bg-white: #FFFFFF;
+    --bg-accent: #F1E4E6;
+
+    --c-dark: #000000;
+    --c-dark-secondary: #222222;
+    --c-dark-tertiary: #6F6E6E;
+    --c-white: #FFFFFF;
+    --c-accent: #F16D7F;
+}
