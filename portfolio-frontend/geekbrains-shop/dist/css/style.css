@@ -557,34 +557,50 @@ main {
 }
 
 .catalog__item--bg-woman {
-    background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), 
-                url('../img/categories/cat-for-woman.jpg')
+    position: relative;
+    background: url('../img/categories/cat-for-woman.jpg')
                 center center/cover no-repeat;
-    
 }
 
 .catalog__item--bg-man {
-    background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), 
-                url('../img/categories/cat-for-man.jpg')
+    position: relative;
+    background: url('../img/categories/cat-for-man.jpg')
                 center center/cover no-repeat;
 }
 
 .catalog__item--bg-kids {
-    background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), 
-                url('../img/categories/cat-for-kids.jpg')
+    position: relative;
+    background: url('../img/categories/cat-for-kids.jpg')
                 center center/cover no-repeat;
 }
 
 .catalog__item--bg-accesories {
-    background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), 
-                url('../img/categories/cat-accesories.jpg')
+    position: relative;
+    background: url('../img/categories/cat-accesories.jpg')
                 center center/cover no-repeat;
+}
+
+.catalog__item--bg-woman::after,
+.catalog__item--bg-man::after,
+.catalog__item--bg-kids::after,
+.catalog__item--bg-accesories::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    background: rgba(33, 22, 22, 0.7);
 }
 
 .catalog__link {
     display: block;
     width: 100%;
     height: 100%;
+
+    position: relative;
+    z-index: 2;
 
     display: flex;
     flex-direction: column;
@@ -608,6 +624,18 @@ main {
     font-size: 24px;
     line-height: 29px;
     color: var(--c-accent);
+}
+
+/* ------------------------------
+    catalog section effects
+------------------------------ */
+
+.catalog__item--bg-woman:hover::after,
+.catalog__item--bg-man:hover::after,
+.catalog__item--bg-kids:hover::after,
+.catalog__item--bg-accesories:hover::after {
+    transition: all .2s;
+    background: rgba(33, 22, 22, 0.5);
 }
 
 /* ------------------------------
