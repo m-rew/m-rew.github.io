@@ -11,6 +11,10 @@ body {
     color: var(--c-dark);
 }
 
+main {
+    background-color: var(--bg-white);
+}
+
 .container {
     max-width: 1140px;
     margin: 0 auto;
@@ -78,6 +82,8 @@ body {
     background-color: transparent;
     padding: 0;
     border: none;
+    
+    cursor: pointer;
 }
 .header__menu-btn,
 .header__login-link {
@@ -114,28 +120,38 @@ body {
 ------------------------------ */
 
 .menu {
-    padding: 35px;
+    max-width: 1000px;
+    overflow: hidden;
 
     position: absolute;
     top: 100%;
     right: 0;
-    z-index: 100;
+    z-index: -100;
 
     background-color: var(--bg-white);
+
+    transition: max-width .6s;
+}
+.menu__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 35px 35px 35px;
 }
 .menu__btn-close {
     width: 12px;
     height: 12px;
 
-    position: absolute;
-    top: 16px;
-    right: 16px;
+    margin: 16px 0 10px 0;
+
+    align-self: flex-end;
 
     border: none;
-    background-color: transparent;
 
-    background-image: url('../img/main/icon-menu-close.svg');
+    background-color: transparent;
+    background-image: url(../img/main/icon-menu-close.svg);
     background-size: cover;
+
+    cursor: pointer;
 }
 .menu__title {
     font-weight: 700;
@@ -146,7 +162,7 @@ body {
 .menu__list {
     margin: 24px 0 0 0;
 }
-.submenu {
+.submenu:not(:first-child) {
     margin: 20px 0 0 0;
 }
 .submenu__title-link {
@@ -162,6 +178,13 @@ body {
     color: var(--c-dark-tertiary);
 }
 
+.menu--active {
+    max-width: 1000px;
+}
+
+.menu--hidden {
+    max-width: 0;
+}
 
 /* ------------------------------
     footer
