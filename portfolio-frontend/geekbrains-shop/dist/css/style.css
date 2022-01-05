@@ -194,33 +194,26 @@ main {
 ------------------------------ */
 
 .menu {
-    max-width: 100vw;
-    overflow: hidden;
-
+    padding: 34px;
     position: absolute;
     top: 100%;
     right: 0;
-    z-index: -100;
+
+    z-index: 100;
+    opacity: 0;
 
     background-color: var(--bg-white);
 
     transition: max-width .6s;
 }
 
-.menu__wrapper {
-    display: flex;
-    flex-direction: column;
-    box-sizing: content-box;
-    padding: 0 35px 35px 35px;
-}
-
 .menu__btn-close {
     width: 12px;
     height: 12px;
 
-    margin: 16px 0 10px 0;
-
-    align-self: flex-end;
+    position: absolute;
+    top: 16px;
+    right: 16px;
 
     border: none;
 
@@ -261,8 +254,8 @@ main {
     color: var(--c-dark-tertiary);
 }
 
-.menu--hidden {
-    max-width: 0;
+.menu--active {
+    opacity: 1;
 }
 
 /* ------------------------------
