@@ -222,7 +222,7 @@ main {
     border: none;
 
     background-color: transparent;
-    background-image: url(../img/main/icon-menu-close.svg);
+    background-image: url('../img/icon/icon-menu-close.svg');
     background-size: cover;
 
     cursor: pointer;
@@ -352,7 +352,7 @@ main {
 .social__link {
     display: flex;
     align-items: center;
-    
+
     text-decoration: none;
 
     transition: all .2s;
