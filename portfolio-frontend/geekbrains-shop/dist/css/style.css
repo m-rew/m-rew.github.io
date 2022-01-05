@@ -1198,6 +1198,10 @@ main {
     background-color: var(--c-accent-secondary);
 }
 
+.form__input:hover {
+    border: 1px solid var(--c-accent-secondary);
+}
+
 /* active */
 
 .form__subscribe-btn:active,
@@ -1210,5 +1214,6 @@ main {
 .form__subscribe-input:focus-visible,
 .form__subscribe-btn:focus-visible,
 .form__input:focus-visible {
-    outline: 1px solid var(--c-accent);
+    border: 1px solid var(--c-accent);
+    outline: none;
 }
