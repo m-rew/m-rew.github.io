@@ -62,6 +62,10 @@ body {
     color: var(--c-dark);
 }
 
+.display-none {
+    display: none;
+}
+
 main {
     background-color: var(--bg-white);
 }
@@ -346,15 +350,18 @@ main {
 }
 
 .social__link {
+    display: flex;
+    align-items: center;
+    
     text-decoration: none;
 
     transition: all .2s;
 }
 
 .social__icon {
-    height: 16px;
-
     transition: all .2s;
+
+    fill: #000000;
 }
 
 /* ------------------------------
@@ -852,7 +859,11 @@ main {
 }
 
 .products__button-add {
-    padding-left: 50px;
+    padding: 10px 14px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     border-color: #FFFFFF;
     background-color: transparent;
@@ -862,24 +873,12 @@ main {
 }
 
 .products__button-add-icon {
-    position: relative;
-}
-
-.products__button-add-icon::before {
-    content: '';
-
-    display: block;
     width: 26px;
     height: 24px;
 
-    position: absolute;
-    top: -25%;
-    left: -37px;
-
-    background-image: url('../img/fetured-Items/icon-add-to-cart.svg');
-    background-size: cover;
-
-    transition: color border-color .2s;
+    margin-right: 11px;
+    
+    transition: all .2s;
 }
 
 .products__btn-wrapper {
@@ -905,6 +904,10 @@ main {
 .products__button-add:hover {
     border-color: var(--c-accent);
     color: var(--c-accent);
+}
+
+.products__button-add:hover .products__button-add-icon {
+    fill: var(--c-accent);
 }
 
 .products__button-add:hover .products__button-add-icon::before {
@@ -1000,7 +1003,7 @@ main {
 
     margin-right: 22px;
 
-    background-image: url('../img/main/icon-mark-check.svg');
+    background-image: url('../img/icon/icon-mark-check.svg');
     background-size: cover;
 }
 
@@ -1108,7 +1111,10 @@ main {
 
 .form__btn-submit {
     margin-top: 39px;
-    padding-right: 66px;
+    padding: 16px 29px;
+
+    display: flex;
+    align-items: center;
 
     background-color: #F16D7F;
 
@@ -1121,24 +1127,14 @@ main {
     transition: all .2s;
 }
 
-.form__btn-icon {
-    position: relative;
-}
-
-.form__btn-icon::after {
-    content: '';
-
+.form__btn-submit-icon {
     display: block;
     width: 17px;
     height: 10px;
 
-    position: absolute;
-    top: 50%;
-    right: -37px;
-    transform: translateY(-50%);
+    margin-left: 20px;
 
-    background-image: url('../img/main/icon-arrow-right.svg');
-    background-size: cover;
+    fill: #FFFFFF;
 }
 
 /* ------------------------------
