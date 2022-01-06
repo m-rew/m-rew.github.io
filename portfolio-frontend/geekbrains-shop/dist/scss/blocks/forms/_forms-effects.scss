@@ -10,7 +10,7 @@
 }
 
 .form__input:hover {
-    outline: 1px solid $c-accent-secondary;
+    box-shadow: 0px 0px 0px 1px $c-accent-secondary inset;
 }
 
 /* active */
@@ -29,5 +29,6 @@
 }
 
 .form__subscribe-input:focus-visible {
-    background-color: $bg-white;
+    box-shadow: 0px 0px 0px 1px $c-accent-secondary inset;
+    outline: none;
 }
