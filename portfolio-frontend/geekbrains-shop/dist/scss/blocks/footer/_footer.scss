@@ -1,0 +1,56 @@
+/* ------------------------------
+    footer
+------------------------------ */
+
+.footer {
+    min-height: 79px;
+    padding: 25px 0;
+
+    background-color: $bg-dark;
+
+    &__wrapper {
+        @include flex(space-between, center);
+    }
+    
+    &__copyright {
+        font-size: 16px;
+    
+        color: $c-white;
+    }
+}
+
+.social {
+    &__list {
+        display: flex;
+    }
+    
+    &__item {
+        width: 32px;
+        height: 32px;
+    
+        @include flex(center, center);
+    
+        background-color: $bg-white;
+    
+        transition: all .2s;
+        cursor: pointer;
+    }
+    
+    &__item:not(:last-child) {
+        margin: 0 8px 0 0;
+    }
+    
+    &__link {
+        @include flex($flex-jc, center);
+    
+        text-decoration: none;
+    
+        transition: all .2s;
+    }
+    
+    &__icon {
+        transition: all .2s;
+    
+        fill: #000000;
+    }
+}

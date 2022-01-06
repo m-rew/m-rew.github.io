@@ -1,0 +1,33 @@
+/* ------------------------------
+    forms effects
+------------------------------ */
+
+/* hover */
+
+.form__subscribe-btn:hover,
+.form__btn-submit:hover {
+    background-color: $c-accent-secondary;
+}
+
+.form__input:hover {
+    outline: 1px solid $c-accent-secondary;
+}
+
+/* active */
+
+.form__subscribe-btn:active,
+.form__btn-submit:active {
+    background-color: $c-accent;
+}
+
+/* focus */
+
+.form__subscribe-input:focus-visible,
+.form__subscribe-btn:focus-visible,
+.form__input:focus-visible {
+    outline: 1px solid $c-accent;
+}
+
+.form__subscribe-input:focus-visible {
+    background-color: $bg-white;
+}

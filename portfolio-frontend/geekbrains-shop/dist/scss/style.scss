@@ -1,0 +1,31 @@
+@import 'reset';
+@import 'variables';
+@import 'fonts';
+@import 'mixin';
+
+@import 'base';
+
+@import 'blocks/forms/forms';
+@import 'blocks/forms/forms-effects';
+
+@import 'blocks/header/header';
+@import 'blocks/header/header-effects';
+
+@import 'blocks/footer/footer';
+@import 'blocks/footer/footer-effects';
+
+@import 'blocks/brand/brand';
+
+@import 'blocks/catalog/catalog';
+@import 'blocks/catalog/catalog-effects';
+
+@import 'blocks/products/products';
+@import 'blocks/products/products-effects';
+
+@import 'blocks/features/features';
+
+@import 'blocks/subscribe/subscribe';
+
+@import 'blocks/top-side/top-side';
+
+@import 'blocks/registration/registration';
