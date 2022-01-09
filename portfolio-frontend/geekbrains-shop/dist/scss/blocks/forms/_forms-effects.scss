@@ -28,7 +28,13 @@
     outline: 1px solid $c-accent;
 }
 
+.form__input:focus-visible::placeholder {
+    color: $c-white;
+}
+
 .form__subscribe-input:focus-visible {
     box-shadow: 0px 0px 0px 1px $c-accent-secondary inset;
     outline: none;
+
+    background-color: $bg-white;
 }
