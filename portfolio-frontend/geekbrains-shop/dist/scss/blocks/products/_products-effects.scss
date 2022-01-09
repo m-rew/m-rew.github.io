@@ -1,0 +1,24 @@
+/* ------------------------------
+    products effects
+------------------------------ */
+
+/* hover */
+
+.products__item:hover .products__overlay-hover {
+    opacity: 1;
+}
+
+.products__button-add:hover {
+    border-color: $c-accent;
+    color: $c-accent;
+}
+
+.products__button-add:hover .products__button-add-icon {
+    fill: $c-accent;
+}
+
+.products__btn:hover {
+    color: $c-white;
+    background-color: $c-accent;
+    border-color: $c-accent;
+}

@@ -1,0 +1,20 @@
+$flex-jc: flex-start;
+$flex-ai: stretch;
+
+// @include flex($flex-jc, $flex-ai);
+@mixin flex($flex-jc, $flex-ai) {
+    display: flex;
+    justify-content: $flex-jc;
+    align-items: $flex-ai;
+}
+
+$font-weight: 400;
+$font-size: 14px;
+$line-height: 17px;
+
+// @include font($font-weight, $font-size, $line-height);
+@mixin font($font-weight, $font-size, $line-height) {
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}

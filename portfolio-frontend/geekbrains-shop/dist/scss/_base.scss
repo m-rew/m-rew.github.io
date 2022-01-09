@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    @include font($font-weight, $font-size, $line-height);
+
+    color: $c-dark;
+}
+
+.display-none {
+    display: none;
+}
+
+main {
+    background-color: $bg-white;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+.btn {
+    padding: 14px 40px;
+    border: 1px solid $c-accent;
+
+    background-color: transparent;
+
+    @include font(400, 14px, 17px);
+    text-decoration: none;
+    color: $c-accent;
+
+    cursor: pointer;
+}

@@ -1,0 +1,101 @@
+/* ------------------------------
+    catalog section
+------------------------------ */
+
+.catalog {
+    padding: 65px 0 48px 0;
+}
+
+.catalog__list {
+    @include flex(center, $flex-ai);
+    flex-wrap: wrap;
+}
+
+.catalog__item {
+    width: calc(33.333% - 20px);
+    height: 260px;
+
+    overflow: hidden;
+}
+
+.catalog__item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+.catalog__item:nth-last-child(-n+2) {
+    margin-right: 0;
+}
+
+.catalog__item:nth-child(n+4) {
+    margin-top: 30px;
+}
+
+.catalog__item:last-child {
+    width: 100%;
+    margin-right: 0;
+}
+
+.catalog__item--bg-woman {
+    position: relative;
+    background: url('../img/categories/cat-for-woman.jpg')
+                center center/cover no-repeat;
+}
+
+.catalog__item--bg-man {
+    position: relative;
+    background: url('../img/categories/cat-for-man.jpg')
+                center center/cover no-repeat;
+}
+
+.catalog__item--bg-kids {
+    position: relative;
+    background: url('../img/categories/cat-for-kids.jpg')
+                center center/cover no-repeat;
+}
+
+.catalog__item--bg-accesories {
+    position: relative;
+    background: url('../img/categories/cat-accesories.jpg')
+                center center/cover no-repeat;
+}
+
+.catalog__item--bg-woman::after,
+.catalog__item--bg-man::after,
+.catalog__item--bg-kids::after,
+.catalog__item--bg-accesories::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    background: rgba(33, 22, 22, 0.7);
+}
+
+.catalog__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    z-index: 2;
+
+    @include flex(center, center);
+    flex-direction: column;
+
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.catalog__offer {
+    @include font($font-weight, 16px, 19px);
+    color: $c-white;
+}
+
+.catalog__title {
+    margin: 10px 0 0 0;
+
+    @include font(700px, 24px, 29px);
+    color: $c-accent;
+}
