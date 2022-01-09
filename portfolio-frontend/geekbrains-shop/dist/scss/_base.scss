@@ -33,6 +33,10 @@ main {
     clip: rect(0 0 0 0)
 }
 
+.text-accent {
+    color: $c-accent;
+}
+
 .btn {
     padding: 14px 40px;
     border: 1px solid $c-accent;

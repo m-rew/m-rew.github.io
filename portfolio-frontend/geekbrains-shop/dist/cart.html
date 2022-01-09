@@ -215,6 +215,128 @@
         </section>
         <!-- Brand Section End -->
 
+        <!-- Cart Section Start -->
+        <section class="cart container">
+            <h2 class="visually-hidden">Cart</h2>
+
+            <!-- Basket Section Start -->
+            <section class="cart__basket basket">
+                <h3 class="visually-hidden">Basket</h3>
+
+                <!-- Basket List Start -->
+                <ul class="basket__list">
+
+                    <!-- Basket Item Start -->
+                    <li class="basket__item">
+                        <div class="basket__item-img-wrapper">
+                            <img src="./img/cart/item-1.jpg" alt="" class="basket__item-img">
+                        </div>
+
+                        <div class="basket__item-content">
+                            <h4 class="basket__item-title">mango people t-shirt</h4>
+
+
+                            <ul class="basket__item-product-param-list">
+                                <li class="basket__item-product-param-item">Price: <span class="text-accent">$300</span>
+                                </li>
+                                <li class="basket__item-product-param-item">Color: Red</li>
+                                <li class="basket__item-product-param-item">Size: Xl</li>
+                                <li class="basket__item-product-param-item">
+                                    <label for="basket__item-product-param-quantity">Quantity:</label>
+                                    <input id="basket__item-product-param-quantity" class="form__input" type="number"
+                                        value="2">
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- Basket Item End -->
+
+                </ul>
+                <!-- Basket List End -->
+
+                <div class="basket__btn-wrapper">
+                    <button class="btn basket__btn-secondary" type="button">clear shopping cart</button>
+                    <a href="catalog.html" class="btn basket__btn-secondary">continue shopping</a>
+                </div>
+            </section>
+            <!-- Basket Section End -->
+
+            <section class="cart__form-buy">
+                <h3 class="visually-hidden">Product purchase</h3>
+
+                <!-- Form Cart Start -->
+                <form action="#" class="form cart__form">
+                    <h4>Product purchase form</h4>
+
+                    <!-- Fieldset Cart Start -->
+                    <fieldset class="form__group">
+                        <legend class="form__group-title">shipping adress</legend>
+
+                        <div class="form__input-wrapper">
+                            <label class="visually-hidden" for="cart__form-city">City</label>
+                            <input class="form__input" id="cart__form-city" type="text" placeholder="Bangladesh"
+                                required>
+
+                            <label class="visually-hidden" for="cart__form-state">State</label>
+                            <input class="form__input" id="cart__form-state" type="text" placeholder="State" required>
+
+                            <label class="visually-hidden" for="cart__form-zip">Postcode / Zip</label>
+                            <input class="form__input" id="cart__form-zip" type="text" placeholder="Postcode / Zip"
+                                required>
+                        </div>
+                    </fieldset>
+                    <!-- Fieldset Cart End -->
+
+                    <button class="btn cart__btn-secondary" type="button">get a quote</button>
+
+                    <div class="cart__order-wrapper">
+                        <p class="cart__order-sub-total">sub total <span>$900</span></p>
+                        <p class="cart__order-grand-total">grand total <span>$900</span></p>
+
+                        <hr>
+
+                        <button class="btn cart__btn-accent" type="submit">proceed to checkout</button>
+                    </div>
+                </form>
+                <!-- Form Cart End -->
+            </section>
+        </section>
+        <!-- Cart Section End -->
+
+        <!-- Subscribe Section Start -->
+        <div class="rev-sub rev-sub--bg">
+            <div class="container rev-sub__wrapper">
+                <section class="reviews">
+                    <div class="reviews__wrapper">
+                        <h3 class="visually-hidden">Review</h3>
+                        <div class="reviews__avatar-wrapper">
+                            <img class="reviews__avatar" src="./img/subscribe/photo-review.jpg" alt="photo woman">
+                        </div>
+                        <p class="reviews__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+                            purus
+                            condimentum“</p>
+                    </div>
+                </section>
+                <section class="subscribe">
+                    <div class="subscribe__wrapper">
+                        <h3 class="subscribe__title">subscribe</h3>
+                        <p class="subscribe__subtitle">for our newletter and promotion</p>
+
+                        <form class="form__subscribe form" action="#">
+                            <h3 class="visually-hidden">subscribe form</h3>
+
+                            <label class="visually-hidden" for="form__subscribe">Enter Your Email</label>
+                            <input class="form__input form__subscribe-input" id="form__subscribe" type="email"
+                                placeholder="Enter Your Email" required>
+
+                            <button class="btn form__subscribe-btn" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- Subscribe Section End -->
+
     </main>
     <!-- Main Section End -->
 
