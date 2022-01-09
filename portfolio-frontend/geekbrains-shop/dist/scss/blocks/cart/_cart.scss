@@ -1,0 +1,168 @@
+/* ------------------------------
+    cart section
+------------------------------ */
+
+.cart {
+    padding: 96px 0 128px 0;
+    @include flex(space-between, $flex-ai);
+
+    &__basket {
+        width: calc(100% / 12 * 7 - 15px);
+    }
+    &__form-buy {
+        width: calc(100% / 12 * 4 - 15px);
+    }
+    &-form {
+        &__group-title {
+            font-weight: 300;
+            text-transform: uppercase;
+            color: $c-dark-secondary;
+        }
+        &__order {
+            margin-top: 57px;
+            padding: 40px;
+            background-color: #F5F3F3;
+
+            &-sub-total {
+                text-align: right;
+                @include font($font-weight, 11px, 13px);
+                text-transform: uppercase;
+                color: $c-dark-tertiary;
+
+                &-price {
+                    margin-left: 25px;
+                }
+            }
+            &-grand-total {
+                margin-top: 12px;
+
+                text-align: right;
+                @include font(300, 16px, 19px);
+                text-transform: uppercase;
+                color: $c-dark-secondary;
+
+                &-price {
+                    margin-left: 25px;
+
+                    font-weight: 700;
+                }
+            }
+        }
+        &__btn-accent {
+            width: 100%;
+
+            font-weight: 300;
+            text-transform: uppercase;
+            color: $c-white;
+
+            background-color: $c-accent;
+        }
+        &__btn-secondary {
+            margin-top: 33px;
+            padding: 10px 15px;
+
+            border: 1px solid #A4A4A4;
+
+            @include font(300, 11px, 13px);
+            text-transform: uppercase;
+            color: $c-dark;
+        }
+    }
+}
+
+.basket {
+    &__list {
+        width: 100%;
+    }
+    &__item {
+        width: 100%;
+
+        position: relative;
+
+        @include flex(space-between, $flex-ai);
+
+        box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);;
+
+        &-btn-remove {
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            top: 28px;
+            right: 22px;
+            border: none;
+            background-color: transparent;
+            background-image: url(../img/icon/icon-cross.svg);
+            background-size: cover;
+            cursor: pointer;
+        }
+        &-img-wrapper {
+            width: calc(100% / 7 * 3 - 15px);
+        }
+        &-img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &-content {
+            padding: 22px 30px;
+
+            flex-grow: 1;
+        }
+        &-title {
+            width: calc(100% / 4 * 3 - 15px);
+
+            @include font($font-weight, 24px, 29px);
+            text-transform: uppercase;
+            color: $c-dark-secondary;
+        }
+        &-product-param-list {
+            margin-top: 42px;
+        }
+        &-product-param-item {
+            margin-top: 6px;
+
+            @include font($font-weight, 22px, 26px);
+            color: $c-dark-secondary;
+
+            &-secondary {
+                color: $c-dark-tertiary;
+            }
+        }
+        &-product-param-item--flex {
+            @include flex($flex-jc, center);
+        }
+        &-product-param-quantity-input {
+            width: 45px;
+            height: 24px;
+            margin-left: 24px;
+            padding: 1px;
+
+            color: $c-dark-tertiary;
+            text-align: center;
+
+            outline: 1px solid #EAEAEA;
+
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+    }
+    &__item:not(:first-child) {
+        margin-top: 40px;
+    }
+    &__btn-wrapper {
+        margin-top: 72px;
+
+        @include flex(space-between, $flex-ai);
+    }
+    &__btn-secondary {
+        border: 1px solid #A4A4A4;
+
+        @include font(300, 14px, 17px);
+        text-transform: uppercase;
+        color: $c-dark;
+    }
+}
