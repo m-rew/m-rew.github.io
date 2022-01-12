@@ -74,13 +74,13 @@
     <h1 class="visually-hidden">The brand of luxerious fashion</h1>
 
     <!-- Header Section Start -->
-    <header class="header">
+    <header class="header header--bg">
         <div class="container">
             <!-- Nav Start -->
             <nav class="header__nav">
                 <h2 class="visually-hidden">Navigation</h2>
 
-                <div class="header__logo-search-wrap">
+                <div class="header__wrap-icon header__wrap-icon--flex-left">
                     <a class="header__logo-link" href="#">
                         <img src="./img/main/logo.png" alt="logo" width="44" height="38">
                     </a>
@@ -99,7 +99,7 @@
                     </form>
                 </div>
 
-                <div class="header__menu-login-basket-wrap">
+                <div class="header__wrap-icon header__wrap-icon--flex-right">
                     <button type="button" class="header__menu-btn" id="header__menu-btn">
                         <svg class="header__btn-icon" fill="#E8E8E8" width="32" height="23"
                             xmlns="http://www.w3.org/2000/svg">
@@ -117,6 +117,7 @@
                             xmlns="http://www.w3.org/2000/svg">
                             <use xlink:href="#basket"></use>
                         </svg>
+                        <span class="header__basket-quantity">5</span>
                     </a>
                 </div>
 
@@ -229,227 +230,236 @@
         <!-- Brand Section End -->
 
         <!-- Catalog Section Start -->
-        <section class="catalog container">
-            <h2 class="visually-hidden">Catalog</h2>
-            <!-- Catalog List Start -->
-            <ul class="catalog__list">
-                <!-- Catalog Item Start -->
-                <li class="catalog__item catalog__item--bg-woman">
-                    <a class="catalog__link" href="#">
-                        <p class="catalog__offer">30% off</p>
-                        <h3 class="catalog__title">for woman</h3>
-                    </a>
-                </li>
-                <!-- Catalog Item End -->
+        <section class="catalog">
+            <div class="container">
+                <h2 class="visually-hidden">Catalog</h2>
+                <!-- Catalog List Start -->
+                <ul class="catalog__list">
+                    <!-- Catalog Item Start -->
+                    <li class="catalog__item catalog__item--bg-woman">
+                        <a class="catalog__link" href="#">
+                            <p class="catalog__offer">30% off</p>
+                            <h3 class="catalog__title">for woman</h3>
+                        </a>
+                    </li>
+                    <!-- Catalog Item End -->
 
-                <!-- Catalog Item Start -->
-                <li class="catalog__item catalog__item--bg-man">
-                    <a class="catalog__link" href="#">
-                        <p class="catalog__offer">hot deal</p>
-                        <h3 class="catalog__title">for man</h3>
-                    </a>
-                </li>
-                <!-- Catalog Item End -->
+                    <!-- Catalog Item Start -->
+                    <li class="catalog__item catalog__item--bg-man">
+                        <a class="catalog__link" href="#">
+                            <p class="catalog__offer">hot deal</p>
+                            <h3 class="catalog__title">for man</h3>
+                        </a>
+                    </li>
+                    <!-- Catalog Item End -->
 
-                <!-- Catalog Item Start -->
-                <li class="catalog__item catalog__item--bg-kids">
-                    <a class="catalog__link" href="#">
-                        <p class="catalog__offer">new arrivals</p>
-                        <h3 class="catalog__title">for kids</h3>
-                    </a>
-                </li>
-                <!-- Catalog Item End -->
+                    <!-- Catalog Item Start -->
+                    <li class="catalog__item catalog__item--bg-kids">
+                        <a class="catalog__link" href="#">
+                            <p class="catalog__offer">new arrivals</p>
+                            <h3 class="catalog__title">for kids</h3>
+                        </a>
+                    </li>
+                    <!-- Catalog Item End -->
 
-                <!-- Catalog Item Start -->
-                <li class="catalog__item catalog__item--bg-accesories">
-                    <a class="catalog__link" href="#">
-                        <p class="catalog__offer">luxirous & trendy</p>
-                        <h3 class="catalog__title">accesories</h3>
-                    </a>
-                </li>
-                <!-- Catalog Item End -->
-            </ul>
-            <!-- Catalog List End -->
-
+                    <!-- Catalog Item Start -->
+                    <li class="catalog__item catalog__item--bg-accesories">
+                        <a class="catalog__link" href="#">
+                            <p class="catalog__offer">luxirous & trendy</p>
+                            <h3 class="catalog__title">accesories</h3>
+                        </a>
+                    </li>
+                    <!-- Catalog Item End -->
+                </ul>
+                <!-- Catalog List End -->
+            </div>
         </section>
         <!-- Catalog Section End -->
 
         <!-- Products Section Start -->
-        <section class="products container">
-            <h2 class="products__title">Fetured Items</h2>
-            <p class="products__subtitle">Shop for items based on what we featured in this week</p>
-            <!-- FeaturedItems List Start -->
-            <ul class="products__list">
-                <!-- FeaturedItems Item Start -->
-                <li class="products__item">
+        <section class="products">
+            <div class="container">
+                <h2 class="products__title">Fetured Items</h2>
+                <p class="products__subtitle">Shop for items based on what we featured in this week</p>
+                <!-- FeaturedItems List Start -->
+                <ul class="products__list">
+                    <!-- FeaturedItems Item Start -->
+                    <li class="products__item">
 
-                    <div class="products__img-wrapper">
-                        <img class="products__img" src="./img/products/item-1.jpg" alt="item-1">
-                    </div>
-
-                    <a class="products__link" href="#">
-                        <div class="products__info-wrapper">
-                            <h3 class="products__name">ellery x m'o capsule</h3>
-                            <p class="products__description">Known for her sculptural takes on traditional tailoring,
-                                Australian arbiter of cool Kym
-                                Ellery teams up with Moda Operandi.</p>
-                            <p class="products__price">$52.00</p>
+                        <div class="products__img-wrapper">
+                            <img class="products__img" src="./img/products/item-1.jpg" alt="item-1">
                         </div>
-                    </a>
 
-                    <div class="products__overlay-hover">
-                        <button type="button" class="btn products__button-add">
-                            <svg class="products__button-add-icon" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#basket"></use>
-                            </svg>
-                            <span>Add to Cart</span>
-                        </button>
-                    </div>
-                </li>
-                <!-- FeaturedItems Item End -->
+                        <a class="products__link" href="#">
+                            <div class="products__info-wrapper">
+                                <h3 class="products__name">ellery x m'o capsule</h3>
+                                <p class="products__description">Known for her sculptural takes on traditional
+                                    tailoring,
+                                    Australian arbiter of cool Kym
+                                    Ellery teams up with Moda Operandi.</p>
+                                <p class="products__price">$52.00</p>
+                            </div>
+                        </a>
 
-                <!-- FeaturedItems Item Start -->
-                <li class="products__item">
-                    <div class="products__img-wrapper">
-                        <img class="products__img" src="./img/products/item-2.jpg" alt="item-2">
-                    </div>
-
-                    <a class="products__link" href="#">
-                        <div class="products__info-wrapper">
-                            <h3 class="products__name">ellery x m'o capsule</h3>
-                            <p class="products__description">Known for her sculptural takes on traditional tailoring,
-                                Australian arbiter of cool Kym
-                                Ellery teams up with Moda Operandi.</p>
-                            <p class="products__price">$52.00</p>
+                        <div class="products__overlay-hover">
+                            <button type="button" class="btn products__button-add">
+                                <svg class="products__button-add-icon" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="#basket"></use>
+                                </svg>
+                                <span>Add to Cart</span>
+                            </button>
                         </div>
-                    </a>
+                    </li>
+                    <!-- FeaturedItems Item End -->
 
-                    <div class="products__overlay-hover">
-                        <button type="button" class="btn products__button-add">
-                            <svg class="products__button-add-icon" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#basket"></use>
-                            </svg>
-                            <span>Add to Cart</span>
-                        </button>
-                    </div>
-                </li>
-                <!-- FeaturedItems Item End -->
-
-                <!-- FeaturedItems Item Start -->
-                <li class="products__item">
-
-                    <div class="products__img-wrapper">
-                        <img class="products__img" src="./img/products/item-3.jpg" alt="item-3">
-                    </div>
-
-                    <a class="products__link" href="#">
-                        <div class="products__info-wrapper">
-                            <h3 class="products__name">ellery x m'o capsule</h3>
-                            <p class="products__description">Known for her sculptural takes on traditional tailoring,
-                                Australian arbiter of cool Kym
-                                Ellery teams up with Moda Operandi.</p>
-                            <p class="products__price">$52.00</p>
+                    <!-- FeaturedItems Item Start -->
+                    <li class="products__item">
+                        <div class="products__img-wrapper">
+                            <img class="products__img" src="./img/products/item-2.jpg" alt="item-2">
                         </div>
-                    </a>
 
-                    <div class="products__overlay-hover">
-                        <button type="button" class="btn products__button-add">
-                            <svg class="products__button-add-icon" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#basket"></use>
-                            </svg>
-                            <span>Add to Cart</span>
-                        </button>
-                    </div>
-                </li>
-                <!-- FeaturedItems Item End -->
+                        <a class="products__link" href="#">
+                            <div class="products__info-wrapper">
+                                <h3 class="products__name">ellery x m'o capsule</h3>
+                                <p class="products__description">Known for her sculptural takes on traditional
+                                    tailoring,
+                                    Australian arbiter of cool Kym
+                                    Ellery teams up with Moda Operandi.</p>
+                                <p class="products__price">$52.00</p>
+                            </div>
+                        </a>
 
-                <!-- FeaturedItems Item Start -->
-                <li class="products__item">
-
-                    <div class="products__img-wrapper">
-                        <img class="products__img" src="./img/products/item-4.jpg" alt="item-4">
-                    </div>
-
-                    <a class="products__link" href="#">
-                        <div class="products__info-wrapper">
-                            <h3 class="products__name">ellery x m'o capsule</h3>
-                            <p class="products__description">Known for her sculptural takes on traditional tailoring,
-                                Australian arbiter of cool Kym
-                                Ellery teams up with Moda Operandi.</p>
-                            <p class="products__price">$52.00</p>
+                        <div class="products__overlay-hover">
+                            <button type="button" class="btn products__button-add">
+                                <svg class="products__button-add-icon" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="#basket"></use>
+                                </svg>
+                                <span>Add to Cart</span>
+                            </button>
                         </div>
-                    </a>
+                    </li>
+                    <!-- FeaturedItems Item End -->
 
-                    <div class="products__overlay-hover">
-                        <button type="button" class="btn products__button-add">
-                            <svg class="products__button-add-icon" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#basket"></use>
-                            </svg>
-                            <span>Add to Cart</span>
-                        </button>
-                    </div>
-                </li>
-                <!-- FeaturedItems Item End -->
+                    <!-- FeaturedItems Item Start -->
+                    <li class="products__item">
 
-                <!-- FeaturedItems Item Start -->
-                <li class="products__item">
-
-                    <div class="products__img-wrapper">
-                        <img class="products__img" src="./img/products/item-5.jpg" alt="item-5">
-                    </div>
-
-                    <a class="products__link" href="#">
-                        <div class="products__info-wrapper">
-                            <h3 class="products__name">ellery x m'o capsule</h3>
-                            <p class="products__description">Known for her sculptural takes on traditional tailoring,
-                                Australian arbiter of cool Kym
-                                Ellery teams up with Moda Operandi.</p>
-                            <p class="products__price">$52.00</p>
+                        <div class="products__img-wrapper">
+                            <img class="products__img" src="./img/products/item-3.jpg" alt="item-3">
                         </div>
-                    </a>
 
-                    <div class="products__overlay-hover">
-                        <button type="button" class="btn products__button-add">
-                            <svg class="products__button-add-icon" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#basket"></use>
-                            </svg>
-                            <span>Add to Cart</span>
-                        </button>
-                    </div>
-                </li>
-                <!-- FeaturedItems Item End -->
+                        <a class="products__link" href="#">
+                            <div class="products__info-wrapper">
+                                <h3 class="products__name">ellery x m'o capsule</h3>
+                                <p class="products__description">Known for her sculptural takes on traditional
+                                    tailoring,
+                                    Australian arbiter of cool Kym
+                                    Ellery teams up with Moda Operandi.</p>
+                                <p class="products__price">$52.00</p>
+                            </div>
+                        </a>
 
-                <!-- FeaturedItems Item Start -->
-                <li class="products__item">
-
-                    <div class="products__img-wrapper">
-                        <img class="products__img" src="./img/products/item-6.jpg" alt="item-6">
-                    </div>
-
-                    <a class="products__link" href="#">
-                        <div class="products__info-wrapper">
-                            <h3 class="products__name">ellery x m'o capsule</h3>
-                            <p class="products__description">Known for her sculptural takes on traditional tailoring,
-                                Australian arbiter of cool Kym
-                                Ellery teams up with Moda Operandi.</p>
-                            <p class="products__price">$52.00</p>
+                        <div class="products__overlay-hover">
+                            <button type="button" class="btn products__button-add">
+                                <svg class="products__button-add-icon" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="#basket"></use>
+                                </svg>
+                                <span>Add to Cart</span>
+                            </button>
                         </div>
-                    </a>
+                    </li>
+                    <!-- FeaturedItems Item End -->
 
-                    <div class="products__overlay-hover">
-                        <button type="button" class="btn products__button-add">
-                            <svg class="products__button-add-icon" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#basket"></use>
-                            </svg>
-                            <span>Add to Cart</span>
-                        </button>
-                    </div>
-                </li>
-                <!-- FeaturedItems Item End -->
-            </ul>
-            <!-- FeaturedItems List End -->
-            <div class="products__btn-wrapper">
-                <a class="btn products__btn" href="#">Browse All Product</a>
+                    <!-- FeaturedItems Item Start -->
+                    <li class="products__item">
+
+                        <div class="products__img-wrapper">
+                            <img class="products__img" src="./img/products/item-4.jpg" alt="item-4">
+                        </div>
+
+                        <a class="products__link" href="#">
+                            <div class="products__info-wrapper">
+                                <h3 class="products__name">ellery x m'o capsule</h3>
+                                <p class="products__description">Known for her sculptural takes on traditional
+                                    tailoring,
+                                    Australian arbiter of cool Kym
+                                    Ellery teams up with Moda Operandi.</p>
+                                <p class="products__price">$52.00</p>
+                            </div>
+                        </a>
+
+                        <div class="products__overlay-hover">
+                            <button type="button" class="btn products__button-add">
+                                <svg class="products__button-add-icon" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="#basket"></use>
+                                </svg>
+                                <span>Add to Cart</span>
+                            </button>
+                        </div>
+                    </li>
+                    <!-- FeaturedItems Item End -->
+
+                    <!-- FeaturedItems Item Start -->
+                    <li class="products__item">
+
+                        <div class="products__img-wrapper">
+                            <img class="products__img" src="./img/products/item-5.jpg" alt="item-5">
+                        </div>
+
+                        <a class="products__link" href="#">
+                            <div class="products__info-wrapper">
+                                <h3 class="products__name">ellery x m'o capsule</h3>
+                                <p class="products__description">Known for her sculptural takes on traditional
+                                    tailoring,
+                                    Australian arbiter of cool Kym
+                                    Ellery teams up with Moda Operandi.</p>
+                                <p class="products__price">$52.00</p>
+                            </div>
+                        </a>
+
+                        <div class="products__overlay-hover">
+                            <button type="button" class="btn products__button-add">
+                                <svg class="products__button-add-icon" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="#basket"></use>
+                                </svg>
+                                <span>Add to Cart</span>
+                            </button>
+                        </div>
+                    </li>
+                    <!-- FeaturedItems Item End -->
+
+                    <!-- FeaturedItems Item Start -->
+                    <li class="products__item">
+
+                        <div class="products__img-wrapper">
+                            <img class="products__img" src="./img/products/item-6.jpg" alt="item-6">
+                        </div>
+
+                        <a class="products__link" href="#">
+                            <div class="products__info-wrapper">
+                                <h3 class="products__name">ellery x m'o capsule</h3>
+                                <p class="products__description">Known for her sculptural takes on traditional
+                                    tailoring,
+                                    Australian arbiter of cool Kym
+                                    Ellery teams up with Moda Operandi.</p>
+                                <p class="products__price">$52.00</p>
+                            </div>
+                        </a>
+
+                        <div class="products__overlay-hover">
+                            <button type="button" class="btn products__button-add">
+                                <svg class="products__button-add-icon" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="#basket"></use>
+                                </svg>
+                                <span>Add to Cart</span>
+                            </button>
+                        </div>
+                    </li>
+                    <!-- FeaturedItems Item End -->
+                </ul>
+                <!-- FeaturedItems List End -->
+                <div class="products__btn-wrapper">
+                    <a class="btn products__btn" href="#">Browse All Product</a>
+                </div>
             </div>
         </section>
         <!-- Products Section End -->
@@ -504,7 +514,7 @@
         <!-- Features Section End -->
 
         <!-- Subscribe Section Start -->
-        <div class="rev-sub rev-sub--bg">
+        <section class="rev-sub rev-sub--bg">
             <div class="container rev-sub__wrapper">
                 <section class="reviews">
                     <div class="reviews__wrapper">
@@ -534,7 +544,7 @@
                     </div>
                 </section>
             </div>
-        </div>
+        </section>
         <!-- Subscribe Section End -->
 
     </main>
@@ -542,56 +552,58 @@
 
     <!-- Footer Section Start -->
     <footer class="footer">
-        <div class="container footer__wrapper">
-            <p class="footer__copyright">© 2021 Brand All Rights Reserved.</p>
-            <!-- Nav Social Start -->
-            <nav class="social">
-                <h2 class="visually-hidden">Social menu</h2>
-                <!-- Nav Social List Start -->
-                <ul class="social__list">
-                    <!-- Nav Social Item Start -->
-                    <li class="social__item">
-                        <a class="social__link" href="#">
-                            <svg class="social__icon" width="8" height="15" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <!-- Nav Social Item End -->
+        <div class="container">
+            <div class="footer__wrapper">
+                <p class="footer__copyright">© 2021 Brand All Rights Reserved.</p>
+                <!-- Nav Social Start -->
+                <nav class="social">
+                    <h2 class="visually-hidden">Social menu</h2>
+                    <!-- Nav Social List Start -->
+                    <ul class="social__list">
+                        <!-- Nav Social Item Start -->
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon" width="8" height="15" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <!-- Nav Social Item End -->
 
-                    <!-- Nav Social Item Start -->
-                    <li class="social__item">
-                        <a class="social__link" href="#">
-                            <svg class="social__icon" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <!-- Nav Social Item End -->
+                        <!-- Nav Social Item Start -->
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <!-- Nav Social Item End -->
 
-                    <!-- Nav Social Item Start -->
-                    <li class="social__item">
-                        <a class="social__link" href="#">
-                            <svg class="social__icon" width="12" height="16" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#pinterest"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <!-- Nav Social Item End -->
+                        <!-- Nav Social Item Start -->
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon" width="12" height="16" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="#pinterest"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <!-- Nav Social Item End -->
 
-                    <!-- Nav Social Item Start -->
-                    <li class="social__item">
-                        <a class="social__link" href="#">
-                            <svg class="social__icon" width="16" height="13" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <!-- Nav Social Item End -->
-                </ul>
-                <!-- Nav Social List End -->
-            </nav>
-            <!-- Nav Social End -->
+                        <!-- Nav Social Item Start -->
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon" width="16" height="13" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <!-- Nav Social Item End -->
+                    </ul>
+                    <!-- Nav Social List End -->
+                </nav>
+                <!-- Nav Social End -->
+            </div>
         </div>
     </footer>
     <!-- Footer Section End -->

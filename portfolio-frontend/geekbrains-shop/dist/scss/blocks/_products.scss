@@ -5,6 +5,14 @@
 .products {
     padding: 48px 0 95px 0;
 
+    @include media-tablet {
+        padding: 77px 0 65px 0;
+    }
+
+    @include media-phone {
+        padding: 32px 0 97px 0;
+    }
+
     &__title {
         @include font($font-weight, 30px, 36px);
         text-align: center;
@@ -13,47 +21,82 @@
     
     &__subtitle {
         margin: 6px 0 0 0;
-    
         text-align: center;
         color: $c-dark-tertiary;
     }
     
     &__list {
-        margin: 48px 0 0 0;
-    
+        margin-top: 48px;
         @include flex(flex-start, $flex-ai);
         flex-wrap: wrap;
+
+        @include media-tablet {
+            margin-top: 73px;
+        }
+
+        @include media-phone {
+            margin-top: 65px;
+        }
     }
     
     &__item {
         width: calc(33.333% - 20px);
-    
         position: relative;
-    
         display: flex;
         flex-direction: column;
-    
         background-color: $bg-dark-secondary;
+
+        @include media-tablet {
+            width: calc(50% - 8px);
+        }
+
+        @include media-phone {
+            width: 100%;
+        }
     }
     
-    &__item:not(:nth-child(3n)) {
-        margin-right: 30px;
+    @include media-desctop {
+        &__item:not(:nth-child(3n)) {
+            margin-right: 30px;
+        }
+        
+        &__item:last-child {
+            margin-right: 0;
+        }
+        
+        &__item:nth-child(n+4) {
+            margin-top: 30px;
+        }
     }
-    
-    &__item:last-child {
-        margin-right: 0;
+
+    @include media-tablet {
+        &__item:not(:nth-child(2n)) {
+            margin-right: 16px;
+        }
+        
+        &__item:last-child {
+            margin-right: 0;
+        }
+        
+        &__item:nth-child(n+3) {
+            margin-top: 16px;
+        }
     }
-    
-    &__item:nth-child(n + 4) {
-        margin-top: 30px;
+
+    @include media-phone {
+        &__item:not(:nth-child(2n)) {
+            margin-right: 0;
+        }
+
+        &__item:nth-child(n+1) {
+            margin-top: 16px;
+        }
     }
     
     &__link {
         position: relative;
-    
         display: flex;
         flex-grow: 1;
-    
         text-decoration: none;
     }
     
@@ -66,13 +109,12 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        object-position: 0 0;
     }
     
     &__info-wrapper {
         padding: 25px 15px 20px 25px;
-    
         flex-grow: 1;
-    
         display: flex;
         flex-direction: column;
     }
@@ -86,18 +128,14 @@
     &__description {
         width: 100%;
         margin: 13px 0 0 0;
-    
         color: $c-dark-tertiary;
     }
     
     &__price {
         width: 100%;
         margin: 18px 0 0 0;
-    
         flex-grow: 1;
-    
         @include flex($flex-jc, flex-end);
-    
         @include font($font-weight, 16px, 19px);
         color: $c-accent;
     }
@@ -106,41 +144,39 @@
         position: absolute;
         width: 100%;
         height: 420px;
-    
         opacity: 0;
-    
         @include flex(center, center);
-    
         background: rgba(58, 56, 56, 0.86);
-    
         transition: all .2s;
     }
     
     &__button-add {
         padding: 10px 14px;
-    
         @include flex(center, center);
-    
         border-color: #FFFFFF;
         background-color: transparent;
         color: #FFFFFF;
-    
         transition: all .2s;
     }
     
     &__button-add-icon {
         width: 26px;
         height: 24px;
-    
         margin-right: 11px;
-        
         transition: all .2s;
     }
     
     &__btn-wrapper {
-        margin: 48px 0 0 0;
-    
+        padding-top: 49px;
         @include flex(center, $flex-ai);
+
+        @include media-tablet {
+            padding-top: 33px;
+        }
+
+        @include media-phone {
+            padding-top: 41px;
+        }
     }
     
     &__btn {

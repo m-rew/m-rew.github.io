@@ -4,19 +4,45 @@
 
 .features {
     padding: 100px 0;
-
     background-color: $bg-dark;
+
+    @include media-tablet {
+        padding: 48px 0 64px 0;
+    }
+
+    @include media-phone {
+        padding: 48px 0 81px 0;
+    }
 
     &__list {
         @include flex(space-between, $flex-ai);
         flex-wrap: wrap;
+
+        @include media-tablet {
+            @include flex($flex-jc, center);
+            flex-direction: column;
+        }
     }
     
     &__item {
         width: calc(33.333% - 60px);
-    
         display: flex;
         flex-direction: column;
+
+        @include media-tablet {
+            width: 50%;
+        }
+    
+        @include media-phone {
+            width: 100%;
+            padding: 0 8px;
+        }
+    }
+
+    @include media-tablet {
+        &__item:not(:first-child) {
+            margin-top: 48px;
+        }
     }
     
     &__img {
@@ -27,7 +53,6 @@
     &__title {
         width: 100%;
         margin: 25px 0 0 0;
-    
         @include font($font-weight, 20px, 24px);
         text-align: center;
         color: $c-white;
@@ -36,58 +61,8 @@
     &__description {
         width: 100%;
         margin: 16px 0 0 0;
-    
         font-weight: 300;
         text-align: center;
         color: $c-white;
     }
-}
-
-.rev-sub {
-    padding: 97px 0 156px 0;
-
-    &--bg {
-        background: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)),
-                    url('../img/subscribe/bg-reviews.jpg')
-                    center center/cover no-repeat;
-    }
-    
-    &__wrapper {
-        @include flex(space-between, center);
-    }
-}
-
-.reviews {
-    width: 50%;
-}
-
-.reviews__wrapper {
-    width: 66.666%;
-
-    @include flex($flex-jc, center);
-    flex-direction: column;
-}
-
-.reviews__avatar-wrapper {
-    width: 96px;
-    height: 96px;
-
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.reviews__avatar {
-    max-width: 100%;
-    max-height: 100%;
-
-    object-fit: cover;
-}
-
-.reviews__text {
-    margin: 30px 0 0 0;
-
-    @include font($font-weight, 20px, 24px);
-    font-style: italic;
-    text-align: center;
-    color: $c-dark-secondary;
 }
