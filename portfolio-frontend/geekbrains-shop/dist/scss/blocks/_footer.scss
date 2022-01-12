@@ -54,3 +54,31 @@
         fill: #000000;
     }
 }
+
+/* ------------------------------
+    footer effects
+------------------------------ */
+
+/* hover */
+
+.social__item:hover .social__icon {
+    fill: $c-white;
+}
+.social__item:hover {
+    background-color: $c-accent;
+}
+
+/* active */
+
+.social__item:active .social__icon {
+    fill: $c-white;
+}
+.social__item:active {
+    background-color: $c-accent-secondary;
+}
+
+/* focus */
+
+.social__link:focus-visible {
+    outline: 1px solid $c-accent;
+}

@@ -179,3 +179,53 @@
         }
     }
 }
+
+/* ------------------------------
+    header & menu effects
+------------------------------ */
+
+/* hover */
+
+.header__search-btn:hover .header__btn-icon,
+.header__menu-btn:hover .header__btn-icon,
+.header__login-link:hover .header__btn-icon,
+.header__basket-link:hover .header__btn-icon {
+    transition: fill .2s;
+    fill: $c-accent;
+}
+
+.submenu__item-link:hover {
+    transition: color .2s;
+    color: $c-accent;
+}
+
+.header__form-search:hover {
+    border: 1px solid $c-accent-secondary;
+}
+
+/* active */
+
+.header__search-btn:active .header__btn-icon,
+.header__menu-btn:active .header__btn-icon,
+.header__login-link:active .header__btn-icon,
+.header__basket-link:active .header__btn-icon {
+    transition: fill .2s;
+    fill: $c-accent-secondary;
+}
+
+/* focus */
+
+.header__logo-link:focus-visible,
+.header__search-btn:focus-visible,
+.header__menu-btn:focus-visible,
+.header__login-link:focus-visible,
+.header__basket-link:focus-visible,
+.menu__btn-close:focus-visible,
+.submenu__title-link:focus-visible,
+.submenu__item-link:focus-visible {
+    outline: 1px solid $c-accent;
+}
+
+.header__form-search:focus-visible {
+    border: 1px solid $c-accent;
+}
