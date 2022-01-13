@@ -101,7 +101,7 @@
         }
 
         &-input {
-            padding: 10px;
+            padding: 20px 10px;
         }
 
         &--active {
@@ -126,7 +126,7 @@
     top: 100%;
     right: 0;
     z-index: 100;
-    opacity: 0;
+    display: none;
     background-color: $bg-white;
     transition: max-width 0.6s;
 
@@ -167,7 +167,7 @@
     }
 
     &--active {
-        opacity: 1;
+        display: block;
     }
     
     .submenu {
