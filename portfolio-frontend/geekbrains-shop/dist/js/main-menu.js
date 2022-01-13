@@ -23,6 +23,7 @@ buttonSearch.addEventListener('click', function () {
     search.classList.toggle('header__form-search--active');
 });
 
+// add padding-top for <main> because <header> fixed
 window.onload = function () {
-    main.style.paddingTop = header.offsetHeight + "px";
+    main.style.paddingTop = header.offsetHeight + 'px';
 };
