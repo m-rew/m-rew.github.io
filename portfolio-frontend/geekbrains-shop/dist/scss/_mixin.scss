@@ -37,9 +37,3 @@ $line-height: 17px;
         @content;
     }
 }
-
-@mixin media-phone-min {
-    @media (max-width: 374px) {
-        @content;
-    }
-}
