@@ -10,5 +10,9 @@
         @include font($font-weight, 24px, 29px);
         text-transform: uppercase;
         color: $c-accent;
+
+        @include media-phone {
+            text-align: center;
+        }
     }
 }

@@ -4,24 +4,86 @@
 
 .cart {
     padding: 96px 0 128px 0;
-    @include flex(space-between, $flex-ai);
+
+    @include media-tablet {
+        padding: 59px 0 128px 0;
+    }
+
+    @include media-phone {
+        padding: 39px 0 96px 0;
+    }
+    
+    &__wrap {
+        @include flex(space-between, $flex-ai);
+
+        @include media-tablet {
+            @include flex($flex-ai, $flex-ai);
+            flex-direction: column;
+        }
+    }
 
     &__basket {
         width: calc(100% / 12 * 7 - 15px);
+
+        @include media-tablet {
+            width: 100%;
+        }
     }
+
     &__form-buy {
         width: calc(100% / 12 * 4 - 15px);
+
+        @include media-tablet {
+            width: 100%;
+            margin-top: 64px;
+        }
+
+        @include media-phone {
+            margin-top: 48px;
+        }
     }
+
     &-form {
+        @include media-tablet {
+            @include flex(space-between, flex-start);
+            flex-wrap: wrap;
+        }
+
+        @include media-phone {
+            @include flex($flex-jc, flex-start);
+            flex-direction: column;
+        }
+
+        &__group {
+            @include media-tablet {
+                width: calc(50% - 15px / 2);
+            }
+
+            @include media-phone {
+                width: 100%;
+            }
+        }
+
         &__group-title {
             font-weight: 300;
             text-transform: uppercase;
             color: $c-dark-secondary;
         }
+
         &__order {
             margin-top: 57px;
             padding: 40px;
             background-color: #F5F3F3;
+
+            @include media-tablet {
+                width: calc(50% - 15px / 2);
+                margin-top: 38px;
+            }
+
+            @include media-phone {
+                width: 100%;
+                margin-top: 48px;
+            }
 
             &-sub-total {
                 text-align: right;
@@ -33,9 +95,9 @@
                     margin-left: 25px;
                 }
             }
+
             &-grand-total {
                 margin-top: 12px;
-
                 text-align: right;
                 @include font(300, 16px, 19px);
                 text-transform: uppercase;
@@ -48,24 +110,38 @@
                 }
             }
         }
+
         &__btn-accent {
             width: 100%;
-
             font-weight: 300;
             text-transform: uppercase;
             color: $c-white;
-
             background-color: $c-accent;
         }
+
         &__btn-secondary {
             margin-top: 33px;
             padding: 10px 15px;
-
             border: 1px solid #A4A4A4;
-
             @include font(300, 11px, 13px);
             text-transform: uppercase;
             color: $c-dark;
+
+            @include media-tablet {
+                margin-top: 0;
+                order: 1;
+            }
+
+            @include media-phone {
+                margin-top: 24px;
+                order: 0;
+                @include font($font-weight, 11px, 13px);
+                text-transform: none;
+
+                &::first-letter {
+                    text-transform: uppercase;
+                }
+            }
         }
     }
 }
@@ -74,14 +150,18 @@
     &__list {
         width: 100%;
     }
+
     &__item {
         width: 100%;
-
+        min-height: 306px;
         position: relative;
-
         @include flex(space-between, $flex-ai);
+        box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
 
-        box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);;
+        @include media-phone {
+            min-height: 188px;
+            box-shadow: 8px 8px 21px rgba(0, 0, 0, 0.13);
+        }
 
         &-btn-remove {
             width: 18px;
@@ -95,53 +175,90 @@
             background-size: cover;
             cursor: pointer;
         }
+
         &-img-wrapper {
             width: calc(100% / 7 * 3 - 15px);
+
+            @include media-tablet {
+                width: calc(100% / 8 * 3 - 15px);
+            }
+
+            @include media-phone {
+                width: 40.2%;
+            }
         }
+
         &-img {
             display: block;
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: top center;
         }
+
         &-content {
             padding: 22px 30px;
-
             flex-grow: 1;
+
+            @include media-phone {
+                padding: 14px 17px;
+            }
         }
+
         &-title {
             width: calc(100% / 4 * 3 - 15px);
-
             @include font($font-weight, 24px, 29px);
             text-transform: uppercase;
             color: $c-dark-secondary;
+
+            @include media-phone {
+                width: 67.3%;
+                font-weight: normal;
+                @include font($font-weight, 16px, 19px);
+            }
         }
+
         &-product-param-list {
             margin-top: 42px;
+
+            @include media-phone {
+                margin-top: 26px;
+            }
         }
+
         &-product-param-item {
             margin-top: 6px;
-
             @include font($font-weight, 22px, 26px);
             color: $c-dark-secondary;
+
+            @include media-phone {
+                @include font($font-weight, 14px, 17px);
+            }
 
             &-secondary {
                 color: $c-dark-tertiary;
             }
         }
+
         &-product-param-item--flex {
             @include flex($flex-jc, center);
         }
+
         &-product-param-quantity-input {
             width: 45px;
             height: 24px;
             margin-left: 24px;
             padding: 1px;
-
             color: $c-dark-tertiary;
             text-align: center;
-
             outline: 1px solid #EAEAEA;
+            @include font($font-weight, 18px, 22px);
+
+            @include media-phone {
+                width: 24px;
+                height: 14px;
+                @include font($font-weight, 10px, 12px);
+            }
 
             &::-webkit-outer-spin-button,
             &::-webkit-inner-spin-button {
@@ -152,17 +269,52 @@
     }
     &__item:not(:first-child) {
         margin-top: 40px;
+
+        @include media-phone {
+            margin-top: 32px;
+        }
     }
+
     &__btn-wrapper {
         margin-top: 72px;
-
         @include flex(space-between, $flex-ai);
+
+        @include media-tablet {
+            margin-top: 63px;
+            @include flex(center, $flex-ai);
+        }
+
+        @include media-phone {
+            margin-top: 30px;
+        }
     }
+
     &__btn-secondary {
         border: 1px solid #A4A4A4;
-
         @include font(300, 14px, 17px);
         text-transform: uppercase;
         color: $c-dark;
+
+        @include media-tablet {
+            &:not(:last-child) {
+                margin-right: 49px;
+            }
+        }
+
+        @include media-phone {
+            width: 100%;
+            padding: 9px 18px;
+            @include font($font-weight, 12px, 14px);
+            text-align: center;
+            text-transform: none;
+
+            &:not(:last-child) {
+                margin-right: 9px;
+            }
+
+            &:first-letter {
+                text-transform: uppercase;
+            }
+        }
     }
 }

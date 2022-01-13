@@ -66,7 +66,7 @@
     <h1 class="visually-hidden">Shopping cart</h1>
 
     <!-- Header Section Start -->
-    <header class="header header--bg">
+    <header class="header header--bg" id="header">
         <div class="container">
             <!-- Nav Start -->
             <nav class="header__nav">
@@ -206,7 +206,7 @@
     <!-- Header Section End -->
 
     <!-- Main Section Start -->
-    <main>
+    <main id="main">
 
         <!-- Top-side Section Start -->
         <section class="top-side">
@@ -217,137 +217,140 @@
         <!-- Brand Section End -->
 
         <!-- Cart Section Start -->
-        <section class="cart container">
-            <h2 class="visually-hidden">Cart</h2>
+        <section class="cart">
+            <div class="container cart__wrap">
+                <h2 class="visually-hidden">Cart</h2>
 
-            <!-- Basket Section Start -->
-            <section class="cart__basket basket">
-                <h3 class="visually-hidden">Basket</h3>
+                <!-- Basket Section Start -->
+                <section class="cart__basket basket">
+                    <h3 class="visually-hidden">Basket</h3>
 
-                <!-- Basket List Start -->
-                <ul class="basket__list">
+                    <!-- Basket List Start -->
+                    <ul class="basket__list">
 
-                    <!-- Basket Item Start -->
-                    <li class="basket__item">
-                        <div class="basket__item-img-wrapper">
-                            <img src="./img/cart/item-1.jpg" alt="item-1" class="basket__item-img">
-                        </div>
+                        <!-- Basket Item Start -->
+                        <li class="basket__item">
+                            <div class="basket__item-img-wrapper">
+                                <img src="./img/cart/item-1.jpg" alt="item-1" class="basket__item-img">
+                            </div>
 
-                        <div class="basket__item-content">
-                            <h4 class="basket__item-title">mango people t&nbsp;-&nbsp;shirt</h4>
+                            <div class="basket__item-content">
+                                <h4 class="basket__item-title">mango people t&nbsp;-&nbsp;shirt</h4>
 
-                            <button type="button" class="basket__item-btn-remove"></button>
+                                <button type="button" class="basket__item-btn-remove"></button>
 
-                            <ul class="basket__item-product-param-list">
-                                <li class="basket__item-product-param-item">Price:
-                                    <span class="text-accent">$300</span>
-                                </li>
-                                <li class="basket__item-product-param-item">
-                                    Color:
-                                    <span class="basket__item-product-param-item-secondary">Red</span>
-                                </li>
-                                <li class="basket__item-product-param-item">Size:
-                                    <span class="basket__item-product-param-item-secondary">Xl</span>
-                                </li>
-                                <li class="basket__item-product-param-item basket__item-product-param-item--flex">
-                                    <label for="basket__item-product-param-quantity">Quantity:</label>
-                                    <input id="basket__item-product-param-quantity"
-                                        class="form__input basket__item-product-param-quantity-input" type="number"
-                                        value="2">
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <!-- Basket Item End -->
+                                <ul class="basket__item-product-param-list">
+                                    <li class="basket__item-product-param-item">Price:
+                                        <span class="text-accent">$300</span>
+                                    </li>
+                                    <li class="basket__item-product-param-item">
+                                        Color:
+                                        <span class="basket__item-product-param-item-secondary">Red</span>
+                                    </li>
+                                    <li class="basket__item-product-param-item">Size:
+                                        <span class="basket__item-product-param-item-secondary">Xl</span>
+                                    </li>
+                                    <li class="basket__item-product-param-item basket__item-product-param-item--flex">
+                                        <label for="basket__item-product-param-quantity">Quantity:</label>
+                                        <input id="basket__item-product-param-quantity"
+                                            class="form__input basket__item-product-param-quantity-input" type="number"
+                                            value="2">
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Basket Item End -->
 
-                    <!-- Basket Item Start -->
-                    <li class="basket__item">
-                        <div class="basket__item-img-wrapper">
-                            <img src="./img/cart/item-2.jpg" alt="item-2" class="basket__item-img">
-                        </div>
+                        <!-- Basket Item Start -->
+                        <li class="basket__item">
+                            <div class="basket__item-img-wrapper">
+                                <img src="./img/cart/item-2.jpg" alt="item-2" class="basket__item-img">
+                            </div>
 
-                        <div class="basket__item-content">
-                            <h4 class="basket__item-title">mango people t&nbsp;-&nbsp;shirt</h4>
+                            <div class="basket__item-content">
+                                <h4 class="basket__item-title">mango people t&nbsp;-&nbsp;shirt</h4>
 
-                            <button type="button" class="basket__item-btn-remove"></button>
+                                <button type="button" class="basket__item-btn-remove"></button>
 
-                            <ul class="basket__item-product-param-list">
-                                <li class="basket__item-product-param-item">Price:
-                                    <span class="text-accent">$300</span>
-                                </li>
-                                <li class="basket__item-product-param-item">
-                                    Color:
-                                    <span class="basket__item-product-param-item-secondary">Red</span>
-                                </li>
-                                <li class="basket__item-product-param-item">Size:
-                                    <span class="basket__item-product-param-item-secondary">Xl</span>
-                                </li>
-                                <li class="basket__item-product-param-item basket__item-product-param-item--flex">
-                                    <label for="basket__item-product-param-quantity">Quantity:</label>
-                                    <input id="basket__item-product-param-quantity"
-                                        class="form__input basket__item-product-param-quantity-input" type="number"
-                                        value="2">
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <!-- Basket Item End -->
+                                <ul class="basket__item-product-param-list">
+                                    <li class="basket__item-product-param-item">Price:
+                                        <span class="text-accent">$300</span>
+                                    </li>
+                                    <li class="basket__item-product-param-item">
+                                        Color:
+                                        <span class="basket__item-product-param-item-secondary">Red</span>
+                                    </li>
+                                    <li class="basket__item-product-param-item">Size:
+                                        <span class="basket__item-product-param-item-secondary">Xl</span>
+                                    </li>
+                                    <li class="basket__item-product-param-item basket__item-product-param-item--flex">
+                                        <label for="basket__item-product-param-quantity">Quantity:</label>
+                                        <input id="basket__item-product-param-quantity"
+                                            class="form__input basket__item-product-param-quantity-input" type="number"
+                                            value="2">
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Basket Item End -->
 
-                </ul>
-                <!-- Basket List End -->
+                    </ul>
+                    <!-- Basket List End -->
 
-                <div class="basket__btn-wrapper">
-                    <button class="btn basket__btn-secondary" type="button">clear shopping cart</button>
-                    <a href="catalog.html" class="btn basket__btn-secondary">continue shopping</a>
-                </div>
-            </section>
-            <!-- Basket Section End -->
-
-            <section class="cart__form-buy">
-                <h3 class="visually-hidden">Product purchase</h3>
-
-                <!-- Form Cart Start -->
-                <form action="#" class="form cart-form">
-                    <h4 class="visually-hidden">Product purchase form</h4>
-
-                    <!-- Fieldset Cart Start -->
-                    <fieldset class="form__group">
-                        <legend class="form__group-title cart-form__group-title">shipping adress</legend>
-
-                        <div class="form__input-wrapper">
-                            <label class="visually-hidden" for="cart__form-city">City</label>
-                            <input class="form__input" id="cart__form-city" type="text" placeholder="Bangladesh"
-                                required>
-
-                            <label class="visually-hidden" for="cart__form-state">State</label>
-                            <input class="form__input" id="cart__form-state" type="text" placeholder="State" required>
-
-                            <label class="visually-hidden" for="cart__form-zip">Postcode / Zip</label>
-                            <input class="form__input" id="cart__form-zip" type="text" placeholder="Postcode / Zip"
-                                required>
-                        </div>
-                    </fieldset>
-                    <!-- Fieldset Cart End -->
-
-                    <button class="btn cart-form__btn-secondary" type="button">get a quote</button>
-
-                    <div class="cart-form__order">
-                        <p class="cart-form__order-sub-total">
-                            sub total
-                            <span class="cart-form__order-sub-total-price">$900</span>
-                        </p>
-                        <p class="cart-form__order-grand-total">
-                            grand total
-                            <span class="cart-form__order-grand-total-price text-accent">$900</span>
-                        </p>
-
-                        <div class="line-hr"></div>
-
-                        <button class="btn cart-form__btn-accent" type="submit">proceed to checkout</button>
+                    <div class="basket__btn-wrapper">
+                        <button class="btn basket__btn-secondary" type="button">clear shopping cart</button>
+                        <a href="catalog.html" class="btn basket__btn-secondary">continue shopping</a>
                     </div>
-                </form>
-                <!-- Form Cart End -->
-            </section>
+                </section>
+                <!-- Basket Section End -->
+
+                <section class="cart__form-buy">
+                    <h3 class="visually-hidden">Product purchase</h3>
+
+                    <!-- Form Cart Start -->
+                    <form action="#" class="form cart-form">
+                        <h4 class="visually-hidden">Product purchase form</h4>
+
+                        <!-- Fieldset Cart Start -->
+                        <fieldset class="form__group cart-form__group">
+                            <legend class="form__group-title cart-form__group-title">shipping adress</legend>
+
+                            <div class="form__input-wrapper">
+                                <label class="visually-hidden" for="cart__form-city">City</label>
+                                <input class="form__input" id="cart__form-city" type="text" placeholder="Bangladesh"
+                                    required>
+
+                                <label class="visually-hidden" for="cart__form-state">State</label>
+                                <input class="form__input" id="cart__form-state" type="text" placeholder="State"
+                                    required>
+
+                                <label class="visually-hidden" for="cart__form-zip">Postcode / Zip</label>
+                                <input class="form__input" id="cart__form-zip" type="text" placeholder="Postcode / Zip"
+                                    required>
+                            </div>
+                        </fieldset>
+                        <!-- Fieldset Cart End -->
+
+                        <button class="btn cart-form__btn-secondary" type="button">get a quote</button>
+
+                        <div class="cart-form__order">
+                            <p class="cart-form__order-sub-total">
+                                sub total
+                                <span class="cart-form__order-sub-total-price">$900</span>
+                            </p>
+                            <p class="cart-form__order-grand-total">
+                                grand total
+                                <span class="cart-form__order-grand-total-price text-accent">$900</span>
+                            </p>
+
+                            <div class="line-hr"></div>
+
+                            <button class="btn cart-form__btn-accent" type="submit">proceed to checkout</button>
+                        </div>
+                    </form>
+                    <!-- Form Cart End -->
+                </section>
+            </div>
         </section>
         <!-- Cart Section End -->
 
