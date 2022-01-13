@@ -217,79 +217,84 @@
         <!-- Brand Section End -->
 
         <!-- Registration Section Start -->
-        <section class="reg container">
-            <h2 class="visually-hidden">registration</h2>
+        <section class="reg">
+            <div class="container reg__wrapper">
+                <h2 class="visually-hidden">registration</h2>
 
-            <div class="reg__form-wrapper">
-                <!-- Form Start -->
-                <form class="reg__form form" action="#">
-                    <h3 class="visually-hidden">registration form</h3>
+                <div class="reg__form-wrapper">
+                    <!-- Form Start -->
+                    <form class="reg__form form" action="#">
+                        <h3 class="visually-hidden">registration form</h3>
 
-                    <!-- Fieldset Start -->
-                    <fieldset class="form__group">
-                        <legend class="form__group-title">Your Name</legend>
+                        <!-- Fieldset Start -->
+                        <fieldset class="form__group">
+                            <legend class="form__group-title">Your Name</legend>
 
-                        <div class="form__input-wrapper">
-                            <label class="visually-hidden" for="reg-form__first-name">First Name</label>
-                            <input class="form__input" id="reg-form__first-name" type="text" placeholder="First Name"
-                                required>
+                            <div class="form__input-wrapper">
+                                <label class="visually-hidden" for="reg-form__first-name">First Name</label>
+                                <input class="form__input" id="reg-form__first-name" type="text"
+                                    placeholder="First Name" required>
 
-                            <label class="visually-hidden" for="reg-form__last-name">Last Name</label>
-                            <input class="form__input" id="reg-form__last-name" type="text" placeholder="Last Name"
-                                required>
-                        </div>
+                                <label class="visually-hidden" for="reg-form__last-name">Last Name</label>
+                                <input class="form__input" id="reg-form__last-name" type="text" placeholder="Last Name"
+                                    required>
+                            </div>
 
-                        <div class="form__radio-wrapper">
-                            <input class="form__input-radio" id="reg-form__male" type="radio"
-                                name="reg-form__radio-gender">
-                            <label class="form__label-radio" for="reg-form__male">Male</label>
+                            <div class="form__radio-wrapper">
+                                <input class="form__input-radio" id="reg-form__male" type="radio"
+                                    name="reg-form__radio-gender">
+                                <label class="form__label-radio" for="reg-form__male">Male</label>
 
-                            <input class="form__input-radio" id="reg-form__female" type="radio"
-                                name="reg-form__radio-gender">
-                            <label class="form__label-radio" for="reg-form__female">Female</label>
-                        </div>
-                    </fieldset>
-                    <!-- Fieldset End -->
+                                <input class="form__input-radio" id="reg-form__female" type="radio"
+                                    name="reg-form__radio-gender">
+                                <label class="form__label-radio" for="reg-form__female">Female</label>
+                            </div>
+                        </fieldset>
+                        <!-- Fieldset End -->
 
-                    <!-- Fieldset Start -->
-                    <fieldset class="form__group">
-                        <legend class="form__group-title">Login details</legend>
+                        <!-- Fieldset Start -->
+                        <fieldset class="form__group">
+                            <legend class="form__group-title">Login details</legend>
 
-                        <div class="form__input-wrapper">
-                            <label class="visually-hidden" for="reg-form__email">Email</label>
-                            <input class="form__input" id="reg-form__email" type="email" placeholder="Email" required>
+                            <div class="form__input-wrapper">
+                                <label class="visually-hidden" for="reg-form__email">Email</label>
+                                <input class="form__input" id="reg-form__email" type="email" placeholder="Email"
+                                    required>
 
-                            <label class="visually-hidden" for="reg-form__password">Password</label>
-                            <input class="form__input" id="reg-form__password" type="password" placeholder="Password"
-                                required>
-                            <p class="reg__form-prompt">Please use 8 or more characters, with at least 1 number and a
-                                mixture of uppercase and lowercase letters</p>
-                        </div>
-                    </fieldset>
-                    <!-- Fieldset End -->
+                                <label class="visually-hidden" for="reg-form__password">Password</label>
+                                <input class="form__input" id="reg-form__password" type="password"
+                                    placeholder="Password" required>
+                                <p class="reg__form-prompt">Please use 8 or more characters, with at least 1 number and
+                                    a
+                                    mixture of uppercase and lowercase letters</p>
+                            </div>
+                        </fieldset>
+                        <!-- Fieldset End -->
 
-                    <button class="btn form__btn-submit" type="submit">
-                        <span>join now</span>
-                        <svg class="form__btn-submit-icon" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="#long-arrow-right"></use>
-                        </svg>
-                    </button>
+                        <button class="btn form__btn-submit" type="submit">
+                            <span>join now</span>
+                            <svg class="form__btn-submit-icon" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="#long-arrow-right"></use>
+                            </svg>
+                        </button>
 
-                </form>
-                <!-- Form End -->
-            </div>
+                    </form>
+                    <!-- Form End -->
+                </div>
 
-            <div class="reg__descr-wrapper">
-                <h3 class="reg__descr-title">loyalty has its perks</h3>
-                <p class="reg__descr-text">Get in on the loyalty program where you can earn points and unlock serious
-                    perks. Starting with these as soon as you join:</p>
-                <ul class="reg__descr-list">
-                    <li class="reg__descr-item">15% off welcome offer</li>
-                    <li class="reg__descr-item">Free shipping, returns and exchanges on all orders</li>
-                    <li class="reg__descr-item">$10 off a purchase on your birthday</li>
-                    <li class="reg__descr-item">Early access to products</li>
-                    <li class="reg__descr-item">Exclusive offers & rewards</li>
-                </ul>
+                <div class="reg__descr-wrapper">
+                    <h3 class="reg__descr-title">loyalty has its perks</h3>
+                    <p class="reg__descr-text">Get in on the loyalty program where you can earn points and unlock
+                        serious
+                        perks. Starting with these as soon as you join:</p>
+                    <ul class="reg__descr-list">
+                        <li class="reg__descr-item">15% off welcome offer</li>
+                        <li class="reg__descr-item">Free shipping, returns and exchanges on all orders</li>
+                        <li class="reg__descr-item">$10 off a purchase on your birthday</li>
+                        <li class="reg__descr-item">Early access to products</li>
+                        <li class="reg__descr-item">Exclusive offers & rewards</li>
+                    </ul>
+                </div>
             </div>
         </section>
         <!-- Registration Section End -->
