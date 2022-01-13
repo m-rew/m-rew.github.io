@@ -2,10 +2,10 @@
     box-sizing: border-box;
 }
 
-body {
+.body {
+    min-width: 375px;
     font-family: 'Lato', sans-serif;
     @include font($font-weight, $font-size, $line-height);
-
     color: $c-dark;
 }
 
@@ -13,7 +13,7 @@ body {
     display: none;
 }
 
-main {
+.main {
     background-color: $bg-white;
 }
 
@@ -29,10 +29,6 @@ main {
     @include media-phone {
         padding: 0 8px;
     }
-}
-
-.main {
-    min-width: 375px;
 }
 
 .visually-hidden {
