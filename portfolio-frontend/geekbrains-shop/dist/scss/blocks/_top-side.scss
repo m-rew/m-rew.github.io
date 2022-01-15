@@ -6,6 +6,15 @@
     padding: 60px 0;
     background-color: $bg-accent;
 
+    &__wrap {
+        @include flex(space-between, $flex-ai);
+
+        @include media-phone {
+            @include flex($flex-jc, center);
+            flex-direction: column;
+        }
+    }
+
     &__title {
         @include font($font-weight, 24px, 29px);
         text-transform: uppercase;
@@ -15,4 +24,52 @@
             text-align: center;
         }
     }
+
+    &__breadcrumbs-list {
+        @include flex($flex-jc, center)
+    }
+
+    &__breadcrumbs-link {
+        @include font(300, $font-size, $line-height);
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $c-dark-tertiary;
+    }
+
+    &__breadcrumbs-item {
+        @include font(700, $font-size, $line-height);
+        text-transform: uppercase;
+        color: $c-accent;
+        cursor: pointer;
+
+        &:not(:last-child)::after {
+            content: '/';
+            margin: 0 5px;
+            @include font(300, $font-size, $line-height);
+            color: $c-dark-tertiary;
+        }
+    }
+}
+
+/* ------------------------------
+    top-side effects
+------------------------------ */
+
+/* hover */
+
+.top-side__breadcrumbs-link:hover {
+    transition: all .2s;
+    color: $c-accent;
+}
+
+/* active */
+
+.top-side__breadcrumbs-link:active {
+    color: $c-accent-secondary;
+}
+
+/* focus */
+
+.top-side__breadcrumbs-link:focus-visible {
+    outline: 1px solid $c-accent;
 }
