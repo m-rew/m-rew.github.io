@@ -1,0 +1,169 @@
+/* ------------------------------
+    forms
+------------------------------ */
+
+.form {
+    font-weight: 300;
+
+    &__group {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    &__group:not(:first-of-type) {
+        margin-top: 33px;
+    }
+    
+    &__group-title {
+        @include font($font-weight, 16px, 19px);
+    }
+    
+    &__input-wrapper {
+        width: 100%;
+        margin-top: 20px;
+    
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    &__input {
+        width: 100%;
+        padding: 16px;
+    
+        border: none;
+        outline: 1px solid #A4A4A4;
+    
+        @include font($font-weight, 13px, 16px);
+    }
+    
+    &__input:not(:first-of-type) {
+        margin-top: 20px;
+    }
+    
+    &__input::placeholder {
+        color: #B1B1B1;
+    }
+    
+    &__radio-wrapper {
+        @include flex(flex-start, $flex-ai);
+        flex-wrap: wrap;
+    
+        margin-top: 31px;
+    }
+    
+    &__input-radio {
+        display: none;
+    }
+    
+    &__label-radio {
+        @include flex($flex-jc, center);
+    
+        position: relative;
+    
+        @include font($font-weight, 11px, 13px);
+    
+        cursor: pointer;
+    }
+    
+    &__label-radio:not(:last-of-type) {
+        margin-right: 20px
+    }
+    
+    &__label-radio::before {
+        content: '';
+    
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+    
+        margin-right: 10px;
+    
+        outline: 1px solid #A4A4A4;
+        border-radius: 50%;
+    }
+    
+    &__input-radio:checked + &__label-radio::after {
+        content: '';
+    
+        display: block;
+        width: 10px;
+        height: 10px;
+    
+        position: absolute;
+        top: 50%;
+        left: 9px;
+        transform: translate(-50%, -50%);
+    
+        background-color: #A4A4A4;
+        border-radius: 50%;
+    }
+    
+    &__btn-submit {
+        margin-top: 39px;
+        padding: 16px 29px;
+    
+        display: flex;
+        align-items: center;
+    
+        background-color: #F16D7F;
+    
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+    
+        transition: all .2s;
+    }
+    
+    &__btn-submit-icon {
+        display: block;
+        width: 17px;
+        height: 10px;
+    
+        margin-left: 20px;
+    
+        fill: #FFFFFF;
+    }
+}
+
+/* ------------------------------
+    forms effects
+------------------------------ */
+
+/* hover */
+
+.form__subscribe-btn:hover,
+.form__btn-submit:hover {
+    background-color: $c-accent-secondary;
+}
+
+.form__input:hover {
+    box-shadow: 0px 0px 0px 1px $c-accent-secondary inset;
+}
+
+/* active */
+
+.form__subscribe-btn:active,
+.form__btn-submit:active {
+    background-color: $c-accent;
+}
+
+/* focus */
+
+.form__subscribe-input:focus-visible,
+.form__subscribe-btn:focus-visible,
+.form__input:focus-visible {
+    outline: 1px solid $c-accent;
+}
+
+.form__input:focus-visible::placeholder {
+    color: $c-white;
+}
+
+.form__subscribe-input:focus-visible {
+    box-shadow: 0px 0px 0px 1px $c-accent-secondary inset;
+    outline: none;
+
+    background-color: $bg-white;
+}

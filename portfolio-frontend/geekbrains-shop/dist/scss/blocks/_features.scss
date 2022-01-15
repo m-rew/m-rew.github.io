@@ -1,0 +1,68 @@
+/* ------------------------------
+    features section
+------------------------------ */
+
+.features {
+    padding: 100px 0;
+    background-color: $bg-dark;
+
+    @include media-tablet {
+        padding: 48px 0 64px 0;
+    }
+
+    @include media-phone {
+        padding: 48px 0 81px 0;
+    }
+
+    &__list {
+        @include flex(space-between, $flex-ai);
+        flex-wrap: wrap;
+
+        @include media-tablet {
+            @include flex($flex-jc, center);
+            flex-direction: column;
+        }
+    }
+    
+    &__item {
+        width: calc(33.333% - 60px);
+        display: flex;
+        flex-direction: column;
+
+        @include media-tablet {
+            width: 50%;
+        }
+    
+        @include media-phone {
+            width: 100%;
+            padding: 0 8px;
+        }
+    }
+
+    @include media-tablet {
+        &__item:not(:first-child) {
+            margin-top: 48px;
+        }
+    }
+    
+    &__img {
+        display: block;
+        height: 40px;
+    }
+    
+    &__title {
+        width: 100%;
+        margin: 25px 0 0 0;
+        @include font($font-weight, 20px, 24px);
+        text-align: center;
+        color: $c-white;
+    }
+    
+    &__description {
+        width: 100%;
+        margin: 16px 0 0 0;
+        font-weight: 300;
+        text-align: center;
+        color: $c-white;
+    }
+}

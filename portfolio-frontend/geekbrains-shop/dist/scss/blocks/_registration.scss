@@ -1,0 +1,100 @@
+/* ------------------------------
+    registration section
+------------------------------ */
+
+.reg {
+    padding: 64px 0 96px 0;
+
+    @include media-tablet {
+        padding: 40px 0 96px 0;
+    }
+
+    &__wrapper {
+        @include flex(space-between, $flex-ai);
+
+        @include media-phone {
+            @include flex($flex-jc, $flex-ai);
+            flex-direction: column;
+        }
+    }
+
+    &__form {
+        &-wrapper {
+            width: 33.333%;
+
+            @include media-tablet {
+                width: 48.8%;
+            }
+
+            @include media-phone {
+                width: 100%;
+            }
+        }
+
+        &-prompt {
+            margin-top: 15px;
+        
+            @include font($font-weight, 13px, 16px);
+            color: #B1B1B1;
+        }
+    }
+    
+    &__descr {
+        &-wrapper {
+            width: 58.333%;
+            @include font(300, 24px, 29px);
+    
+            @include media-tablet {
+                width: 48.8%;
+            }
+
+            @include media-phone {
+                width: 100%;
+                margin-top: 40px;
+            }
+        }
+
+        &-title {
+            text-transform: uppercase;
+
+            @include media-tablet {
+                @include font(300, 16px, 19px);
+            }
+        }
+        
+        &-text {
+            margin-top: 22px;
+
+            @include media-tablet {
+                margin-top: 32px;
+                @include font(300, 16px, 19px);
+            }
+        }
+        
+        &-list {
+            margin-top: 22px;
+        }
+        
+        &-item {
+            @include flex($flex-jc, center);
+
+            @include media-tablet {
+                @include font(300, 16px, 19px);
+            }
+
+            &:not(:first-child) {
+                margin-top: 16px;
+            }
+            
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 20px;
+                height: 16px;
+                margin-right: 22px;
+                background-image: url('../img/icon/icon-mark-check.svg');
+                background-size: cover;
+            }
+        }
+    }
+}

@@ -14,7 +14,26 @@ $line-height: 17px;
 
 // @include font($font-weight, $font-size, $line-height);
 @mixin font($font-weight, $font-size, $line-height) {
+    font-family: 'Lato', sans-serif;
     font-weight: $font-weight;
     font-size: $font-size;
     line-height: $line-height;
+}
+
+@mixin media-desctop {
+    @media (min-width: 1140px) {
+        @content;
+    }
+}
+
+@mixin media-tablet {
+    @media (max-width: 1139px) {
+        @content;
+    }
+}
+
+@mixin media-phone {
+    @media (max-width: 767px) {
+        @content;
+    }
 }

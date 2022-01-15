@@ -1,0 +1,156 @@
+/* ------------------------------
+    rev-sub section
+------------------------------ */
+
+.rev-sub {
+    padding: 97px 0 156px 0;
+
+    @include media-tablet {
+        padding: 54px 0 219px 0;
+    }
+
+    @include media-phone {
+        padding: 64px 0 110px 0;
+    }
+
+    &--bg {
+        background: linear-gradient(rgba(244,244,244,0.7), rgba(244,244,244,0.7)),url(../img/subscribe/bg-reviews.jpg) left 25% center/cover no-repeat;
+    }
+
+    &__wrapper {
+        @include flex(space-between, center);
+
+        @include media-tablet {
+            @include flex($flex-jc, center);
+            flex-direction: column;
+        }
+    }
+}
+
+/* ------------------------------
+    reviews section
+------------------------------ */
+
+.reviews {
+    width: 50%;
+
+    @include media-phone {
+        width: 100%;
+        padding: 0 8px;
+    }
+}
+
+.reviews__wrapper {
+    width: 66.666%;
+    @include flex($flex-jc, center);
+    flex-direction: column;
+
+    @include media-tablet {
+        width: 100%;
+    }
+}
+
+.reviews__avatar-wrapper {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.reviews__avatar {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.reviews__text {
+    margin: 30px 0 0 0;
+    @include font($font-weight, 20px, 24px);
+    font-style: italic;
+    text-align: center;
+    color: $c-dark-secondary;
+}
+
+/* ------------------------------
+    subscribe section
+------------------------------ */
+
+.subscribe {
+    width: 50%;
+    @include flex(flex-end, $flex-ai);
+
+    @include media-tablet {
+        margin-top: 48px;
+    }
+
+    @include media-phone {
+        width: 100%;
+        margin-top: 59px;
+        padding: 0 8px;
+    }
+
+    @include media-phone {
+        margin-top: 59px;
+    }
+
+    &__wrapper {
+        width: 66.666%;
+        margin: 0 16.666% 0 0;
+        @include flex($flex-jc, center);
+        flex-direction: column;
+
+        @include media-tablet {
+            width: 100%;
+            margin: 0;
+        }
+    }
+    
+    &__title {
+        @include font(700, 24px, 40px);
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    &__subtitle {
+        @include font($font-weight, 18px, 30px);
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+/* ------------------------------
+    subscribe forms
+------------------------------ */
+
+.form__subscribe {
+    width: 100%;
+    margin-top: 32px;
+    display: flex;
+
+    @include media-tablet {
+        margin-top: 27px;
+    }
+
+    @include media-phone {
+        margin-top: 22px;
+    }
+    
+    &-input {
+        padding: 19px;
+        border: none;
+        outline: none;
+        border-radius: 50px 0px 0px 50px;
+        background: $bg-dark-tertiary;
+        color: $c-dark;
+    }
+    
+    &-btn {
+        padding: 20px;
+        margin-left: -1px;
+        color: $c-white;
+        border: none;
+        border-radius: 0px 50px 50px 0px;
+        background-color: $c-accent;
+        transition: all .2s;
+    }
+}

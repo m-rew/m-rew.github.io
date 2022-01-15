@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="css/style.min.css">
 
-    <title>Registration</title>
+    <title>Shopping cart</title>
 </head>
 
 <body class="body">
@@ -63,7 +63,7 @@
     </svg>
     <!-- SVG Icons End -->
 
-    <h1 class="visually-hidden">registration</h1>
+    <h1 class="visually-hidden">Shopping cart</h1>
 
     <!-- Header Section Start -->
     <header class="header header--bg" id="header">
@@ -104,7 +104,7 @@
                             <use xlink:href="#human"></use>
                         </svg>
                     </a>
-                    <a class="header__basket-link" href="cart.html">
+                    <a class="header__basket-link" href="#">
                         <svg class="header__btn-icon" fill="#E8E8E8" width="33" height="29"
                             xmlns="http://www.w3.org/2000/svg">
                             <use xlink:href="#basket"></use>
@@ -211,93 +211,148 @@
         <!-- Top-side Section Start -->
         <section class="top-side">
             <div class="container">
-                <h2 class="top-side__title">registration</h2>
+                <h2 class="top-side__title">Shopping cart</h2>
             </div>
         </section>
         <!-- Brand Section End -->
 
-        <!-- Registration Section Start -->
-        <section class="reg">
-            <div class="container reg__wrapper">
-                <h2 class="visually-hidden">registration</h2>
+        <!-- Cart Section Start -->
+        <section class="cart">
+            <div class="container cart__wrap">
+                <h2 class="visually-hidden">Cart</h2>
 
-                <div class="reg__form-wrapper">
-                    <!-- Form Start -->
-                    <form class="reg__form form" action="#">
-                        <h3 class="visually-hidden">registration form</h3>
+                <!-- Basket Section Start -->
+                <section class="cart__basket basket">
+                    <h3 class="visually-hidden">Basket</h3>
 
-                        <!-- Fieldset Start -->
-                        <fieldset class="form__group">
-                            <legend class="form__group-title">Your Name</legend>
+                    <!-- Basket List Start -->
+                    <ul class="basket__list">
 
-                            <div class="form__input-wrapper">
-                                <label class="visually-hidden" for="reg-form__first-name">First Name</label>
-                                <input class="form__input" id="reg-form__first-name" type="text"
-                                    placeholder="First Name" required>
-
-                                <label class="visually-hidden" for="reg-form__last-name">Last Name</label>
-                                <input class="form__input" id="reg-form__last-name" type="text" placeholder="Last Name"
-                                    required>
+                        <!-- Basket Item Start -->
+                        <li class="basket__item">
+                            <div class="basket__item-img-wrapper">
+                                <img src="./img/cart/item-1.jpg" alt="item-1" class="basket__item-img">
                             </div>
 
-                            <div class="form__radio-wrapper">
-                                <input class="form__input-radio" id="reg-form__male" type="radio"
-                                    name="reg-form__radio-gender">
-                                <label class="form__label-radio" for="reg-form__male">Male</label>
+                            <div class="basket__item-content">
+                                <h4 class="basket__item-title">mango people t&nbsp;-&nbsp;shirt</h4>
 
-                                <input class="form__input-radio" id="reg-form__female" type="radio"
-                                    name="reg-form__radio-gender">
-                                <label class="form__label-radio" for="reg-form__female">Female</label>
+                                <button type="button" class="basket__item-btn-remove"></button>
+
+                                <ul class="basket__item-product-param-list">
+                                    <li class="basket__item-product-param-item">Price:
+                                        <span class="text-accent">$300</span>
+                                    </li>
+                                    <li class="basket__item-product-param-item">
+                                        Color:
+                                        <span class="basket__item-product-param-item-secondary">Red</span>
+                                    </li>
+                                    <li class="basket__item-product-param-item">Size:
+                                        <span class="basket__item-product-param-item-secondary">Xl</span>
+                                    </li>
+                                    <li class="basket__item-product-param-item basket__item-product-param-item--flex">
+                                        <label for="basket__item-product-param-quantity">Quantity:</label>
+                                        <input id="basket__item-product-param-quantity"
+                                            class="form__input basket__item-product-param-quantity-input" type="number"
+                                            value="2">
+                                    </li>
+                                </ul>
                             </div>
-                        </fieldset>
-                        <!-- Fieldset End -->
+                        </li>
+                        <!-- Basket Item End -->
 
-                        <!-- Fieldset Start -->
-                        <fieldset class="form__group">
-                            <legend class="form__group-title">Login details</legend>
-
-                            <div class="form__input-wrapper">
-                                <label class="visually-hidden" for="reg-form__email">Email</label>
-                                <input class="form__input" id="reg-form__email" type="email" placeholder="Email"
-                                    required>
-
-                                <label class="visually-hidden" for="reg-form__password">Password</label>
-                                <input class="form__input" id="reg-form__password" type="password"
-                                    placeholder="Password" required>
-                                <p class="reg__form-prompt">Please use 8 or more characters, with at least 1 number and
-                                    a
-                                    mixture of uppercase and lowercase letters</p>
+                        <!-- Basket Item Start -->
+                        <li class="basket__item">
+                            <div class="basket__item-img-wrapper">
+                                <img src="./img/cart/item-2.jpg" alt="item-2" class="basket__item-img">
                             </div>
-                        </fieldset>
-                        <!-- Fieldset End -->
 
-                        <button class="btn form__btn-submit" type="submit">
-                            <span>join now</span>
-                            <svg class="form__btn-submit-icon" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#long-arrow-right"></use>
-                            </svg>
-                        </button>
+                            <div class="basket__item-content">
+                                <h4 class="basket__item-title">mango people t&nbsp;-&nbsp;shirt</h4>
 
-                    </form>
-                    <!-- Form End -->
-                </div>
+                                <button type="button" class="basket__item-btn-remove"></button>
 
-                <div class="reg__descr-wrapper">
-                    <h3 class="reg__descr-title">loyalty has its perks</h3>
-                    <p class="reg__descr-text">Get in on the loyalty program where you can earn points and unlock
-                        serious
-                        perks. Starting with these as soon as you join:</p>
-                    <ul class="reg__descr-list">
-                        <li class="reg__descr-item">15% off welcome offer</li>
-                        <li class="reg__descr-item">Free shipping, returns and exchanges on all orders</li>
-                        <li class="reg__descr-item">$10 off a purchase on your birthday</li>
-                        <li class="reg__descr-item">Early access to products</li>
-                        <li class="reg__descr-item">Exclusive offers & rewards</li>
+                                <ul class="basket__item-product-param-list">
+                                    <li class="basket__item-product-param-item">Price:
+                                        <span class="text-accent">$300</span>
+                                    </li>
+                                    <li class="basket__item-product-param-item">
+                                        Color:
+                                        <span class="basket__item-product-param-item-secondary">Red</span>
+                                    </li>
+                                    <li class="basket__item-product-param-item">Size:
+                                        <span class="basket__item-product-param-item-secondary">Xl</span>
+                                    </li>
+                                    <li class="basket__item-product-param-item basket__item-product-param-item--flex">
+                                        <label for="basket__item-product-param-quantity">Quantity:</label>
+                                        <input id="basket__item-product-param-quantity"
+                                            class="form__input basket__item-product-param-quantity-input" type="number"
+                                            value="2">
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Basket Item End -->
+
                     </ul>
-                </div>
+                    <!-- Basket List End -->
+
+                    <div class="basket__btn-wrapper">
+                        <button class="btn basket__btn-secondary" type="button">clear shopping cart</button>
+                        <a href="catalog.html" class="btn basket__btn-secondary">continue shopping</a>
+                    </div>
+                </section>
+                <!-- Basket Section End -->
+
+                <section class="cart__form-buy">
+                    <h3 class="visually-hidden">Product purchase</h3>
+
+                    <!-- Form Cart Start -->
+                    <form action="#" class="form cart-form">
+                        <h4 class="visually-hidden">Product purchase form</h4>
+
+                        <!-- Fieldset Cart Start -->
+                        <fieldset class="form__group cart-form__group">
+                            <legend class="form__group-title cart-form__group-title">shipping adress</legend>
+
+                            <div class="form__input-wrapper">
+                                <label class="visually-hidden" for="cart__form-city">City</label>
+                                <input class="form__input" id="cart__form-city" type="text" placeholder="Bangladesh"
+                                    required>
+
+                                <label class="visually-hidden" for="cart__form-state">State</label>
+                                <input class="form__input" id="cart__form-state" type="text" placeholder="State"
+                                    required>
+
+                                <label class="visually-hidden" for="cart__form-zip">Postcode / Zip</label>
+                                <input class="form__input" id="cart__form-zip" type="text" placeholder="Postcode / Zip"
+                                    required>
+                            </div>
+                        </fieldset>
+                        <!-- Fieldset Cart End -->
+
+                        <button class="btn cart-form__btn-secondary" type="button">get a quote</button>
+
+                        <div class="cart-form__order">
+                            <p class="cart-form__order-sub-total">
+                                sub total
+                                <span class="cart-form__order-sub-total-price">$900</span>
+                            </p>
+                            <p class="cart-form__order-grand-total">
+                                grand total
+                                <span class="cart-form__order-grand-total-price text-accent">$900</span>
+                            </p>
+
+                            <div class="line-hr"></div>
+
+                            <button class="btn cart-form__btn-accent" type="submit">proceed to checkout</button>
+                        </div>
+                    </form>
+                    <!-- Form Cart End -->
+                </section>
             </div>
         </section>
-        <!-- Registration Section End -->
+        <!-- Cart Section End -->
 
         <!-- Subscribe Section Start -->
         <section class="rev-sub rev-sub--bg">

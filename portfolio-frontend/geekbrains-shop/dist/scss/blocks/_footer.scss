@@ -1,0 +1,95 @@
+/* ------------------------------
+    footer
+------------------------------ */
+
+.footer {
+    min-height: 79px;
+    padding: 25px 0;
+    background-color: $bg-dark;
+
+    @include media-phone {
+        padding: 43px 0 9px 0;
+    }
+
+    &__wrapper {
+        padding: 0 15px;
+        @include flex(space-between, center);
+
+        @include media-phone {
+            @include flex($flex-jc, center);
+            flex-direction: column;
+        }
+    }
+    
+    &__copyright {
+        font-size: 16px;
+        color: $c-white;
+
+        @include media-phone {
+            margin-top: 40px;
+            order: 1;
+        }
+    }
+}
+
+.social {
+    @include media-phone {
+        order: 0;
+    }
+
+    &__list {
+        display: flex;
+    }
+    
+    &__item {
+        width: 32px;
+        height: 32px;
+        @include flex(center, center);
+        background-color: $bg-white;
+        transition: all .2s;
+        cursor: pointer;
+    }
+    
+    &__item:not(:last-child) {
+        margin: 0 8px 0 0;
+    }
+    
+    &__link {
+        @include flex($flex-jc, center);
+        text-decoration: none;
+        transition: all .2s;
+    }
+    
+    &__icon {
+        transition: all .2s;
+        fill: #000000;
+    }
+}
+
+/* ------------------------------
+    footer effects
+------------------------------ */
+
+/* hover */
+
+.social__item:hover .social__icon {
+    fill: $c-white;
+}
+.social__item:hover {
+    background-color: $c-accent;
+}
+
+/* active */
+
+.social__item:active .social__icon {
+    fill: $c-white;
+}
+.social__item:active {
+    background-color: $c-accent-secondary;
+}
+
+/* focus */
+
+.social__link:focus-visible {
+    outline: 1px solid $c-accent;
+}
