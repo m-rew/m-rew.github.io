@@ -24,6 +24,15 @@
         text-align: center;
         color: $c-dark-tertiary;
     }
+
+    // for product.html
+    &--last-products {
+        padding: 128px 0;
+
+        @include media-phone {
+            padding: 64px 0;
+        }
+    }
     
     &__list {
         margin-top: 48px;
@@ -36,6 +45,11 @@
 
         @include media-phone {
             margin-top: 65px;
+        }
+
+        // for product.html
+        &--last-products {
+            margin-top: 0;
         }
     }
     
