@@ -46,8 +46,12 @@
 
 /* hover */
 
+.gallery__control-prev .gallery__nav-icon,
+.gallery__control-next .gallery__nav-icon {
+    transition: all .2s;
+}
+
 .gallery__control-prev:hover .gallery__nav-icon,
 .gallery__control-next:hover .gallery__nav-icon {
-    transition: all .2s;
     color: $c-accent;
 }

@@ -153,14 +153,20 @@
 
 /* hover */
 
-.product-info__btn:hover {
+.product-info__btn {
     transition: all .2s;
+}
+
+.product-info__btn:hover {
     border-color: $c-accent-secondary;
     color: $c-accent-secondary;
 }
 
-.product-info__btn:hover .product-info__btn-icon {
+.product-info__btn .product-info__btn-icon {
     transition: all .2s;
+}
+
+.product-info__btn:hover .product-info__btn-icon {
     fill: $c-accent-secondary;
 }
 
