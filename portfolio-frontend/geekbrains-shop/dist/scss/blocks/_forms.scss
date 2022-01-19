@@ -133,7 +133,7 @@
 
 /* hover */
 
-.form__subscribe-btn:hover,
+.subscribe__form-btn:hover,
 .form__btn-submit:hover {
     background-color: $c-accent-secondary;
     color: $c-white;
@@ -145,15 +145,15 @@
 
 /* active */
 
-.form__subscribe-btn:active,
+.subscribe__form-btn:active,
 .form__btn-submit:active {
     background-color: $c-accent;
 }
 
 /* focus */
 
-.form__subscribe-input:focus-visible,
-.form__subscribe-btn:focus-visible,
+.subscribe__form-input:focus-visible,
+.subscribe__form-btn:focus-visible,
 .form__input:focus-visible {
     outline: 1px solid $c-accent;
 }
@@ -162,7 +162,7 @@
     color: $c-white;
 }
 
-.form__subscribe-input:focus-visible {
+.subscribe__form-input:focus-visible {
     box-shadow: 0px 0px 0px 1px $c-accent-secondary inset;
     outline: none;
 

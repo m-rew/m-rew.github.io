@@ -116,41 +116,41 @@
         text-transform: uppercase;
         text-align: center;
     }
-}
 
-/* ------------------------------
-    subscribe forms
------------------------------- */
+    /* ------------------------------
+        subscribe forms
+    ------------------------------ */
 
-.form__subscribe {
-    width: 100%;
-    margin-top: 32px;
-    display: flex;
-
-    @include media-tablet {
-        margin-top: 27px;
-    }
-
-    @include media-phone {
-        margin-top: 22px;
-    }
+    &__form {
+        width: 100%;
+        margin-top: 32px;
+        display: flex;
     
-    &-input {
-        padding: 19px;
-        border: none;
-        outline: none;
-        border-radius: 50px 0px 0px 50px;
-        background: $bg-dark-tertiary;
-        color: $c-dark;
-    }
+        @include media-tablet {
+            margin-top: 27px;
+        }
     
-    &-btn {
-        padding: 20px;
-        margin-left: -1px;
-        color: $c-white;
-        border: none;
-        border-radius: 0px 50px 50px 0px;
-        background-color: $c-accent;
-        transition: all .2s;
+        @include media-phone {
+            margin-top: 22px;
+        }
+        
+        &-input {
+            padding: 19px;
+            border: none;
+            outline: none;
+            border-radius: 50px 0px 0px 50px;
+            background: $bg-dark-tertiary;
+            color: $c-dark;
+        }
+        
+        &-btn {
+            padding: 20px;
+            margin-left: -1px;
+            color: $c-white;
+            border: none;
+            border-radius: 0px 50px 50px 0px;
+            background-color: $c-accent;
+            transition: all .2s;
+        }
     }
 }
