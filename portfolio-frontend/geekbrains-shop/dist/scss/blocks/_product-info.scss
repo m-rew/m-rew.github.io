@@ -84,35 +84,16 @@
         margin: 65px 0;
     }
 
-    &__label {
-        position: relative;
-    }
-
     &__select {
-        appearance: none;
-        padding: 7px 31px 7px 11px;
-        width: 100%;
-        border: none;
-        border-radius: 3px;
-        background: transparent;
-        cursor: pointer;
-        text-transform: uppercase;
-        color: $c-dark-tertiary;
-        transition: all .2s;
-        position: relative;
-        z-index: 2;
+        margin-right: 23px;
+        @include flex(center, $flex-ai);
 
-        @include media-phone {
-            @include font($font-weight, 10px, 12px);
+        &:last-child {
+            margin-right: 0;
         }
 
-        &-option {
-            padding: 10px;
-            color: #223254;
-        }
-
-        &-option:first-child {
-            display: none;
+        &-list {
+            @include flex(center, $flex-ai);
         }
     }
 
@@ -153,14 +134,20 @@
 
 /* hover */
 
-.product-info__btn:hover {
+.product-info__btn {
     transition: all .2s;
+}
+
+.product-info__btn:hover {
     border-color: $c-accent-secondary;
     color: $c-accent-secondary;
 }
 
-.product-info__btn:hover .product-info__btn-icon {
+.product-info__btn .product-info__btn-icon {
     transition: all .2s;
+}
+
+.product-info__btn:hover .product-info__btn-icon {
     fill: $c-accent-secondary;
 }
 

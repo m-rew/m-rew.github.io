@@ -129,7 +129,6 @@
     z-index: 100;
     display: none;
     background-color: $bg-white;
-    transition: max-width 0.6s;
 
     @include media-phone {
         width: 100%;
@@ -232,16 +231,25 @@
 
 /* hover */
 
+.header__search-btn .header__btn-icon,
+.header__menu-btn .header__btn-icon,
+.header__login-link .header__btn-icon,
+.header__basket-link .header__btn-icon {
+    transition: fill .2s;
+}
+
 .header__search-btn:hover .header__btn-icon,
 .header__menu-btn:hover .header__btn-icon,
 .header__login-link:hover .header__btn-icon,
 .header__basket-link:hover .header__btn-icon {
-    transition: fill .2s;
     fill: $c-accent;
 }
 
-.submenu__item-link:hover {
+.submenu__item-link {
     transition: color .2s;
+}
+
+.submenu__item-link:hover {
     color: $c-accent;
 }
 
