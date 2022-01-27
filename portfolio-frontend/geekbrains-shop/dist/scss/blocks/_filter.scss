@@ -17,7 +17,9 @@
         }
 
         .select__list {
-            left: 0;
+            min-width: 0;
+            width: calc(100% - 16px);
+            left: 8px;
         }
     }
 
@@ -25,14 +27,25 @@
         display: grid;
         grid-template-columns: 1fr 2fr;
 
+        @include media-tablet {
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
         @include media-phone {
             grid-template-columns: 50px 1fr;
+            gap: 0;
             position: relative;
         }
     }
 
     &__menu {
+        margin-right: 20px;
         position: relative;
+
+        @include media-tablet {
+            margin-right: 0;
+        }
 
         @include media-phone {
             position: static;
@@ -68,7 +81,7 @@
         @include media-phone {
             width: 37px;
             height: 25px;
-            margin-left: 0;
+            margin-left: 8px;
         }
     }
 
@@ -86,6 +99,10 @@
         
         &--active {
             display: block;
+        }
+
+        @include media-phone {
+            width: calc(100% - 16px);
         }
     }
 

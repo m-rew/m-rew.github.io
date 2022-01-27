@@ -162,3 +162,12 @@
 .products-catalog__pagination-link:hover {
     color: $c-accent;
 }
+
+.products-catalog__button-add:hover {
+    border-color: $c-accent;
+    color: $c-accent;
+}
+
+.products-catalog__button-add:hover .products-catalog__button-add-icon {
+    fill: $c-accent;
+}
