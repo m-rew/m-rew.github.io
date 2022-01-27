@@ -62,6 +62,21 @@
         z-index: 2;
         cursor: pointer;
 
+        &--active {
+            
+            & + .filter__menu-list-wrap {
+                display: block;
+            }
+
+            & .filter__menu-title {
+                color: $c-accent;
+            }
+
+            & .filter__menu-icon {
+                fill: $c-accent;
+            }
+        }
+
         @include media-phone {
             margin-left: 0;
             left: 0;
@@ -96,10 +111,6 @@
         z-index: 1;
         background: #FFFFFF;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-        
-        &--active {
-            display: block;
-        }
 
         @include media-phone {
             width: calc(100% - 16px);

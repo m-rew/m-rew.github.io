@@ -132,6 +132,7 @@
 
     &__icon-down {
         margin-left: 10px;
+        transition: all .2s;
     }
 
     &__btn {
@@ -140,11 +141,13 @@
         background-color: transparent;
         text-transform: uppercase;
         color: $c-dark-tertiary;
+        cursor: pointer;
     }
 
     &__title {
         text-transform: uppercase;
         color: $c-dark-tertiary;
+        transition: all .2s;
 
         @include media-phone {
             @include font($font-weight, 12px, 14px);
@@ -212,7 +215,20 @@
     }
 
     &--active {
-        display: block;
+
+        & .select__title {
+            color: $c-accent;
+        }
+
+        & .select__icon-down {
+            fill: $c-accent;
+            transform: rotate(180deg);
+        }
+
+        & .select__list {
+            display: block;
+        }
+        
     }
 }
 
@@ -231,6 +247,14 @@
 
 .form__input:hover {
     box-shadow: 0px 0px 0px 1px $c-accent-secondary inset;
+}
+
+.select__btn:hover .select__title {
+    color: $c-accent;
+}
+
+.select__btn:hover .select__icon-down {
+    fill: $c-accent;
 }
 
 /* active */
