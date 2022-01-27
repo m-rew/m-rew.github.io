@@ -145,16 +145,23 @@
     &__title {
         text-transform: uppercase;
         color: $c-dark-tertiary;
+
+        @include media-phone {
+            @include font($font-weight, 12px, 14px);
+        }
     }
 
     &__list {
-        width: 100%;
+        min-width: 100%;
+        width: fit-content;
         padding: 5px 0;
+        padding-right: 22px;
         @include flex($flex-jc, $flex-ai);
         flex-wrap: wrap;
         background: $bg-white;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
         position: absolute;
+        z-index: 1;
         top: calc(100% + 5px);
         display: none;
     }
