@@ -85,24 +85,28 @@
             position: relative;
             background: url('../img/categories/cat-for-woman.jpg')
                         center top/cover no-repeat;
+            background-color: $c-accent;
         }
         
         &--bg-man {
             position: relative;
             background: url('../img/categories/cat-for-man.jpg')
                         center top/cover no-repeat;
+            background-color: $c-accent;
         }
         
         &--bg-kids {
             position: relative;
             background: url('../img/categories/cat-for-kids.jpg')
                         center top/cover no-repeat;
+            background-color: $c-accent;
         }
         
         &--bg-accesories {
             position: relative;
             background: url('../img/categories/cat-accesories.jpg')
                         center top/cover no-repeat;
+            background-color: $c-accent;
         }
         
         &--bg-woman::after,
@@ -135,12 +139,14 @@
     &__offer {
         @include font($font-weight, 16px, 19px);
         color: $c-white;
+        text-align: center;
     }
     
     &__title {
         margin-top: 10px;
         @include font(700px, 24px, 29px);
         color: $c-accent;
+        text-align: center;
     
         @include media-tablet {
             margin-top: 5px;

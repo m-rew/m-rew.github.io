@@ -15,6 +15,7 @@
 
     &--bg {
         background: linear-gradient(rgba(244,244,244,0.7), rgba(244,244,244,0.7)),url(../img/subscribe/bg-reviews.jpg) left 25% center/cover no-repeat;
+        background-color: $c-accent;
     }
 
     &__wrapper {
