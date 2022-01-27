@@ -84,6 +84,24 @@
         margin: 65px 0;
     }
 
+    &__select-list {
+        
+
+        @include media-phone {
+            position: relative;
+
+            & .select {
+                position: static;
+            }
+
+            & .select__list {
+                min-width: 0;
+                width: calc(100% - 16px);
+                left: 8px;
+            }
+        }
+    }
+
     &__select {
         margin-right: 23px;
         @include flex(center, $flex-ai);
