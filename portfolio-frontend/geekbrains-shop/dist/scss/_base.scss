@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-.body {
+body {
     min-width: 375px;
     font-family: 'Lato', sans-serif;
     @include font($font-weight, $font-size, $line-height);
@@ -55,6 +55,7 @@
     @include font(400, 14px, 17px);
     text-decoration: none;
     color: $c-accent;
+    text-align: center;
 
     cursor: pointer;
 }

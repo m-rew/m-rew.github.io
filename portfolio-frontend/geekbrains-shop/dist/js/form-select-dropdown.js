@@ -1,11 +1,11 @@
 let selectBtn1 = document.querySelector('#select__btn-1');
-let selectList1 = document.querySelector('#select__list-1');
+let selectList1 = document.querySelector('#select-1');
 
 let selectBtn2 = document.querySelector('#select__btn-2');
-let selectList2 = document.querySelector('#select__list-2');
+let selectList2 = document.querySelector('#select-2');
 
 let selectBtn3 = document.querySelector('#select__btn-3');
-let selectList3 = document.querySelector('#select__list-3');
+let selectList3 = document.querySelector('#select-3');
 
 selectBtn1.addEventListener('click', function () {
     selectList1.classList.toggle('select--active');

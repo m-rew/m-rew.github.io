@@ -12,10 +12,10 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.min.css">
 
-    <title>Shopping cart</title>
+    <title>Product</title>
 </head>
 
-<body class="body">
+<body>
 
     <!-- SVG Icons Start -->
     <svg class="display-none" xmlns="http://www.w3.org/2000/svg">
@@ -72,7 +72,7 @@
     </svg>
     <!-- SVG Icons End -->
 
-    <h1 class="visually-hidden">new arrivals</h1>
+    <h1 class="visually-hidden">Product</h1>
 
     <!-- Header Section Start -->
     <header class="header header--bg" id="header">
@@ -199,7 +199,7 @@
                             <use xlink:href="#human"></use>
                         </svg>
                     </a>
-                    <a class="header__basket-link" href="#">
+                    <a class="header__basket-link" href="cart.html">
                         <svg class="header__btn-icon" fill="#E8E8E8" width="33" height="29"
                             xmlns="http://www.w3.org/2000/svg">
                             <use xlink:href="#basket"></use>
@@ -276,118 +276,123 @@
 
                     <div class="line-hr product-info__line-hr"></div>
 
-                    <!-- Select List Start -->
-                    <div class="product-info__select-list">
+                    <form action="#">
+                        <!-- Select List Start -->
+                        <div class="product-info__select-list">
 
-                        <!-- Select Item Start -->
-                        <div class="product-info__select select" for="select-color">
-                            <button id="select__btn-1" class="select__btn" type="button">
-                                <p class="select__title">choose color</p>
-                                <svg class="select__icon-down" width="11" height="6" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="#icon-arrow-down"></use>
-                                </svg>
-                            </button>
+                            <!-- Select Item Start -->
+                            <div id="select-1" class="product-info__select select">
+                                <button id="select__btn-1" class="select__btn" type="button">
+                                    <p class="select__title">choose color</p>
+                                    <svg class="select__icon-down" width="11" height="6"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="#icon-arrow-down"></use>
+                                    </svg>
+                                </button>
 
-                            <ul id="select__list-1" class="select__list">
-                                <li class="select__item">
-                                    <input id="choose-color-1" class="select__input-radio" type="radio"
-                                        name="choose-color" value="1">
-                                    <label class="select__label" for="choose-color-1">black</label>
-                                </li>
-                                <li class="select__item">
-                                    <input id="choose-color-2" class="select__input-radio" type="radio"
-                                        name="choose-color" value="2">
-                                    <label class="select__label" for="choose-color-2">white</label>
-                                </li>
-                                <li class="select__item">
-                                    <input id="choose-color-3" class="select__input-radio" type="radio"
-                                        name="choose-color" value="3">
-                                    <label class="select__label" for="choose-color-3">red</label>
-                                </li>
-                            </ul>
+                                <ul class="select__list">
+                                    <li class="select__item">
+                                        <input id="choose-color-1" class="select__input-radio" type="radio"
+                                            name="choose-color" value="1" required>
+                                        <label class="select__label" for="choose-color-1">black</label>
+                                    </li>
+                                    <li class="select__item">
+                                        <input id="choose-color-2" class="select__input-radio" type="radio"
+                                            name="choose-color" value="2" required>
+                                        <label class="select__label" for="choose-color-2">white</label>
+                                    </li>
+                                    <li class="select__item">
+                                        <input id="choose-color-3" class="select__input-radio" type="radio"
+                                            name="choose-color" value="3" required>
+                                        <label class="select__label" for="choose-color-3">red</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Select Item End -->
+
+                            <!-- Select Item Start -->
+                            <div id="select-2" class="product-info__select select">
+                                <button id="select__btn-2" class="select__btn" type="button">
+                                    <p class="select__title">choose size</p>
+                                    <svg class="select__icon-down" width="11" height="6"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="#icon-arrow-down"></use>
+                                    </svg>
+                                </button>
+
+                                <ul class="select__list">
+                                    <li class="select__item">
+                                        <input id="choose-size-1" class="select__input-radio" type="radio"
+                                            name="choose-size" value="1" required>
+                                        <label class="select__label" for="choose-size-1">XS</label>
+                                    </li>
+                                    <li class="select__item">
+                                        <input id="choose-size-2" class="select__input-radio" type="radio"
+                                            name="choose-size" value="2" required>
+                                        <label class="select__label" for="choose-size-2">S</label>
+                                    </li>
+                                    <li class="select__item">
+                                        <input id="choose-size-3" class="select__input-radio" type="radio"
+                                            name="choose-size" value="3" required>
+                                        <label class="select__label" for="choose-size-3">M</label>
+                                    </li>
+                                    <li class="select__item">
+                                        <input id="choose-size-4" class="select__input-radio" type="radio"
+                                            name="choose-size" value="3" required>
+                                        <label class="select__label" for="choose-size-4">L</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Select Item End -->
+
+                            <!-- Select Item Start -->
+                            <div id="select-3" class="product-info__select select">
+                                <button id="select__btn-3" class="select__btn" type="button">
+                                    <p class="select__title">quantity</p>
+                                    <svg class="select__icon-down" width="11" height="6"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="#icon-arrow-down"></use>
+                                    </svg>
+                                </button>
+
+                                <ul class="select__list">
+                                    <li class="select__item">
+                                        <input id="quantity-1" class="select__input-radio" type="radio" name="quantity"
+                                            value="1" required>
+                                        <label class="select__label" for="quantity-1">1</label>
+                                    </li>
+                                    <li class="select__item">
+                                        <input id="quantity-2" class="select__input-radio" type="radio" name="quantity"
+                                            value="2" required>
+                                        <label class="select__label" for="quantity-2">2</label>
+                                    </li>
+                                    <li class="select__item">
+                                        <input id="quantity-3" class="select__input-radio" type="radio" name="quantity"
+                                            value="3" required>
+                                        <label class="select__label" for="quantity-3">5</label>
+                                    </li>
+                                    <li class="select__item">
+                                        <input id="quantity-4" class="select__input-radio" type="radio" name="quantity"
+                                            value="3" required>
+                                        <label class="select__label" for="quantity-4">10</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Select Item End -->
+
                         </div>
-                        <!-- Select Item End -->
+                        <!-- Select List End -->
 
-                        <!-- Select Item Start -->
-                        <div class="product-info__select select" for="select-color">
-                            <button id="select__btn-2" class="select__btn" type="button">
-                                <p class="select__title">choose size</p>
-                                <svg class="select__icon-down" width="11" height="6" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="#icon-arrow-down"></use>
+                        <div class="product-info__btn-wrap">
+                            <button class="product-info__btn" type="submit">
+                                <svg class="product-info__btn-icon" width="26" height="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="#basket"></use>
                                 </svg>
+                                Add to Cart
                             </button>
-
-                            <ul id="select__list-2" class="select__list">
-                                <li class="select__item">
-                                    <input id="choose-size-1" class="select__input-radio" type="radio"
-                                        name="choose-size" value="1">
-                                    <label class="select__label" for="choose-size-1">XS</label>
-                                </li>
-                                <li class="select__item">
-                                    <input id="choose-size-2" class="select__input-radio" type="radio"
-                                        name="choose-size" value="2">
-                                    <label class="select__label" for="choose-size-2">S</label>
-                                </li>
-                                <li class="select__item">
-                                    <input id="choose-size-3" class="select__input-radio" type="radio"
-                                        name="choose-size" value="3">
-                                    <label class="select__label" for="choose-size-3">M</label>
-                                </li>
-                                <li class="select__item">
-                                    <input id="choose-size-4" class="select__input-radio" type="radio"
-                                        name="choose-size" value="3">
-                                    <label class="select__label" for="choose-size-4">L</label>
-                                </li>
-                            </ul>
                         </div>
-                        <!-- Select Item End -->
-
-                        <!-- Select Item Start -->
-                        <div class="product-info__select select" for="select-color">
-                            <button id="select__btn-3" class="select__btn" type="button">
-                                <p class="select__title">quantity</p>
-                                <svg class="select__icon-down" width="11" height="6" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="#icon-arrow-down"></use>
-                                </svg>
-                            </button>
-
-                            <ul id="select__list-3" class="select__list">
-                                <li class="select__item">
-                                    <input id="quantity-1" class="select__input-radio" type="radio" name="quantity"
-                                        value="1">
-                                    <label class="select__label" for="quantity-1">1</label>
-                                </li>
-                                <li class="select__item">
-                                    <input id="quantity-2" class="select__input-radio" type="radio" name="quantity"
-                                        value="2">
-                                    <label class="select__label" for="quantity-2">2</label>
-                                </li>
-                                <li class="select__item">
-                                    <input id="quantity-3" class="select__input-radio" type="radio" name="quantity"
-                                        value="3">
-                                    <label class="select__label" for="quantity-3">5</label>
-                                </li>
-                                <li class="select__item">
-                                    <input id="quantity-4" class="select__input-radio" type="radio" name="quantity"
-                                        value="3">
-                                    <label class="select__label" for="quantity-4">10</label>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- Select Item End -->
-
-                    </div>
-                    <!-- Select List End -->
-
-                    <div class="product-info__btn-wrap">
-                        <button class="product-info__btn" type="button">
-                            <svg class="product-info__btn-icon" width="26" height="24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#basket"></use>
-                            </svg>
-                            Add to Cart
-                        </button>
-                    </div>
+                    </form>
                 </div>
             </div>
         </section>

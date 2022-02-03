@@ -76,7 +76,8 @@
         }
         
         &-item {
-            @include flex($flex-jc, center);
+            position: relative;
+            margin-left: 42px;
 
             @include media-tablet {
                 @include font(300, 16px, 19px);
@@ -91,7 +92,9 @@
                 display: inline-block;
                 width: 20px;
                 height: 16px;
-                margin-right: 22px;
+                position: absolute;
+                left: -42px;
+                top: 5px;
                 background-image: url('../img/icon/icon-mark-check.svg');
                 background-size: cover;
             }

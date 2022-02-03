@@ -56,9 +56,8 @@
     }
     
     &__label-radio {
-        @include flex($flex-jc, center);
-    
         position: relative;
+        margin-left: 28px;
     
         @include font($font-weight, 11px, 13px);
     
@@ -76,7 +75,10 @@
         width: 18px;
         height: 18px;
     
-        margin-right: 10px;
+        position: absolute;
+        left: -28px;
+        top: 50%;
+        transform: translateY(-50%);
     
         outline: 1px solid #A4A4A4;
         border-radius: 50%;
@@ -91,7 +93,7 @@
     
         position: absolute;
         top: 50%;
-        left: 9px;
+        left: -19px;
         transform: translate(-50%, -50%);
     
         background-color: #A4A4A4;
@@ -132,6 +134,7 @@
 
     &__icon-down {
         margin-left: 10px;
+        transition: all .2s;
     }
 
     &__btn {
@@ -140,21 +143,30 @@
         background-color: transparent;
         text-transform: uppercase;
         color: $c-dark-tertiary;
+        cursor: pointer;
     }
 
     &__title {
         text-transform: uppercase;
         color: $c-dark-tertiary;
+        transition: all .2s;
+
+        @include media-phone {
+            @include font($font-weight, 12px, 14px);
+        }
     }
 
     &__list {
-        width: 100%;
+        min-width: 100%;
+        width: fit-content;
         padding: 5px 0;
+        padding-right: 22px;
         @include flex($flex-jc, $flex-ai);
         flex-wrap: wrap;
         background: $bg-white;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
         position: absolute;
+        z-index: 1;
         top: calc(100% + 5px);
         display: none;
     }
@@ -205,7 +217,20 @@
     }
 
     &--active {
-        display: block;
+
+        & .select__title {
+            color: $c-accent;
+        }
+
+        & .select__icon-down {
+            fill: $c-accent;
+            transform: rotate(180deg);
+        }
+
+        & .select__list {
+            display: block;
+        }
+        
     }
 }
 
@@ -224,6 +249,14 @@
 
 .form__input:hover {
     box-shadow: 0px 0px 0px 1px $c-accent-secondary inset;
+}
+
+.select__btn:hover .select__title {
+    color: $c-accent;
+}
+
+.select__btn:hover .select__icon-down {
+    fill: $c-accent;
 }
 
 /* active */
