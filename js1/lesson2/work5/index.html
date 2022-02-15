@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        'use strict';
+
+        /* 
+            Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),
+            где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от
+            переданного значения операции (использовать switch) выполнить одну из арифметических
+            операций
+            (использовать функции из задания 4) и вернуть полученное значение
+        */
+
+        function getPlus(a, b) {
+            return a + b;
+        }
+
+        function getMinus(a, b) {
+            return a - b;
+        }
+
+        function getMultiply(a, b) {
+            return a * b;
+        }
+
+        function getDivide(a, b) {
+            return a / b;
+        }
+
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case '+':
+                    return getPlus(arg1, arg2);
+                case '-':
+                    return getMinus(arg1, arg2);
+                case '*':
+                    return getMultiply(arg1, arg2);
+                case '/':
+                    return getDivide(arg1, arg2);
+            }
+        }
+
+        console.log(mathOperation(5, 5, '*'));
+
+    </script>
+
+</body>
+
+</html>
