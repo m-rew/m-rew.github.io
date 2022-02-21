@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        'use strict';
+
+        /*
+            1.2 (это обязательное задание) Сделайте в стиле es5, а затем в стиле es6 (по аналогии из дополнительных
+            видео -> 3 примеры наследования -> механика наследования),
+            а) конструктор Post, который принимает параметры author, text, date и сохраняет их как свойства объекта. Объекты
+            типа Post должны иметь метод edit, который будет принимать текст и записывать его в свойство text объекта.
+            б) конструктор AttachedPost, который принимает параметры author, text, date. Проинициализируйте эти свойства с
+            помощью конструктора Post, чтобы не дублировать код. Также в конструкторе AttachedPost должно создаваться
+            свойство highlighted со значением false. Унаследуйте в объектах типа AttachedPost методы из Post.
+            Объекты типа AttachedPost должны иметь метод makeTextHighlighted, который будет назначать свойству
+            highlighted значение true.
+        */
+
+        // es5 a
+
+        function Post(author, text) {
+            this.author = author;
+            this.text = text;
+            this.date = new Date();
+        }
+
+        Post.prototype.edit = function () {
+            let newText = prompt('Введите новый текст к записи:');
+            this.text = newText;
+            this.dateEdit = new Date();
+        }
+
+        let post1 = new Post('Андрей', 'Lorem ipsum dolor sit amet.');
+
+        post1.edit();
+
+        console.log(post1);
+
+        // es6 a
+
+        class Post2 {
+            constructor(author, text) {
+                this.author = author;
+                this.text = text;
+                this.date = new Date();
+            }
+
+            edit() {
+                let newText = prompt('Введите новый текст к записи:');
+                this.text = newText;
+                this.dateEdit = new Date();
+            }
+        }
+
+        let post2 = new Post2('Андрей', 'Lorem ipsum dolor sit amet.');
+
+        post2.edit();
+
+        console.log(post2);
+
+        // es5 б
+
+        function AttachedPost(author, text) {
+            Post.call(this, author, text);
+            this.highlighted = false;
+        }
+
+        AttachedPost.prototype = Post.prototype;
+        AttachedPost.prototype.constructor = AttachedPost;
+
+        AttachedPost.prototype.makeTextHighlighted = function () {
+            this.highlighted = true;
+        }
+
+        let AttachedPost1 = new AttachedPost('Евгений', 'Лорем ...');
+
+        AttachedPost1.makeTextHighlighted();
+        AttachedPost1.edit();
+
+        console.log(AttachedPost1);
+
+        // es6 б
+
+        class AttachedPost2 extends Post2 {
+            constructor(author, text) {
+                super(author, text);
+                this.highlighted = false;
+            }
+
+            makeTextHighlighted() {
+                this.highlighted = true;
+            }
+        }
+
+        let attachedPost2 = new AttachedPost('Евгений', 'Лорем ...');
+
+        attachedPost2.makeTextHighlighted();
+        attachedPost2.edit();
+
+        console.log(attachedPost2);
+
+
+    </script>
+
+</body>
+
+</html>

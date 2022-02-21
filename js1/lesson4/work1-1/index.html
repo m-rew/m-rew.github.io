@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        'use strict';
+
+        /*
+            1.1 (это обязательное задание) Сделайте в стиле es5, а затем в стиле es6 (по аналогии из дополнительных
+            видео -> 3 примеры наследования -> типы на es5 и es6), конструктор Product, который принимает параметры name
+            и price, сохраните их как свойства объекта. Также объекты типа Product должны иметь метод
+            make25PercentDiscount, который будет уменьшать цену в объекте на 25%. Имейте в виду, что метод
+            make25PercentDiscount не должен быть внутри функции-конструктора, и также не нужно создавать отдельный
+            объект-прототип (как объект transport в уроке).
+
+        */
+
+        // es5
+
+        function Product(name, price) {
+            this.name = name;
+            this.price = price;
+        }
+
+        Product.prototype.make25PercentDiscount = function () {
+            this.price = this.price * 0.75;
+        }
+
+        let prod1 = new Product('Продукт 1', 200);
+        let prod2 = new Product('Продукт 2', 100);
+        let prod3 = new Product('Продукт 3', 555);
+
+        prod3.make25PercentDiscount();
+
+        console.log('Без скидки! ' + prod1.name + ': ' + prod1.price);
+        console.log('Без скидки! ' + prod2.name + ': ' + prod2.price);
+        console.log('Скидка 25%! ' + prod3.name + ': ' + prod3.price);
+
+        // es6
+
+        class Product2 {
+            constructor(name, price) {
+                this.name = name;
+                this.price = price;
+            }
+
+            make25PercentDiscount() {
+                this.price = this.price * 0.75;
+            }
+        }
+
+        let prod4 = new Product2('Продукт 4', 200);
+        let prod5 = new Product2('Продукт 5', 100);
+        let prod6 = new Product2('Продукт 6', 555);
+
+        prod6.make25PercentDiscount();
+
+        console.log('Без скидки! ' + prod4.name + ': ' + prod4.price);
+        console.log('Без скидки! ' + prod5.name + ': ' + prod5.price);
+        console.log('Скидка 25%! ' + prod6.name + ': ' + prod6.price);
+
+    </script>
+
+</body>
+
+</html>
