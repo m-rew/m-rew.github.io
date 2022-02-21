@@ -75,7 +75,7 @@
             this.highlighted = false;
         }
 
-        AttachedPost.prototype = Post.prototype;
+        AttachedPost.prototype = Object.create(Post.prototype);
         AttachedPost.prototype.constructor = AttachedPost;
 
         AttachedPost.prototype.makeTextHighlighted = function () {
