@@ -16,7 +16,13 @@
     и aria-label с помощью метода getAttribute. -->
 
     <script>
-        
+        'use strict';
+
+        const button = document.querySelector('button');
+        const span = document.querySelector('span');
+
+        console.log(button.getAttribute('data-dismiss'));
+        console.log(span.getAttribute('aria-hidden'));
     </script>
 </body>
 

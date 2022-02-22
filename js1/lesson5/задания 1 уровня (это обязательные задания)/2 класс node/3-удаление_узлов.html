@@ -22,7 +22,13 @@
     2. Аналогичным образом удалите элемент с классом .btn-outline-dark -->
 
     <script>
+        'use strict';
 
+        const elementParent = document.querySelector('body');
+        const btnWarning = document.querySelector('.btn-outline-warning');
+        const btnDark = document.querySelector('.btn-outline-dark');
+        elementParent.removeChild(btnWarning);
+        elementParent.removeChild(btnDark);
     </script>
 </body>
 
