@@ -44,9 +44,18 @@
     -->
 
     <script>
+        'use strict';
+
+        let closeBtns = document.querySelectorAll('.close');
+
+        closeBtns.forEach(function (btn) {
+            btn.addEventListener('click', function (event) {
+                closeClickHandler(event);
+            });
+        });
 
         function closeClickHandler(event) {
-           
+            event.currentTarget.parentElement.style.cssText = 'display: none;';
         }
     </script>
 </body>
