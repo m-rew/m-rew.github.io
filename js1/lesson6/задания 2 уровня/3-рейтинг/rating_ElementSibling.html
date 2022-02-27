@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <style>
+        i {
+            font-size: 50px;
+        }
+
+        .golden {
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <i id="first" class="fas fa-star"></i>
+    <i id="second" class="fas fa-star"></i>
+    <i id="third" class="fas fa-star"></i>
+    <i id="fourth" class="fas fa-star"></i>
+    <i id="fifth" class="fas fa-star"></i>
+
+    <!-- Задание. Используя заготовку, сделайте чтобы при наведении на вторую звезду
+    подсвечивались первая и вторая звезды. При наведени на третью звезду подсвечивались
+    первая, вторая и третья звезды, и т.д. 
+    mouseover - это событие срабатывает когда мы наводим на элемент.
+    mouseout - это событие срабатывает когда мы перестаем наводить на элемент.
+	Вы можете пойти более продвинутым путем, и получать предыдущий элемент 
+	например с помощью https://mzl.la/3a4SPlR
+    -->
+
+    <script>
+        let stars = document.querySelectorAll('i');
+        let goldenClass = 'golden';
+        let timerID;
+
+        // Создаем родителя элементам. Может есть более короткий способ обернуть элементы в родителя?
+        // Он нужен для того, чтобы звезды не моргали при смене наведения мышью с одной на другую
+        document.querySelector('body').insertAdjacentHTML('afterbegin', '<div class="rating"></div>');
+        document.querySelector('.rating').style.cssText = 'width: max-content;'
+
+        // Добавляем в родителя и удаляем нынешние элементы
+        stars.forEach(function (star) {
+            document.querySelector('.rating').insertAdjacentHTML('beforeend', star.outerHTML);
+            star.remove();
+        });
+
+        // Переназначаем переменную на новый список объектов
+        stars = document.querySelectorAll('.rating i');
+
+        stars.forEach(function (star, index) {
+            star.addEventListener('mouseover', function (event) {
+                clearTimeout(timerID);
+
+                if (!event.target.classList.contains(goldenClass)) {
+                    event.target.classList.add(goldenClass);
+                }
+                // Проверяем наличие goldenClass у предыдущих, если НЕТ - добавляем
+                if (event.target.previousElementSibling && !event.target.previousElementSibling.classList.contains(goldenClass)) {
+                    for (let i = index; i >= 0; i--) {
+                        stars[i].classList.add(goldenClass);
+                    }
+                }
+
+                // Проверяем наличие goldenClass у следующих, если ЕСТЬ - удаляем
+                if (event.target.nextElementSibling && event.target.nextElementSibling.classList.contains(goldenClass)) {
+                    console.log('У следующего есть goldenClass');
+                    for (let i = index + 1; i < stars.length; i++) {
+                        stars[i].classList.remove(goldenClass);
+                    }
+                }
+            });
+
+            star.addEventListener('mouseout', function (event) {
+                event.target.parentElement.addEventListener('mouseout', function (event) {
+                    for (let i = 0; i < stars.length; i++) {
+                        stars[i].classList.remove(goldenClass);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
