@@ -1,0 +1,118 @@
+$diceSize: 150px;
+
+li {
+    list-style-type: none;
+}
+
+body {
+    background: #000;$diceSize: 150px;
+
+    li {
+        list-style-type: none;
+    }
+
+    body {
+        background: #000;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .ui {
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        perspective: 400px;
+        transform: translateX(-$diceSize);
+
+        &--two {
+            top: 50%;
+            left: 70%;
+        }
+
+        .dice {
+            transform-style: preserve-3d;
+            transform: rotateX(124deg) rotateY(327deg);
+
+            &--two {
+                transform: rotateX(121deg) rotateY(25deg);
+            }
+
+            &_list {
+                transform: translateY(-$diceSize / 2) translateX(-$diceSize / 2);
+                transform-style: preserve-3d;
+            }
+
+            &_item {
+                position: absolute;
+                width: $diceSize;
+                height: $diceSize;
+                background: rgba(255, 100, 100, 0.6);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 7rem;
+                font-family: 'Dosis', sans-serif;
+                color: rgba(0, 0, 0, 0.6);
+                border-radius: 20px; 
+                border: 10px double rgba(255, 255, 255, 0.1);
+
+                &[data-id='1'] {
+                    transform: translateZ($diceSize / 2);
+                }
+                &[data-id='2'] {
+                    transform: translateY($diceSize / 2) rotateX(270deg);
+                }
+                &[data-id='3'] {
+                    transform: translateX($diceSize / 2) rotateY(-270deg);
+                }
+                &[data-id='4'] {
+                    transform: translateX(-$diceSize / 2) rotateY(-90deg);
+                }
+                &[data-id='5'] {
+                    transform: translateY(-$diceSize / 2) rotateX(90deg);
+                }
+                &[data-id='6'] {
+                    transform: translateZ(-$diceSize / 2) rotateY(180deg);
+                }
+            }
+        }
+    }
+
+    height: 100vh;
+    overflow: hidden;
+
+    @keyframes rotateOne {
+        0% {
+            transform: scale(1) rotateX(124deg) rotateY(327deg) translate(0%, 0%);
+        }
+        20% {
+            transform: scale(3) rotateX(196deg) rotateY(471deg) translate(-500%, -500%);
+        }
+        100% {
+            transform: scale(1) rotateX(484deg) rotateY(1047deg) translate(0%, 0%);
+        }
+    }
+    
+    @keyframes rotateTwo {
+        0% {
+            transform: scale(1) rotateX(121deg) rotateY(25deg);
+        }
+        20% {
+            transform: scale(3) rotateX(41deg) rotateY(-119deg);
+        }
+        100% {
+            transform: scale(1) rotateX(-239deg) rotateY(-695deg);
+        }
+    }
+}
+
+body.animation {
+    .dice {
+        animation: rotateOne 1000ms linear infinite;
+    }
+
+    .dice--two {
+        animation: rotateTwo 1000ms linear infinite;
+    }
+    
+}

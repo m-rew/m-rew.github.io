@@ -16,6 +16,7 @@
     &__nav {
         height: 100%;
         @include flex(space-between, center);
+        position: relative;
 
         @include media-phone {
             padding: 0 8px;
