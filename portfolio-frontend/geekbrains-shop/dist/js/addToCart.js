@@ -2,6 +2,7 @@
 
 let btnCart = document.querySelector('#btnCart');
 let basket = document.querySelector('.basket');
+let quantityEl = document.querySelector('.header__basket-quantity');
 
 let btnAddToCartObj = document.querySelectorAll('.addtocart');
 let productOverlay;
@@ -10,6 +11,7 @@ let productInfoObj;
 let cartMassObj = [];
 let cartHTML = '';
 let totalPrice = 0;
+let totalQuantity = 0;
 
 // Открытик и закрытие корзины
 btnCart.addEventListener('click', function (event) {
@@ -110,6 +112,7 @@ function addToCart(massObj) {
         `;
 
         totalPrice += massObj[i].totalPrice;
+        totalQuantity += massObj[i].quantity;
     }
 
     basket.innerHTML = `
@@ -129,6 +132,9 @@ function addToCart(massObj) {
         </table>
     `;
 
+    quantityEl.textContent = totalQuantity;
+
     cartHTML = '';
     totalPrice = 0;
+    totalQuantity = 0;
 }
